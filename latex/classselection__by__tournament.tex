@@ -1,0 +1,106 @@
+\hypertarget{classselection__by__tournament}{
+\section{Referência da Template de Classe selection\_\-by\_\-tournament$<$ \_\-ty, \_\-realTy $>$}
+\label{classselection__by__tournament}\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}}
+}
+
+
+{\ttfamily \#include $<$selection\_\-by\_\-tournament.h$>$}
+
+Diagrama de Hierarquia para selection\_\-by\_\-tournament$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classselection__by__tournament}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::mutex::scoped\_\-lock \hyperlink{classselection__by__tournament_a0ba2a47db6a59696b51f19341719c3fd}{scoped\_\-lock}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classselection__by__tournament_a511f69a870e3bb1fdcf7aa8d48383c15}{selection\_\-by\_\-tournament} (\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$popPt)
+\item 
+\hyperlink{classselection__by__tournament_a4865e086f5a9f3aeb6991814f13f7eda}{$\sim$selection\_\-by\_\-tournament} ()
+\item 
+void \hyperlink{classselection__by__tournament_aa2a32fdcbd6365eea3e40a565c9cff3a}{Select} (void)
+\item 
+void \hyperlink{classselection__by__tournament_a3e16cf77dd481a3ce1a01ac4edffa4ba}{ReadyToReceive} (void)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{classselection__by__tournament_ad754f7c3afa1443bfed139265cd506c1}{CallSelect} (\hyperlink{classselection__by__tournament}{selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$ $\ast$v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class selection\_\-by\_\-tournament$<$ \_\-ty, \_\-realTy $>$}
+
+Classe que implementa a interface de um operador genético de seleção por torneio. As threads do operador executam o método \hyperlink{classselection__by__tournament_aa2a32fdcbd6365eea3e40a565c9cff3a}{Select()}. Como o operador de seleção é um gargalo na implementação atual ele espera
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Definições de Tipos}
+\hypertarget{classselection__by__tournament_a0ba2a47db6a59696b51f19341719c3fd}{
+\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}!scoped\_\-lock@{scoped\_\-lock}}
+\index{scoped\_\-lock@{scoped\_\-lock}!selection_by_tournament@{selection\_\-by\_\-tournament}}
+\subsubsection[{scoped\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef boost::mutex::scoped\_\-lock {\bf selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$::{\bf scoped\_\-lock}}}
+\label{classselection__by__tournament_a0ba2a47db6a59696b51f19341719c3fd}
+Definição do padrão scoped lock. 
+
+Reimplementação de \hyperlink{classgenetic__operator__thread_abe926f8fc2a1548516dad216a1acd4fb}{genetic\_\-operator\_\-thread$<$ \_\-ty, \_\-realTy $>$}.
+
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classselection__by__tournament_a511f69a870e3bb1fdcf7aa8d48383c15}{
+\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}!selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}}
+\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}!selection_by_tournament@{selection\_\-by\_\-tournament}}
+\subsubsection[{selection\_\-by\_\-tournament}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$::{\bf selection\_\-by\_\-tournament} ({\bf population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em popPt})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classselection__by__tournament_a511f69a870e3bb1fdcf7aa8d48383c15}
+Método construtor.
+
+popPt Ponteiro para a população onde será aplicado o operador. \hypertarget{classselection__by__tournament_a4865e086f5a9f3aeb6991814f13f7eda}{
+\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}!$\sim$selection\_\-by\_\-tournament@{$\sim$selection\_\-by\_\-tournament}}
+\index{$\sim$selection\_\-by\_\-tournament@{$\sim$selection\_\-by\_\-tournament}!selection_by_tournament@{selection\_\-by\_\-tournament}}
+\subsubsection[{$\sim$selection\_\-by\_\-tournament}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$::$\sim${\bf selection\_\-by\_\-tournament} ()}}
+\label{classselection__by__tournament_a4865e086f5a9f3aeb6991814f13f7eda}
+Método destrutor. 
+
+\subsection{Métodos}
+\hypertarget{classselection__by__tournament_ad754f7c3afa1443bfed139265cd506c1}{
+\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}!CallSelect@{CallSelect}}
+\index{CallSelect@{CallSelect}!selection_by_tournament@{selection\_\-by\_\-tournament}}
+\subsubsection[{CallSelect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void $\ast$ {\bf selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$::CallSelect ({\bf selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em v})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classselection__by__tournament_ad754f7c3afa1443bfed139265cd506c1}
+Método que chama as threads.
+
+v Ponteiro para o operador.
+
+\begin{DoxyReturn}{Retorna}
+Ponteiro NULL. 
+\end{DoxyReturn}
+\hypertarget{classselection__by__tournament_a3e16cf77dd481a3ce1a01ac4edffa4ba}{
+\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}!ReadyToReceive@{ReadyToReceive}}
+\index{ReadyToReceive@{ReadyToReceive}!selection_by_tournament@{selection\_\-by\_\-tournament}}
+\subsubsection[{ReadyToReceive}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$::ReadyToReceive (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classselection__by__tournament_a3e16cf77dd481a3ce1a01ac4edffa4ba}
+Função que implementa a variável de condição para receber indivíduos 
+
+Reimplementação de \hyperlink{classgenetic__operator__thread_a7c86cee81334320d496fb196920fcc10}{genetic\_\-operator\_\-thread$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classselection__by__tournament_aa2a32fdcbd6365eea3e40a565c9cff3a}{
+\index{selection\_\-by\_\-tournament@{selection\_\-by\_\-tournament}!Select@{Select}}
+\index{Select@{Select}!selection_by_tournament@{selection\_\-by\_\-tournament}}
+\subsubsection[{Select}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf selection\_\-by\_\-tournament}$<$ \_\-ty, \_\-realTy $>$::Select (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classselection__by__tournament_aa2a32fdcbd6365eea3e40a565c9cff3a}
+Realiza o torneio efetivamente após a avaliação da funções objetivo 
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{selection__by__tournament_8h}{selection\_\-by\_\-tournament.h}\end{DoxyCompactItemize}

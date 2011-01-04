@@ -1,0 +1,99 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Código-Fonte de ga_exception.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Busca" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&nbsp;Membros</span></a></li>
+    </ul>
+  </div>
+<h1>ga_exception.h</h1><a href="ga__exception_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00008"></a>00008 <span class="preprocessor">#ifndef GA_EXCEPTION_H</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="preprocessor">#define GA_EXCEPTION_H</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &lt;typeinfo&gt;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00018"></a>00018 <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00019"></a><a class="code" href="classga__exception.html">00019</a> <span class="keyword">class </span><a class="code" href="classga__exception.html">ga_exception</a> : <span class="keyword">public</span> std::exception
+<a name="l00020"></a>00020 {
+<a name="l00021"></a>00021   <span class="keyword">public</span>:
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00031"></a>00031     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00032"></a><a class="code" href="classga__exception.html#a92dc4bfb0206de9f8a107f2545eb3bb8">00032</a>      <a class="code" href="classga__exception.html#a92dc4bfb0206de9f8a107f2545eb3bb8">ga_exception</a>(std::string line,std::string func, std::string file)
+<a name="l00033"></a>00033       :_line(line),_methodName(func),_fileName(file){}
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035      <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00041"></a>00041      <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00042"></a><a class="code" href="classga__exception.html#ab636963c37205d48c5b8f00ef353bed0">00042</a>      std::string <a class="code" href="classga__exception.html#ab636963c37205d48c5b8f00ef353bed0">what</a> (<span class="keywordtype">void</span>) {<span class="keywordflow">return</span> <span class="stringliteral">&quot;Erro no método &quot;</span> + _methodName + <span class="stringliteral">&quot;, do arquivo &quot;</span> + _fileName + <span class="stringliteral">&quot; na linha &quot;</span> + _line;}
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044   <span class="keyword">private</span>:
+<a name="l00045"></a>00045     
+<a name="l00046"></a>00046     <span class="comment">//string com o nome do arquivo em que ocorreu o erro</span>
+<a name="l00047"></a>00047     std::string _fileName;
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049     <span class="comment">//nome do método em que ocorreu o erro</span>
+<a name="l00050"></a>00050     std::string _methodName;
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052     <span class="comment">//linha do arquivo em que ocorreu o erro</span>
+<a name="l00053"></a>00053     std::string _line;
+<a name="l00054"></a>00054     
+<a name="l00055"></a>00055 };
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="preprocessor">#endif //GA_EXCEPTION_H</span>
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Gerado em Sat Oct 30 13:47:50 2010 por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Código-Fonte de genetic_algorithm_thread.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Busca" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&nbsp;Membros</span></a></li>
+    </ul>
+  </div>
+<h1>genetic_algorithm_thread.h</h1><a href="genetic__algorithm__thread_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00008"></a>00008 <span class="preprocessor">#ifndef GENETIC_ALGORITHM_THREAD_H</span>
+<a name="l00009"></a>00009 <span class="preprocessor"></span><span class="preprocessor">#define GENETIC_ALGORITHM_THREAD_H</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="genetic__algorithm_8h.html">genetic_algorithm.h</a>&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;population_thread.h&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="genetic__operator__thread_8h.html">genetic_operator_thread.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="selection__by__tournament_8h.html">selection_by_tournament.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;cross_over_thread.h&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="mutate__bit__by__bit__thread_8h.html">mutate_bit_by_bit_thread.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &lt;utility&gt;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00027"></a>00027 <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00028"></a>00028 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> _ty = GAtype,<span class="keyword">typename</span> _realTy = GAreal_type&gt; <span class="keyword">class </span><a class="code" href="classgenetic__algorithm__thread.html">genetic_algorithm_thread</a>;
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00037"></a>00037 <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00038"></a>00038 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> _ty,<span class="keyword">typename</span> _realTy&gt;
+<a name="l00039"></a><a class="code" href="classgenetic__algorithm__thread.html">00039</a> <span class="keyword">class </span><a class="code" href="classgenetic__algorithm__thread.html">genetic_algorithm_thread</a> : <span class="keyword">public</span> <a class="code" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt;_ty,_realTy&gt;
+<a name="l00040"></a>00040 {
+<a name="l00041"></a>00041   <span class="keyword">public</span>:
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00049"></a>00049     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00050"></a>00050     <a class="code" href="classgenetic__algorithm__thread.html#aa09321fa64467ad8dbe34d809eb786da">genetic_algorithm_thread</a> (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; max_generation);
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053   <span class="keyword">private</span>:
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00059"></a>00059     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00060"></a>00060     <a class="code" href="classpopulation__thread.html">population_thread&lt;_ty,_realTy&gt;</a>* _population;
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00068"></a>00068     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00069"></a>00069     <span class="keywordtype">void</span> JoinThreadsOperator (<a class="code" href="classgenetic__operator__thread.html">genetic_operator_thread&lt;_ty,_realTy&gt;</a>* op);
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00075"></a>00075     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00076"></a>00076     <a class="code" href="classgenetic__operator__thread.html">genetic_operator_thread&lt;_ty,_realTy&gt;</a>* selection;
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00082"></a>00082     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00083"></a>00083     <a class="code" href="classgenetic__operator__thread.html">genetic_operator_thread&lt;_ty,_realTy&gt;</a>* <a class="code" href="classcross__over.html">cross_over</a>;
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00089"></a>00089     <span class="comment">/* ----------------------------------------*/</span>
+<a name="l00090"></a>00090     <a class="code" href="classgenetic__operator__thread.html">genetic_operator_thread&lt;_ty,_realTy&gt;</a>* mutation;
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092 };
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> _ty,<span class="keyword">typename</span> _realTy&gt;
+<a name="l00095"></a><a class="code" href="classgenetic__algorithm__thread.html#aa09321fa64467ad8dbe34d809eb786da">00095</a> <a class="code" href="classgenetic__algorithm__thread.html#aa09321fa64467ad8dbe34d809eb786da">genetic_algorithm_thread&lt;_ty,_realTy&gt;::genetic_algorithm_thread</a> (<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; max_generation)
+<a name="l00096"></a>00096 :<a class="code" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt;_ty,_realTy&gt;(max_generation)<span class="comment">//chama o construtor da classe mãe</span>
+<a name="l00097"></a>00097 {
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099   
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101   <span class="comment">//cria o operador de seleçõa por torneio</span>
+<a name="l00102"></a>00102   selection = <span class="keyword">new</span> <a class="code" href="classselection__by__tournament.html">selection_by_tournament&lt;_ty,_realTy&gt;</a>(<a class="code" href="classgenetic__algorithm.html">genetic_algorithm&lt;_ty,_realTy&gt;::_population</a>);
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104   <span class="comment">//cria o operador de cruzamento</span>
+<a name="l00105"></a>00105   <a class="code" href="classcross__over.html">cross_over</a> = <span class="keyword">new</span> <a class="code" href="classcross__over__thread.html">cross_over_thread&lt;_ty,_realTy&gt;</a>(NULL);
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107   <span class="comment">//cria o operador de mutação</span>
+<a name="l00108"></a>00108   mutation = <span class="keyword">new</span> <a class="code" href="classmutate__bit__by__bit__thread.html">mutate_bit_by_bit_thread&lt;_ty,_realTy&gt;</a>(NULL);
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110   <span class="comment">//seta os onsumiores e podutores de cada operador</span>
+<a name="l00111"></a>00111   selection-&gt;SetProducer(mutation-&gt;<a class="code" href="classgenetic__operator__thread.html#a751c7f678d7486bee8b1a02bb9e60416">GetReference</a>());<span class="comment">//o operador de seleção consome os dados produzidos pelo operador de mutação</span>
+<a name="l00112"></a>00112   selection-&gt;SetConsumer(cross_over-&gt;<a class="code" href="classgenetic__operator__thread.html#a751c7f678d7486bee8b1a02bb9e60416">GetReference</a>());<span class="comment">//o operador de seleção prouz os dados do operador de cruzamento</span>
+<a name="l00113"></a>00113   cross_over-&gt;<a class="code" href="classgenetic__operator__thread.html#a435435aa8c4e9f50b041b40c7f63b599">SetProducer</a>(selection-&gt;GetReference());<span class="comment">//o operador de cruzamento consome os dados poduzios pelo operador de seleção</span>
+<a name="l00114"></a>00114   cross_over-&gt;<a class="code" href="classgenetic__operator__thread.html#a2944e0158bc914db042fdcf22a4a4e70">SetConsumer</a>(mutation-&gt;<a class="code" href="classgenetic__operator__thread.html#a751c7f678d7486bee8b1a02bb9e60416">GetReference</a>());<span class="comment">//o operador de cruzamento produz os dados do operador de mutação</span>
+<a name="l00115"></a>00115   mutation-&gt;<a class="code" href="classgenetic__operator__thread.html#a435435aa8c4e9f50b041b40c7f63b599">SetProducer</a>(cross_over-&gt;<a class="code" href="classgenetic__operator__thread.html#a751c7f678d7486bee8b1a02bb9e60416">GetReference</a>());<span class="comment">//o operador de mutação consomeos dados produzidos pelo operador de cruzamento</span>
+<a name="l00116"></a>00116   mutation-&gt;<a class="code" href="classgenetic__operator__thread.html#a2944e0158bc914db042fdcf22a4a4e70">SetConsumer</a>(selection-&gt;GetReference());<span class="comment">//o operador de mutação produz os dados do operador de seleção</span>
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118   <span class="comment">//dispara asthreads do operador de seleção</span>
+<a name="l00119"></a>00119   selection-&gt;ApplyGeneticOperator();
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123   <span class="comment">//faz os joins com as threads</span>
+<a name="l00124"></a>00124   JoinThreadsOperator(selection);
+<a name="l00125"></a>00125   JoinThreadsOperator(cross_over);
+<a name="l00126"></a>00126   JoinThreadsOperator(mutation);
+<a name="l00127"></a>00127   
+<a name="l00128"></a>00128   <span class="comment">//atualiza os dados da população de seleção para obter o melhor indivíduo</span>
+<a name="l00129"></a>00129   selection-&gt;UpdatePopulation();
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131   <span class="comment">//begin debug</span>
+<a name="l00132"></a>00132   std::cout &lt;&lt; <span class="stringliteral">&quot;Fim do GA!&quot;</span> &lt;&lt; std::endl &lt;&lt; <span class="stringliteral">&quot;População ordenada pelo fitness: &quot;</span> &lt;&lt; std::endl;
+<a name="l00133"></a>00133   selection-&gt;PrintPopulation();
+<a name="l00134"></a>00134   std::cout &lt;&lt; std::endl;
+<a name="l00135"></a>00135   <a class="code" href="classindividual.html">individual&lt;_ty,_realTy&gt;</a>* <span class="keywordtype">id</span> = selection-&gt;GetBestIndividual(); 
+<a name="l00136"></a>00136   <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == NULL)
+<a name="l00137"></a>00137   {
+<a name="l00138"></a>00138     std::cout &lt;&lt; <span class="stringliteral">&quot;ID NULO!!!&quot;</span> &lt;&lt; std::endl;
+<a name="l00139"></a>00139     exit(0);
+<a name="l00140"></a>00140   }
+<a name="l00141"></a>00141   std::cout &lt;&lt; <span class="stringliteral">&quot;Melhor indivíduo: &quot;</span> &lt;&lt; std::endl;
+<a name="l00142"></a>00142   std::cout &lt;&lt; *<span class="keywordtype">id</span> &lt;&lt; std::endl;
+<a name="l00143"></a>00143   std::cout &lt;&lt; std::endl;
+<a name="l00144"></a>00144   std::cout &lt;&lt; <span class="stringliteral">&quot;Posição do melhor indivíduo: &quot;</span> &lt;&lt; std::endl;
+<a name="l00145"></a>00145   <span class="keywordtype">id</span>-&gt;PrintRealPosition();
+<a name="l00146"></a>00146   <span class="comment">//end debug </span>
+<a name="l00147"></a>00147 
+<a name="l00148"></a>00148 
+<a name="l00149"></a>00149 }
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151 <span class="comment">//faz o join com as threads do operator op</span>
+<a name="l00152"></a>00152 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> _ty,<span class="keyword">typename</span> _realTy&gt;
+<a name="l00153"></a>00153 <span class="keywordtype">void</span> <a class="code" href="classgenetic__algorithm__thread.html">genetic_algorithm_thread&lt;_ty,_realTy&gt;::JoinThreadsOperator</a> (<a class="code" href="classgenetic__operator__thread.html">genetic_operator_thread&lt;_ty,_realTy&gt;</a>* op)
+<a name="l00154"></a>00154 {
+<a name="l00155"></a>00155   <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code" href="classgenetic__operator__thread.html">genetic_operator_thread&lt;_ty,_realTy&gt;::it_</a> it = op-&gt;<a class="code" href="classgenetic__operator__thread.html#a3f9defee5440ebe6d973bcc8806d64ee">Begin</a>(); it != op-&gt;<a class="code" href="classgenetic__operator__thread.html#ae836d401cde0a8ac21025348b9fcedf6">End</a>(); ++it)
+<a name="l00156"></a>00156   {
+<a name="l00157"></a>00157     <span class="comment">//confere se é nulo antes de realizar o join</span>
+<a name="l00158"></a>00158     <span class="keywordflow">if</span> (*it)
+<a name="l00159"></a>00159       (*it)-&gt;join();
+<a name="l00160"></a>00160   }
+<a name="l00161"></a>00161 
+<a name="l00162"></a>00162 }
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164 <span class="preprocessor">#endif //GENETIC_ALGORITHM_THREAD_H</span>
+</pre></div></div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Gerado em Sat Oct 30 13:47:50 2010 por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

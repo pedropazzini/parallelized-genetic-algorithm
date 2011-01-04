@@ -1,0 +1,116 @@
+\hypertarget{classgenetic__algorithm}{
+\section{Referência da Template de Classe genetic\_\-algorithm$<$ \_\-ty, \_\-realTy $>$}
+\label{classgenetic__algorithm}\index{genetic\_\-algorithm@{genetic\_\-algorithm}}
+}
+
+
+{\ttfamily \#include $<$genetic\_\-algorithm.h$>$}
+
+Diagrama de Hierarquia para genetic\_\-algorithm$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classgenetic__algorithm}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgenetic__algorithm_af33b707193eeea4557c46ddb0bde22b6}{genetic\_\-algorithm} (const int \&max\_\-generation=1000)
+\item 
+const int \& \hyperlink{classgenetic__algorithm_ab125057b9774303bab463defd29000e1}{GetMaxGeneration} (void) const 
+\item 
+void \hyperlink{classgenetic__algorithm_ad7e8c1a4ce92a617bf2d2a4496a4a31b}{SeMaxGeneration} (const int \&new\_\-max)
+\item 
+void \hyperlink{classgenetic__algorithm_a9a875d5695bfcc574b616f69e1605427}{StartGA} (void)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__algorithm_a1b2109867086541f375f091a34b1413b}{\_\-population}
+\item 
+int \hyperlink{classgenetic__algorithm_aa27789d88ad571a15a9ad984f238f51e}{\_\-max\_\-generation}
+\item 
+\hyperlink{classgenetic__operator}{genetic\_\-operator}$<$\_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__algorithm_a9f03558907645bff987053e1571c9816}{\_\-mutation}
+\item 
+\hyperlink{classcross__over}{cross\_\-over}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__algorithm_a4b1145baa8b987a6e69681f79a939b24}{\_\-cross\_\-over}
+\item 
+\hyperlink{classgenetic__operator}{genetic\_\-operator}$<$\_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__algorithm_a237298e9294747b7531beca4df11e049}{\_\-selection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class genetic\_\-algorithm$<$ \_\-ty, \_\-realTy $>$}
+
+Classe que encapsula os conceitos do algoritmo genético e inicia o GA.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classgenetic__algorithm_af33b707193eeea4557c46ddb0bde22b6}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!genetic\_\-algorithm@{genetic\_\-algorithm}}
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{genetic\_\-algorithm}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::{\bf genetic\_\-algorithm} (const int \& {\em max\_\-generation} = {\ttfamily 1000})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__algorithm_af33b707193eeea4557c46ddb0bde22b6}
+Método construtor
+
+max\_\-generation Número máximo de gerações. 
+
+\subsection{Métodos}
+\hypertarget{classgenetic__algorithm_ab125057b9774303bab463defd29000e1}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!GetMaxGeneration@{GetMaxGeneration}}
+\index{GetMaxGeneration@{GetMaxGeneration}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{GetMaxGeneration}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ const int\& {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::GetMaxGeneration (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__algorithm_ab125057b9774303bab463defd29000e1}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O número máximo de gerações. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__algorithm_ad7e8c1a4ce92a617bf2d2a4496a4a31b}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!SeMaxGeneration@{SeMaxGeneration}}
+\index{SeMaxGeneration@{SeMaxGeneration}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{SeMaxGeneration}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::SeMaxGeneration (const int \& {\em new\_\-max})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__algorithm_ad7e8c1a4ce92a617bf2d2a4496a4a31b}
+Método de interface (set).
+
+new\_\-max O novo valor do número máximo de gerações. \hypertarget{classgenetic__algorithm_a9a875d5695bfcc574b616f69e1605427}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!StartGA@{StartGA}}
+\index{StartGA@{StartGA}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{StartGA}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::StartGA (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__algorithm_a9a875d5695bfcc574b616f69e1605427}
+Método que irá iniciar o algoritmo genético. 
+
+\subsection{Atributos}
+\hypertarget{classgenetic__algorithm_a4b1145baa8b987a6e69681f79a939b24}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!\_\-cross\_\-over@{\_\-cross\_\-over}}
+\index{\_\-cross\_\-over@{\_\-cross\_\-over}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{\_\-cross\_\-over}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf cross\_\-over}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-cross\_\-over}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__algorithm_a4b1145baa8b987a6e69681f79a939b24}
+Operador genético de cruzamento do GA. \hypertarget{classgenetic__algorithm_aa27789d88ad571a15a9ad984f238f51e}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!\_\-max\_\-generation@{\_\-max\_\-generation}}
+\index{\_\-max\_\-generation@{\_\-max\_\-generation}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{\_\-max\_\-generation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ int {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-max\_\-generation}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__algorithm_aa27789d88ad571a15a9ad984f238f51e}
+Número máximo de gerações do GA. \hypertarget{classgenetic__algorithm_a9f03558907645bff987053e1571c9816}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!\_\-mutation@{\_\-mutation}}
+\index{\_\-mutation@{\_\-mutation}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{\_\-mutation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf genetic\_\-operator}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-mutation}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__algorithm_a9f03558907645bff987053e1571c9816}
+Operador genético de mutação do GA. \hypertarget{classgenetic__algorithm_a1b2109867086541f375f091a34b1413b}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!\_\-population@{\_\-population}}
+\index{\_\-population@{\_\-population}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{\_\-population}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf population}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-population}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__algorithm_a1b2109867086541f375f091a34b1413b}
+População do GA \hypertarget{classgenetic__algorithm_a237298e9294747b7531beca4df11e049}{
+\index{genetic\_\-algorithm@{genetic\_\-algorithm}!\_\-selection@{\_\-selection}}
+\index{\_\-selection@{\_\-selection}!genetic_algorithm@{genetic\_\-algorithm}}
+\subsubsection[{\_\-selection}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf genetic\_\-operator}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-algorithm}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-selection}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__algorithm_a237298e9294747b7531beca4df11e049}
+Operador genético de seleção do GA. 
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{genetic__algorithm_8h}{genetic\_\-algorithm.h}\end{DoxyCompactItemize}

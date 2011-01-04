@@ -1,0 +1,137 @@
+\hypertarget{classcross__over}{
+\section{Referência da Template de Classe cross\_\-over$<$ \_\-ty, \_\-realTy $>$}
+\label{classcross__over}\index{cross\_\-over@{cross\_\-over}}
+}
+
+
+{\ttfamily \#include $<$cross\_\-over.h$>$}
+
+Diagrama de Hierarquia para cross\_\-over$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classcross__over}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcross__over_aa3561392e40e80aec88cc88aab4f988d}{cross\_\-over} (\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$\_\-to\_\-apply\_\-operator=NULL, const int \&number\_\-coordinate=def::genetic\_\-operator::cross\_\-over::number\_\-coordinate, const float \&probability=def::genetic\_\-operator::cross\_\-over::probability, const int \&CP=9, const bool \&aleatory=true)
+\item 
+const bool \& \hyperlink{classcross__over_a62fa09dbf5e970644ea151d78ce8e2eb}{IsAleatory} (void) const 
+\item 
+void \hyperlink{classcross__over_a69f0a44b51940c67f996e9da5cda250b}{SetAleatory} (const bool \&new\_\-aleatory)
+\item 
+virtual void \hyperlink{classcross__over_a241401bf77d5c8c465991baa90b1d01b}{MakePairs} (void)
+\item 
+bool \hyperlink{classcross__over_ace759185adf45d08ece996286c69542f}{CrossOver} (\hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&c1, \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&c2, const int \&CP)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classcross__over_af8d2e8a02552551f3edd692793816de3}{CrossOver} (\_\-ty \&coord\_\-1, \_\-ty \&coord\_\-2, const int \&CP)
+\item 
+virtual const char \& \hyperlink{classcross__over_a1a840a73fa36cc7f4f7e769f78d73e81}{WalkOnPopulationHook} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id)
+\item 
+virtual const char \& \hyperlink{classcross__over_a1febad7c46ec396173e099372d50839e}{WalkOnIndividualHook} (\hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class cross\_\-over$<$ \_\-ty, \_\-realTy $>$}
+
+Classe que encapsula um operador genético de cruzamento. Herda os atributos da classe \hyperlink{classgenetic__operator}{genetic\_\-operator}, já que o o operador genético é um tipo de operador. O método principal é o método \hyperlink{classcross__over_ace759185adf45d08ece996286c69542f}{CrossOver()}, que realiza efetivamente o cruzamento entre dois indivíduos.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classcross__over_aa3561392e40e80aec88cc88aab4f988d}{
+\index{cross\_\-over@{cross\_\-over}!cross\_\-over@{cross\_\-over}}
+\index{cross\_\-over@{cross\_\-over}!cross_over@{cross\_\-over}}
+\subsubsection[{cross\_\-over}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::{\bf cross\_\-over} ({\bf population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em \_\-to\_\-apply\_\-operator} = {\ttfamily NULL}, \/  const int \& {\em number\_\-coordinate} = {\ttfamily def::genetic\_\-operator::cross\_\-over$<$~\_\-ty,~\_\-realTy~$>$::number\_\-coordinate}, \/  const float \& {\em probability} = {\ttfamily def::genetic\_\-operator::cross\_\-over$<$~\_\-ty,~\_\-realTy~$>$::probability}, \/  const int \& {\em CP} = {\ttfamily 9}, \/  const bool \& {\em aleatory} = {\ttfamily true})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcross__over_aa3561392e40e80aec88cc88aab4f988d}
+Método construtor
+
+\_\-to\_\-apply\_\-operator Ponteiro para a população na qual o operador irá realizar o cruzamento.  number\_\-coordinate Búmero de coordenadas das coordeanadas da população.  probability Probabilidade da realazição do cruzamento.  CP Ponto de corte do cruzamento.  aleatory Se o ponto de corte é aleatório ou não. 
+
+\subsection{Métodos}
+\hypertarget{classcross__over_af8d2e8a02552551f3edd692793816de3}{
+\index{cross\_\-over@{cross\_\-over}!CrossOver@{CrossOver}}
+\index{CrossOver@{CrossOver}!cross_over@{cross\_\-over}}
+\subsubsection[{CrossOver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::CrossOver (\_\-ty \& {\em coord\_\-1}, \/  \_\-ty \& {\em coord\_\-2}, \/  const int \& {\em CP})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classcross__over_af8d2e8a02552551f3edd692793816de3}
+Realiza o cruzamento entre duas coordenadas.
+
+coord\_\-1 Uma das coordenadas que participará do cruzamento.  coord\_\-2 A outra coordenada que participará do cruzamento.  CP O ponto de corte do cruzamento. \hypertarget{classcross__over_ace759185adf45d08ece996286c69542f}{
+\index{cross\_\-over@{cross\_\-over}!CrossOver@{CrossOver}}
+\index{CrossOver@{CrossOver}!cross_over@{cross\_\-over}}
+\subsubsection[{CrossOver}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ bool {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::CrossOver ({\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em c1}, \/  {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em c2}, \/  const int \& {\em CP})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcross__over_ace759185adf45d08ece996286c69542f}
+Realiza o cruzamento efetivamente.
+
+c1 Um dos indivíduos do par que poderá ser cruzado.  c2 O outro indivíduo do par que poderá ser cruzado.  CP O ponto de corte do cruzamento.
+
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\hypertarget{classcross__over_a62fa09dbf5e970644ea151d78ce8e2eb}{
+\index{cross\_\-over@{cross\_\-over}!IsAleatory@{IsAleatory}}
+\index{IsAleatory@{IsAleatory}!cross_over@{cross\_\-over}}
+\subsubsection[{IsAleatory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const bool\& {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::IsAleatory (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcross__over_a62fa09dbf5e970644ea151d78ce8e2eb}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Retorna se o ponto de corte do operador é aleatório. 
+\end{DoxyReturn}
+\hypertarget{classcross__over_a241401bf77d5c8c465991baa90b1d01b}{
+\index{cross\_\-over@{cross\_\-over}!MakePairs@{MakePairs}}
+\index{MakePairs@{MakePairs}!cross_over@{cross\_\-over}}
+\subsubsection[{MakePairs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::MakePairs (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classcross__over_a241401bf77d5c8c465991baa90b1d01b}
+Realiza o casamento dos individuos. \hypertarget{classcross__over_a69f0a44b51940c67f996e9da5cda250b}{
+\index{cross\_\-over@{cross\_\-over}!SetAleatory@{SetAleatory}}
+\index{SetAleatory@{SetAleatory}!cross_over@{cross\_\-over}}
+\subsubsection[{SetAleatory}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::SetAleatory (const bool \& {\em new\_\-aleatory})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcross__over_a69f0a44b51940c67f996e9da5cda250b}
+Método de interface (set).
+
+new\_\-aleatory Valor que fará com que o ponto de corte do operador seja aleatório ou não. \hypertarget{classcross__over_a1febad7c46ec396173e099372d50839e}{
+\index{cross\_\-over@{cross\_\-over}!WalkOnIndividualHook@{WalkOnIndividualHook}}
+\index{WalkOnIndividualHook@{WalkOnIndividualHook}!cross_over@{cross\_\-over}}
+\subsubsection[{WalkOnIndividualHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ const char \& {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::WalkOnIndividualHook ({\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classcross__over_a1febad7c46ec396173e099372d50839e}
+Método de gancho que caminha no vetor de coordenadas aplicando o operador de cruzamento.
+
+coo Coordenada onde será aplicado o operador genético.
+
+\begin{DoxyReturn}{Retorna}
+A direção de caminhada do algoritmo. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{classgenetic__operator_a2124d70b28b35d3114eb3e3ffa72baef}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classcross__over_a1a840a73fa36cc7f4f7e769f78d73e81}{
+\index{cross\_\-over@{cross\_\-over}!WalkOnPopulationHook@{WalkOnPopulationHook}}
+\index{WalkOnPopulationHook@{WalkOnPopulationHook}!cross_over@{cross\_\-over}}
+\subsubsection[{WalkOnPopulationHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ const char \& {\bf cross\_\-over}$<$ \_\-ty, \_\-realTy $>$::WalkOnPopulationHook ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classcross__over_a1a840a73fa36cc7f4f7e769f78d73e81}
+Método de gancho que caminha no vetor de indivíduos aplicando o operador de cruzamento.
+
+id Indivíduo onde será aplicado o operador de cruzamento.
+
+\begin{DoxyReturn}{Retorna}
+Um identificador da nova direção de caminhada 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{classgenetic__operator_a3405bb5335111bd675d408aa8db052fa}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cross__over_8h}{cross\_\-over.h}\end{DoxyCompactItemize}

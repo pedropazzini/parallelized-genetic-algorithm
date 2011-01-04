@@ -1,0 +1,61 @@
+\hypertarget{individual_8h}{
+\section{Referência do Arquivo individual.h}
+\label{individual_8h}\index{individual.h@{individual.h}}
+}
+{\ttfamily \#include $<$vector$>$}\par
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include \char`\"{}coordinate.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}definitions.h\char`\"{}}\par
+\subsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classindividual}{individual$<$ \_\-ty, \_\-realTy $>$}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::istream \& \hyperlink{individual_8h_a11c97e7fa3954c61cc91282d96d1ae2d}{operator$>$$>$} (std::istream \&is, \hyperlink{classindividual}{individual}$<$ T, U $>$ \&id)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::ostream \& \hyperlink{individual_8h_a90bc9541f07077cb6af916fd8dd2eca2}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classindividual}{individual}$<$ T, U $>$ \&id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Arquivo que define a calsse indivíduo, que encapsula os conceitos de um indivíduo do algoritmo genético. \begin{DoxyAuthor}{Autor}
+Pedro Pazzini 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+0.0.1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2010-\/10-\/29 
+\end{DoxyDate}
+
+
+\subsection{Funções}
+\hypertarget{individual_8h_a90bc9541f07077cb6af916fd8dd2eca2}{
+\index{individual.h@{individual.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!individual.h@{individual.h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ std::ostream\& operator$<$$<$ (std::ostream \& {\em os}, \/  const {\bf individual}$<$ T, U $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{individual_8h_a90bc9541f07077cb6af916fd8dd2eca2}
+Sobrecarga do operador de fluxo de saída.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]is Stream do fluxo de saída.  id Indivíduo a ser jogado no fluxo de saída.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+A mesma stream passada como parâmetro. 
+\end{DoxyReturn}
+\hypertarget{individual_8h_a11c97e7fa3954c61cc91282d96d1ae2d}{
+\index{individual.h@{individual.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!individual.h@{individual.h}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ std::istream\& operator$>$$>$ (std::istream \& {\em is}, \/  {\bf individual}$<$ T, U $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{individual_8h_a11c97e7fa3954c61cc91282d96d1ae2d}
+Sobrecarga do operador de fluxo de entrada.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]is Stream do fluxo de entrada.  id Indivíduo a ser jogado no fluxo de entrada.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+A mesma stream passada como parâmetro. 
+\end{DoxyReturn}

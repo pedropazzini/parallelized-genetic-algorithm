@@ -1,0 +1,114 @@
+\hypertarget{classmutate__bit__by__bit__thread}{
+\section{Referência da Template de Classe mutate\_\-bit\_\-by\_\-bit\_\-thread$<$ \_\-ty, \_\-realTy $>$}
+\label{classmutate__bit__by__bit__thread}\index{mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}}
+}
+
+
+{\ttfamily \#include $<$mutate\_\-bit\_\-by\_\-bit\_\-thread.h$>$}
+
+Diagrama de Hierarquia para mutate\_\-bit\_\-by\_\-bit\_\-thread$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classmutate__bit__by__bit__thread}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::mutex::scoped\_\-lock \hyperlink{classmutate__bit__by__bit__thread_a059838b054d4de64b20d33d1db7e89c0}{scoped\_\-lock}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmutate__bit__by__bit__thread_a3f2bb991bf06934cb614d2fb91f2bf0a}{mutate\_\-bit\_\-by\_\-bit\_\-thread} (\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$popPt)
+\item 
+void \hyperlink{classmutate__bit__by__bit__thread_a13d804deae7d91aa75897068eb733050}{ConsumeAndProduce} (void)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmutate__bit__by__bit__thread_a452b4832fd083ab19d3f3f65b79bf271}{ApplyMutateOperatorInIndividual} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$id)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Protegidos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \hyperlink{classmutate__bit__by__bit__thread_a6f3893ebf8126e17b2f45e694811765f}{CallConsumeAndProduce} (void $\ast$v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class mutate\_\-bit\_\-by\_\-bit\_\-thread$<$ \_\-ty, \_\-realTy $>$}
+
+Classe que define um objeto do tipo operador genético. Este objeto herda os atributos das classes \hyperlink{classgenetic__operator}{genetic\_\-operator} e \hyperlink{classmutate__bit__by__bit}{mutate\_\-bit\_\-by\_\-bit}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Definições de Tipos}
+\hypertarget{classmutate__bit__by__bit__thread_a059838b054d4de64b20d33d1db7e89c0}{
+\index{mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}!scoped\_\-lock@{scoped\_\-lock}}
+\index{scoped\_\-lock@{scoped\_\-lock}!mutate_bit_by_bit_thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}}
+\subsubsection[{scoped\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef boost::mutex::scoped\_\-lock {\bf mutate\_\-bit\_\-by\_\-bit\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf scoped\_\-lock}}}
+\label{classmutate__bit__by__bit__thread_a059838b054d4de64b20d33d1db7e89c0}
+Definição do padrão scoped lock. 
+
+Reimplementação de \hyperlink{classgenetic__operator__thread_abe926f8fc2a1548516dad216a1acd4fb}{genetic\_\-operator\_\-thread$<$ \_\-ty, \_\-realTy $>$}.
+
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classmutate__bit__by__bit__thread_a3f2bb991bf06934cb614d2fb91f2bf0a}{
+\index{mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}!mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}}
+\index{mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}!mutate_bit_by_bit_thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}}
+\subsubsection[{mutate\_\-bit\_\-by\_\-bit\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf mutate\_\-bit\_\-by\_\-bit\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf mutate\_\-bit\_\-by\_\-bit\_\-thread} ({\bf population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em popPt})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classmutate__bit__by__bit__thread_a3f2bb991bf06934cb614d2fb91f2bf0a}
+Método construtor.
+
+popPt Ponteiro para a populção na qual será aplicado o operador. 
+
+\subsection{Métodos}
+\hypertarget{classmutate__bit__by__bit__thread_a452b4832fd083ab19d3f3f65b79bf271}{
+\index{mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}!ApplyMutateOperatorInIndividual@{ApplyMutateOperatorInIndividual}}
+\index{ApplyMutateOperatorInIndividual@{ApplyMutateOperatorInIndividual}!mutate_bit_by_bit_thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}}
+\subsubsection[{ApplyMutateOperatorInIndividual}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf mutate\_\-bit\_\-by\_\-bit\_\-thread}$<$ \_\-ty, \_\-realTy $>$::ApplyMutateOperatorInIndividual ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classmutate__bit__by__bit__thread_a452b4832fd083ab19d3f3f65b79bf271}
+Aplica o operador de mutação em um indivíduo
+
+id O indivíduo aonde será aplicado o operador de mutação.
+
+Método que recebe como parâmetro um ponteiro para um indivíduo e aplica o operador de mutação sobre o mesmo. Basicamente o método caminha sobre cada objeto coordenada do indivíduo, e aplica o operador sobre cada coordenada. A probabilidade de mutação de cada bit é definidia no arquivo \hyperlink{definitions_8h}{definitions.h}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]Tipo de cada coordenada para a representação binária \item[{\em \_\-realTy}]Tipo das coordenadas para a representação real  id Ponteiro para o indivíduo no qual será aplicado o operador de mutação bit a bit. \end{DoxyTemplParams}
+\hypertarget{classmutate__bit__by__bit__thread_a6f3893ebf8126e17b2f45e694811765f}{
+\index{mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}!CallConsumeAndProduce@{CallConsumeAndProduce}}
+\index{CallConsumeAndProduce@{CallConsumeAndProduce}!mutate_bit_by_bit_thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}}
+\subsubsection[{CallConsumeAndProduce}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ static void$\ast$ {\bf mutate\_\-bit\_\-by\_\-bit\_\-thread}$<$ \_\-ty, \_\-realTy $>$::CallConsumeAndProduce (void $\ast$ {\em v})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classmutate__bit__by__bit__thread_a6f3893ebf8126e17b2f45e694811765f}
+Usado para criar as threads
+
+v Ponteiro para o operador que chamará as threads.
+
+\begin{DoxyReturn}{Retorna}
+Ponteiro NULL. 
+\end{DoxyReturn}
+\hypertarget{classmutate__bit__by__bit__thread_a13d804deae7d91aa75897068eb733050}{
+\index{mutate\_\-bit\_\-by\_\-bit\_\-thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}!ConsumeAndProduce@{ConsumeAndProduce}}
+\index{ConsumeAndProduce@{ConsumeAndProduce}!mutate_bit_by_bit_thread@{mutate\_\-bit\_\-by\_\-bit\_\-thread}}
+\subsubsection[{ConsumeAndProduce}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf mutate\_\-bit\_\-by\_\-bit\_\-thread}$<$ \_\-ty, \_\-realTy $>$::ConsumeAndProduce (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classmutate__bit__by__bit__thread_a13d804deae7d91aa75897068eb733050}
+Método a ser executado pelas threads
+
+Método a ser executado pelas threads do operador de mutação bit a bit. O operador remove um indivíduo da sua população, aplica o operador de mutação, e já deposita o mesmo no operador que consome os indivíduos do operador de mutação, que no caso, é o operador de seleção.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mutate__bit__by__bit__thread_8h}{mutate\_\-bit\_\-by\_\-bit\_\-thread.h}\end{DoxyCompactItemize}

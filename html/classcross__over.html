@@ -1,0 +1,349 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Referência da Template de Classe cross_over&lt; _ty, _realTy &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Busca" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;Componentes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&nbsp;de&nbsp;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&nbsp;Membros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referência da Template de Classe cross_over&lt; _ty, _realTy &gt;</h1><!-- doxytag: class="cross_over" --><!-- doxytag: inherits="genetic_operator" -->
+<p><code>#include &lt;<a class="el" href="cross__over_8h_source.html">cross_over.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de Hierarquia para cross_over&lt; _ty, _realTy &gt;:</div>
+<div class="dynsection">
+ <div class="center">
+  <img src="classcross__over.png" usemap="#cross_over&lt; _ty, _realTy &gt;_map" alt=""/>
+  <map id="cross_over&lt; _ty, _realTy &gt;_map" name="cross_over&lt; _ty, _realTy &gt;_map">
+<area href="classgenetic__operator.html" alt="genetic_operator&lt; _ty, _realTy &gt;" shape="rect" coords="0,0,212,24"/>
+<area href="classcross__over__thread.html" alt="cross_over_thread&lt; _ty, _realTy &gt;" shape="rect" coords="0,112,212,136"/>
+</map>
+ </div>
+</div>
+
+<p><a href="classcross__over-members.html">Lista de todos os Membros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Métodos Públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#aa3561392e40e80aec88cc88aab4f988d">cross_over</a> (<a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *_to_apply_operator=NULL, const int &amp;number_coordinate=def::genetic_operator::cross_over::number_coordinate, const float &amp;probability=def::genetic_operator::cross_over::probability, const int &amp;CP=9, const bool &amp;aleatory=true)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const bool &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#a62fa09dbf5e970644ea151d78ce8e2eb">IsAleatory</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#a69f0a44b51940c67f996e9da5cda250b">SetAleatory</a> (const bool &amp;new_aleatory)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#a241401bf77d5c8c465991baa90b1d01b">MakePairs</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#ace759185adf45d08ece996286c69542f">CrossOver</a> (<a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;c1, <a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;c2, const int &amp;CP)</td></tr>
+<tr><td colspan="2"><h2>Métodos Protegidos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#af8d2e8a02552551f3edd692793816de3">CrossOver</a> (_ty &amp;coord_1, _ty &amp;coord_2, const int &amp;CP)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const char &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#a1a840a73fa36cc7f4f7e769f78d73e81">WalkOnPopulationHook</a> (<a class="el" href="classindividual.html">individual</a>&lt; _ty, _realTy &gt; &amp;id)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const char &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcross__over.html#a1febad7c46ec396173e099372d50839e">WalkOnIndividualHook</a> (<a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;coo)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descrição Detalhada</h2>
+<h3>template&lt;typename _ty, typename _realTy&gt;<br/>
+ class cross_over&lt; _ty, _realTy &gt;</h3>
+
+<p>Classe que encapsula um operador genético de cruzamento. Herda os atributos da classe <a class="el" href="classgenetic__operator.html">genetic_operator</a>, já que o o operador genético é um tipo de operador. O método principal é o método <a class="el" href="classcross__over.html#ace759185adf45d08ece996286c69542f">CrossOver()</a>, que realiza efetivamente o cruzamento entre dois indivíduos.</p>
+<dl><dt><b>Template Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>_ty</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>_realTy</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<hr/><h2>Construtores &amp; Destrutores</h2>
+<a class="anchor" id="aa3561392e40e80aec88cc88aab4f988d"></a><!-- doxytag: member="cross_over::cross_over" ref="aa3561392e40e80aec88cc88aab4f988d" args="(population&lt; _ty, _realTy &gt; *_to_apply_operator=NULL, const int &amp;number_coordinate=def::genetic_operator::cross_over::number_coordinate, const float &amp;probability=def::genetic_operator::cross_over::probability, const int &amp;CP=9, const bool &amp;aleatory=true)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::<a class="el" href="classcross__over.html">cross_over</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *&nbsp;</td>
+          <td class="paramname"> <em>_to_apply_operator</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>number_coordinate</em> = <code>def::genetic_operator::cross_over&lt;&nbsp;_ty,&nbsp;_realTy&nbsp;&gt;::number_coordinate</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;&nbsp;</td>
+          <td class="paramname"> <em>probability</em> = <code>def::genetic_operator::cross_over&lt;&nbsp;_ty,&nbsp;_realTy&nbsp;&gt;::probability</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>CP</em> = <code>9</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>aleatory</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método construtor</p>
+<p>_to_apply_operator Ponteiro para a população na qual o operador irá realizar o cruzamento.  number_coordinate Búmero de coordenadas das coordeanadas da população.  probability Probabilidade da realazição do cruzamento.  CP Ponto de corte do cruzamento.  aleatory Se o ponto de corte é aleatório ou não. </p>
+
+</div>
+</div>
+<hr/><h2>Métodos</h2>
+<a class="anchor" id="af8d2e8a02552551f3edd692793816de3"></a><!-- doxytag: member="cross_over::CrossOver" ref="af8d2e8a02552551f3edd692793816de3" args="(_ty &amp;coord_1, _ty &amp;coord_2, const int &amp;CP)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::CrossOver </td>
+          <td>(</td>
+          <td class="paramtype">_ty &amp;&nbsp;</td>
+          <td class="paramname"> <em>coord_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_ty &amp;&nbsp;</td>
+          <td class="paramname"> <em>coord_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>CP</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Realiza o cruzamento entre duas coordenadas.</p>
+<p>coord_1 Uma das coordenadas que participará do cruzamento.  coord_2 A outra coordenada que participará do cruzamento.  CP O ponto de corte do cruzamento. </p>
+
+</div>
+</div>
+<a class="anchor" id="ace759185adf45d08ece996286c69542f"></a><!-- doxytag: member="cross_over::CrossOver" ref="ace759185adf45d08ece996286c69542f" args="(coordinate&lt; _ty, _realTy &gt; &amp;c1, coordinate&lt; _ty, _realTy &gt; &amp;c2, const int &amp;CP)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::CrossOver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>c2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>CP</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Realiza o cruzamento efetivamente.</p>
+<p>c1 Um dos indivíduos do par que poderá ser cruzado.  c2 O outro indivíduo do par que poderá ser cruzado.  CP O ponto de corte do cruzamento.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a62fa09dbf5e970644ea151d78ce8e2eb"></a><!-- doxytag: member="cross_over::IsAleatory" ref="a62fa09dbf5e970644ea151d78ce8e2eb" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty, typename _realTy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool&amp; <a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::IsAleatory </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de interface (get).</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>Retorna se o ponto de corte do operador é aleatório. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a241401bf77d5c8c465991baa90b1d01b"></a><!-- doxytag: member="cross_over::MakePairs" ref="a241401bf77d5c8c465991baa90b1d01b" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::MakePairs </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Realiza o casamento dos individuos. </p>
+
+</div>
+</div>
+<a class="anchor" id="a69f0a44b51940c67f996e9da5cda250b"></a><!-- doxytag: member="cross_over::SetAleatory" ref="a69f0a44b51940c67f996e9da5cda250b" args="(const bool &amp;new_aleatory)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty, typename _realTy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::SetAleatory </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&nbsp;</td>
+          <td class="paramname"> <em>new_aleatory</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de interface (set).</p>
+<p>new_aleatory Valor que fará com que o ponto de corte do operador seja aleatório ou não. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1febad7c46ec396173e099372d50839e"></a><!-- doxytag: member="cross_over::WalkOnIndividualHook" ref="a1febad7c46ec396173e099372d50839e" args="(coordinate&lt; _ty, _realTy &gt; &amp;coo)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const char &amp; <a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::WalkOnIndividualHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>coo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de gancho que caminha no vetor de coordenadas aplicando o operador de cruzamento.</p>
+<p>coo Coordenada onde será aplicado o operador genético.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>A direção de caminhada do algoritmo. </dd></dl>
+
+<p>Implementa <a class="el" href="classgenetic__operator.html#a2124d70b28b35d3114eb3e3ffa72baef">genetic_operator&lt; _ty, _realTy &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a840a73fa36cc7f4f7e769f78d73e81"></a><!-- doxytag: member="cross_over::WalkOnPopulationHook" ref="a1a840a73fa36cc7f4f7e769f78d73e81" args="(individual&lt; _ty, _realTy &gt; &amp;id)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const char &amp; <a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt;::WalkOnPopulationHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classindividual.html">individual</a>&lt; _ty, _realTy &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de gancho que caminha no vetor de indivíduos aplicando o operador de cruzamento.</p>
+<p>id Indivíduo onde será aplicado o operador de cruzamento.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>Um identificador da nova direção de caminhada </dd></dl>
+
+<p>Implementa <a class="el" href="classgenetic__operator.html#a3405bb5335111bd675d408aa8db052fa">genetic_operator&lt; _ty, _realTy &gt;</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li><a class="el" href="cross__over_8h_source.html">cross_over.h</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Gerado em Sat Oct 30 13:47:50 2010 por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

@@ -1,0 +1,94 @@
+\documentclass[a4paper]{book}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Guia de Referência}\\
+\vspace*{1cm}
+{\large Gerado por Doxygen 1.6.3}\\
+\vspace*{0.5cm}
+{\small Sat Oct 30 13:47:50 2010}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{Índice dos Componentes}
+\input{hierarchy}
+\chapter{Índice dos Componentes}
+\input{annotated}
+\chapter{Índice dos Arquivos}
+\input{files}
+\chapter{Classes}
+\input{classcoordinate}
+\include{classcross__over}
+\include{classcross__over__thread}
+\include{classga__exception}
+\include{classgenetic__algorithm}
+\include{classgenetic__algorithm__thread}
+\include{classgenetic__operator}
+\include{classgenetic__operator__thread}
+\include{classindividual}
+\include{classmutate__bit__by__bit}
+\include{classmutate__bit__by__bit__thread}
+\include{classpopulation}
+\include{structpopulation__compare}
+\include{classpopulation__thread}
+\include{classselection__by__roulette}
+\include{classselection__by__tournament}
+\include{classsemaphore}
+\chapter{Arquivos}
+\input{coordinate_8h}
+\include{cross__over_8h}
+\include{definitions_8h}
+\include{ga__exception_8h}
+\include{genetic__algorithm_8h}
+\include{genetic__algorithm__thread_8h}
+\include{genetic__operator_8h}
+\include{genetic__operator__thread_8h}
+\include{individual_8h}
+\include{mutate__bit__by__bit__thread_8h}
+\include{population_8h}
+\include{selection__by__roulette_8h}
+\include{selection__by__tournament_8h}
+\include{semaphore_8h}
+\printindex
+\end{document}

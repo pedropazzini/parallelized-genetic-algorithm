@@ -1,0 +1,162 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Referência do Arquivo individual.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Busca" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Lista&nbsp;de&nbsp;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&nbsp;Membros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referência do Arquivo individual.h</h1><code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &quot;<a class="el" href="coordinate_8h_source.html">coordinate.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="definitions_8h_source.html">definitions.h</a>&quot;</code><br/>
+
+<p><a href="individual_8h_source.html">Vá para o código-fonte deste arquivo.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Componentes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classindividual.html">individual&lt; _ty, _realTy &gt;</a></td></tr>
+<tr><td colspan="2"><h2>Funções</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="individual_8h.html#a11c97e7fa3954c61cc91282d96d1ae2d">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="classindividual.html">individual</a>&lt; T, U &gt; &amp;id)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&nbsp;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="individual_8h.html#a90bc9541f07077cb6af916fd8dd2eca2">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classindividual.html">individual</a>&lt; T, U &gt; &amp;id)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descrição Detalhada</h2>
+<p>Arquivo que define a calsse indivíduo, que encapsula os conceitos de um indivíduo do algoritmo genético. </p>
+<dl class="author"><dt><b>Autor:</b></dt><dd>Pedro Pazzini </dd></dl>
+<dl class="version"><dt><b>Versão:</b></dt><dd>0.0.1 </dd></dl>
+<dl class="date"><dt><b>Data:</b></dt><dd>2010-10-29 </dd></dl>
+<hr/><h2>Funções</h2>
+<a class="anchor" id="a90bc9541f07077cb6af916fd8dd2eca2"></a><!-- doxytag: member="individual.h::operator&lt;&lt;" ref="a90bc9541f07077cb6af916fd8dd2eca2" args="(std::ostream &amp;os, const individual&lt; T, U &gt; &amp;id)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&nbsp;</td>
+          <td class="paramname"> <em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classindividual.html">individual</a>&lt; T, U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Sobrecarga do operador de fluxo de saída.</p>
+<dl><dt><b>Template Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>T</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>U</em>&nbsp;</td><td>is Stream do fluxo de saída.  id Indivíduo a ser jogado no fluxo de saída.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>A mesma stream passada como parâmetro. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a11c97e7fa3954c61cc91282d96d1ae2d"></a><!-- doxytag: member="individual.h::operator&gt;&gt;" ref="a11c97e7fa3954c61cc91282d96d1ae2d" args="(std::istream &amp;is, individual&lt; T, U &gt; &amp;id)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&nbsp;</td>
+          <td class="paramname"> <em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classindividual.html">individual</a>&lt; T, U &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Sobrecarga do operador de fluxo de entrada.</p>
+<dl><dt><b>Template Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>T</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>U</em>&nbsp;</td><td>is Stream do fluxo de entrada.  id Indivíduo a ser jogado no fluxo de entrada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>A mesma stream passada como parâmetro. </dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Gerado em Sat Oct 30 13:47:50 2010 por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

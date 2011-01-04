@@ -1,0 +1,278 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Referência da Template de Classe genetic_algorithm&lt; _ty, _realTy &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Busca" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;Componentes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&nbsp;de&nbsp;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&nbsp;Membros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referência da Template de Classe genetic_algorithm&lt; _ty, _realTy &gt;</h1><!-- doxytag: class="genetic_algorithm" -->
+<p><code>#include &lt;<a class="el" href="genetic__algorithm_8h_source.html">genetic_algorithm.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de Hierarquia para genetic_algorithm&lt; _ty, _realTy &gt;:</div>
+<div class="dynsection">
+ <div class="center">
+  <img src="classgenetic__algorithm.png" usemap="#genetic_algorithm&lt; _ty, _realTy &gt;_map" alt=""/>
+  <map id="genetic_algorithm&lt; _ty, _realTy &gt;_map" name="genetic_algorithm&lt; _ty, _realTy &gt;_map">
+<area href="classgenetic__algorithm__thread.html" alt="genetic_algorithm_thread&lt; _ty, _realTy &gt;" shape="rect" coords="0,56,247,80"/>
+</map>
+ </div>
+</div>
+
+<p><a href="classgenetic__algorithm-members.html">Lista de todos os Membros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Métodos Públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#af33b707193eeea4557c46ddb0bde22b6">genetic_algorithm</a> (const int &amp;max_generation=1000)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#ab125057b9774303bab463defd29000e1">GetMaxGeneration</a> (void) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#ad7e8c1a4ce92a617bf2d2a4496a4a31b">SeMaxGeneration</a> (const int &amp;new_max)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#a9a875d5695bfcc574b616f69e1605427">StartGA</a> (void)</td></tr>
+<tr><td colspan="2"><h2>Atributos Protegidos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#a1b2109867086541f375f091a34b1413b">_population</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#aa27789d88ad571a15a9ad984f238f51e">_max_generation</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt;_ty, _realTy &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#a9f03558907645bff987053e1571c9816">_mutation</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcross__over.html">cross_over</a>&lt; _ty, _realTy &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#a4b1145baa8b987a6e69681f79a939b24">_cross_over</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt;_ty, _realTy &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__algorithm.html#a237298e9294747b7531beca4df11e049">_selection</a></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descrição Detalhada</h2>
+<h3>template&lt;typename _ty, typename _realTy&gt;<br/>
+ class genetic_algorithm&lt; _ty, _realTy &gt;</h3>
+
+<p>Classe que encapsula os conceitos do algoritmo genético e inicia o GA.</p>
+<dl><dt><b>Template Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>_ty</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>_realTy</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<hr/><h2>Construtores &amp; Destrutores</h2>
+<a class="anchor" id="af33b707193eeea4557c46ddb0bde22b6"></a><!-- doxytag: member="genetic_algorithm::genetic_algorithm" ref="af33b707193eeea4557c46ddb0bde22b6" args="(const int &amp;max_generation=1000)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::<a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a> </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>max_generation</em> = <code>1000</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método construtor</p>
+<p>max_generation Número máximo de gerações. </p>
+
+</div>
+</div>
+<hr/><h2>Métodos</h2>
+<a class="anchor" id="ab125057b9774303bab463defd29000e1"></a><!-- doxytag: member="genetic_algorithm::GetMaxGeneration" ref="ab125057b9774303bab463defd29000e1" args="(void) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const int&amp; <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::GetMaxGeneration </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de interface (get).</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>O número máximo de gerações. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad7e8c1a4ce92a617bf2d2a4496a4a31b"></a><!-- doxytag: member="genetic_algorithm::SeMaxGeneration" ref="ad7e8c1a4ce92a617bf2d2a4496a4a31b" args="(const int &amp;new_max)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::SeMaxGeneration </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>new_max</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de interface (set).</p>
+<p>new_max O novo valor do número máximo de gerações. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a875d5695bfcc574b616f69e1605427"></a><!-- doxytag: member="genetic_algorithm::StartGA" ref="a9a875d5695bfcc574b616f69e1605427" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::StartGA </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método que irá iniciar o algoritmo genético. </p>
+
+</div>
+</div>
+<hr/><h2>Atributos</h2>
+<a class="anchor" id="a4b1145baa8b987a6e69681f79a939b24"></a><!-- doxytag: member="genetic_algorithm::_cross_over" ref="a4b1145baa8b987a6e69681f79a939b24" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcross__over.html">cross_over</a>&lt;_ty,_realTy&gt;* <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::<a class="el" href="classgenetic__algorithm.html#a4b1145baa8b987a6e69681f79a939b24">_cross_over</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Operador genético de cruzamento do GA. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa27789d88ad571a15a9ad984f238f51e"></a><!-- doxytag: member="genetic_algorithm::_max_generation" ref="aa27789d88ad571a15a9ad984f238f51e" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::<a class="el" href="classgenetic__algorithm.html#aa27789d88ad571a15a9ad984f238f51e">_max_generation</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Número máximo de gerações do GA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f03558907645bff987053e1571c9816"></a><!-- doxytag: member="genetic_algorithm::_mutation" ref="a9f03558907645bff987053e1571c9816" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt;_ty,_realTy&gt;* <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::<a class="el" href="classgenetic__algorithm.html#a9f03558907645bff987053e1571c9816">_mutation</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Operador genético de mutação do GA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b2109867086541f375f091a34b1413b"></a><!-- doxytag: member="genetic_algorithm::_population" ref="a1b2109867086541f375f091a34b1413b" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpopulation.html">population</a>&lt;_ty,_realTy&gt;* <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::<a class="el" href="classgenetic__algorithm.html#a1b2109867086541f375f091a34b1413b">_population</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>População do GA </p>
+
+</div>
+</div>
+<a class="anchor" id="a237298e9294747b7531beca4df11e049"></a><!-- doxytag: member="genetic_algorithm::_selection" ref="a237298e9294747b7531beca4df11e049" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt;_ty,_realTy&gt;* <a class="el" href="classgenetic__algorithm.html">genetic_algorithm</a>&lt; _ty, _realTy &gt;::<a class="el" href="classgenetic__algorithm.html#a237298e9294747b7531beca4df11e049">_selection</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Operador genético de seleção do GA. </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li><a class="el" href="genetic__algorithm_8h_source.html">genetic_algorithm.h</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Gerado em Sat Oct 30 13:47:50 2010 por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

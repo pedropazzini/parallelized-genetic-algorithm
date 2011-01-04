@@ -1,0 +1,167 @@
+\hypertarget{classselection__by__roulette}{
+\section{Referência da Template de Classe selection\_\-by\_\-roulette$<$ \_\-ty, \_\-realTy $>$}
+\label{classselection__by__roulette}\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}}
+}
+
+
+{\ttfamily \#include $<$selection\_\-by\_\-roulette.h$>$}
+
+Diagrama de Hierarquia para selection\_\-by\_\-roulette$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classselection__by__roulette}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::vector$<$ std::pair$<$ \_\-realTy, \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$ $>$ \hyperlink{classselection__by__roulette_a4c224a095113f38dce7d98f10d8c0833}{\_\-RouletteTy}
+\item 
+typedef std::vector$<$ std::pair$<$ \_\-realTy, \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$ $>$::iterator \hyperlink{classselection__by__roulette_a557d2432eb36aba61aa31a9e4b0dcb54}{it\_\-}
+\item 
+typedef std::vector$<$ std::pair$<$ \_\-realTy, \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$ $>$::const\_\-iterator \hyperlink{classselection__by__roulette_ac64df0d86cf8396ce91df17d9ce27f0e}{const\_\-it\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classselection__by__roulette_a043cefe0479622491fea593c7f28ddfa}{selection\_\-by\_\-roulette} (\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$pt\_\-to\_\-apply\_\-operator=NULL)
+\item 
+virtual std::string \hyperlink{classselection__by__roulette_a137f1a757ab4d71a0ca0bdba7f9f35d0}{GetName} (void)
+\item 
+virtual const char \& \hyperlink{classselection__by__roulette_abb536fd7b63a452a2ebd8e7572bfc4d8}{WalkOnIndividualHook} (\hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo)
+\item 
+virtual const char \& \hyperlink{classselection__by__roulette_a98be3d54afb87450f190615f7da330e9}{WalkOnPopulationHook} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id)
+\item 
+\hyperlink{classselection__by__roulette_ac64df0d86cf8396ce91df17d9ce27f0e}{const\_\-it\_\-} \hyperlink{classselection__by__roulette_a8d04a76229aa2d0c68c1a945e77d8e19}{begin} (void) const 
+\item 
+\hyperlink{classselection__by__roulette_ac64df0d86cf8396ce91df17d9ce27f0e}{const\_\-it\_\-} \hyperlink{classselection__by__roulette_a2abe33c34280ba81f0f0dab12c8e875b}{end} (void) const 
+\end{DoxyCompactItemize}
+\subsection*{Métodos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classselection__by__roulette_ac3db5bbe67ee2aa4e1942fd983d3cc80}{GenerateRoulette} (void)
+\item 
+virtual void \hyperlink{classselection__by__roulette_ae19e7e752f54ab03983be567c8d10392}{RotateRoulette} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class selection\_\-by\_\-roulette$<$ \_\-ty, \_\-realTy $>$}
+
+Classe template que encapsula os métodos e atributos de um operador genético de seleção por torneio. Herda da classe \hyperlink{classgenetic__operator}{genetic\_\-operator}. Os métods principais são \hyperlink{classselection__by__roulette_ac3db5bbe67ee2aa4e1942fd983d3cc80}{GenerateRoulette()} e \hyperlink{classselection__by__roulette_ae19e7e752f54ab03983be567c8d10392}{RotateRoulette()}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Definições de Tipos}
+\hypertarget{classselection__by__roulette_a4c224a095113f38dce7d98f10d8c0833}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!\_\-RouletteTy@{\_\-RouletteTy}}
+\index{\_\-RouletteTy@{\_\-RouletteTy}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{\_\-RouletteTy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ typedef std::vector$<$std::pair$<$\_\-realTy,{\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$$>$ $>$ {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-RouletteTy}}}
+\label{classselection__by__roulette_a4c224a095113f38dce7d98f10d8c0833}
+Definição do container que armazena uma roleta. \hypertarget{classselection__by__roulette_ac64df0d86cf8396ce91df17d9ce27f0e}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!const\_\-it\_\-@{const\_\-it\_\-}}
+\index{const\_\-it\_\-@{const\_\-it\_\-}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{const\_\-it\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ typedef std::vector$<$std::pair$<$\_\-realTy,{\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$$>$ $>$::const\_\-iterator {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::{\bf const\_\-it\_\-}}}
+\label{classselection__by__roulette_ac64df0d86cf8396ce91df17d9ce27f0e}
+Definição para um iterator constante que percorre o container da roleta. \hypertarget{classselection__by__roulette_a557d2432eb36aba61aa31a9e4b0dcb54}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!it\_\-@{it\_\-}}
+\index{it\_\-@{it\_\-}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{it\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ typedef std::vector$<$std::pair$<$\_\-realTy,{\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$$>$ $>$::iterator {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::{\bf it\_\-}}}
+\label{classselection__by__roulette_a557d2432eb36aba61aa31a9e4b0dcb54}
+Definição para um iterator que percorre o container da roleta. 
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classselection__by__roulette_a043cefe0479622491fea593c7f28ddfa}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}}
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{selection\_\-by\_\-roulette}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::{\bf selection\_\-by\_\-roulette} ({\bf population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em pt\_\-to\_\-apply\_\-operator} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classselection__by__roulette_a043cefe0479622491fea593c7f28ddfa}
+Método construtor.
+
+pt\_\-to\_\-apply\_\-operator Ponteiro para a população na qual será aplicado o operador. 
+
+\subsection{Métodos}
+\hypertarget{classselection__by__roulette_a8d04a76229aa2d0c68c1a945e77d8e19}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!begin@{begin}}
+\index{begin@{begin}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf const\_\-it\_\-} {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::begin (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classselection__by__roulette_a8d04a76229aa2d0c68c1a945e77d8e19}
+Método que retorna um iterator para percorrer a roleta.
+
+\begin{DoxyReturn}{Retorna}
+Iterator para o começo do container que armazena a roleta. 
+\end{DoxyReturn}
+\hypertarget{classselection__by__roulette_a2abe33c34280ba81f0f0dab12c8e875b}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!end@{end}}
+\index{end@{end}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf const\_\-it\_\-} {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::end (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classselection__by__roulette_a2abe33c34280ba81f0f0dab12c8e875b}
+Métod que retorna um iterator para percorre a roleta.
+
+\begin{DoxyReturn}{Retorna}
+Iterator para o fim da roleta. 
+\end{DoxyReturn}
+\hypertarget{classselection__by__roulette_ac3db5bbe67ee2aa4e1942fd983d3cc80}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!GenerateRoulette@{GenerateRoulette}}
+\index{GenerateRoulette@{GenerateRoulette}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{GenerateRoulette}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::GenerateRoulette (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classselection__by__roulette_ac3db5bbe67ee2aa4e1942fd983d3cc80}
+Constrói a roleta(preenche \_\-myRoulette) \hypertarget{classselection__by__roulette_a137f1a757ab4d71a0ca0bdba7f9f35d0}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!GetName@{GetName}}
+\index{GetName@{GetName}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ virtual std::string {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::GetName (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classselection__by__roulette_a137f1a757ab4d71a0ca0bdba7f9f35d0}
+Retorna o nome da classe para o padrão AbstractFactory
+
+\begin{DoxyReturn}{Retorna}
+Uma string com o nome da classe. 
+\end{DoxyReturn}
+
+
+Reimplementação de \hyperlink{classgenetic__operator_ae0f79368c0b4ad0cff3f608727bd87f5}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classselection__by__roulette_ae19e7e752f54ab03983be567c8d10392}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!RotateRoulette@{RotateRoulette}}
+\index{RotateRoulette@{RotateRoulette}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{RotateRoulette}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::RotateRoulette (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classselection__by__roulette_ae19e7e752f54ab03983be567c8d10392}
+Realiza a seleção propriamente dita, ou seja roda a roleta \hypertarget{classselection__by__roulette_abb536fd7b63a452a2ebd8e7572bfc4d8}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!WalkOnIndividualHook@{WalkOnIndividualHook}}
+\index{WalkOnIndividualHook@{WalkOnIndividualHook}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{WalkOnIndividualHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ virtual const char\& {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::WalkOnIndividualHook ({\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classselection__by__roulette_abb536fd7b63a452a2ebd8e7572bfc4d8}
+O método de seleção por roleta não realiza nenhuma operação direta sobre as coordenadas
+
+coo A coordenada onde seria aplicado o operador.
+
+\begin{DoxyReturn}{Retorna}
+A direção de caminhada do vetor. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{classgenetic__operator_a2124d70b28b35d3114eb3e3ffa72baef}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classselection__by__roulette_a98be3d54afb87450f190615f7da330e9}{
+\index{selection\_\-by\_\-roulette@{selection\_\-by\_\-roulette}!WalkOnPopulationHook@{WalkOnPopulationHook}}
+\index{WalkOnPopulationHook@{WalkOnPopulationHook}!selection_by_roulette@{selection\_\-by\_\-roulette}}
+\subsubsection[{WalkOnPopulationHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ const char \& {\bf selection\_\-by\_\-roulette}$<$ \_\-ty, \_\-realTy $>$::WalkOnPopulationHook ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classselection__by__roulette_a98be3d54afb87450f190615f7da330e9}
+O método de seleção por roleta realiza operações diretamente nos indivíduos
+
+id O indivíduo aonde será aplicado o operador de seleção.
+
+\begin{DoxyReturn}{Retorna}
+A direção da caminhada do vetor. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{classgenetic__operator_a3405bb5335111bd675d408aa8db052fa}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{selection__by__roulette_8h}{selection\_\-by\_\-roulette.h}\end{DoxyCompactItemize}
