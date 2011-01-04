@@ -1,0 +1,440 @@
+\hypertarget{classindividual}{
+\section{Referência da Template de Classe individual$<$ \_\-ty, \_\-realTy $>$}
+\label{classindividual}\index{individual@{individual}}
+}
+
+
+{\ttfamily \#include $<$individual.h$>$}
+
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::vector$<$ \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$ \hyperlink{classindividual_a1e5daa9df67df2ce845387ea20c7111e}{posTy\_\-}
+\item 
+typedef std::vector$<$ \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$::iterator \hyperlink{classindividual_a366746f769614c9cc31b42da59525c6b}{it\_\-}
+\item 
+typedef std::vector$<$ \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$::const\_\-iterator \hyperlink{classindividual_adcf0ed63de337fb1511eb795502f6e48}{const\_\-it\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classindividual_af3455065daf6ab90fdb5c3e6347e453f}{individual} (const int \&id, const int \&dimension=def::individual::dimension, const int \&size=def::individual::size)
+\item 
+\hyperlink{classindividual_ab73b6268c2159515fc0bd845fbbbb13c}{individual} (const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id)
+\item 
+\hyperlink{classindividual_a987acf66924e969f29e3091faf6776b3}{$\sim$individual} (void)
+\item 
+const \_\-realTy \& \hyperlink{classindividual_adf23ea4763b162d8e84ee53765775697}{GetValue} (void) const 
+\item 
+void \hyperlink{classindividual_a906863b234c66ce3a45cab44c85ef385}{SetValue} (const \_\-realTy \&new\_\-val)
+\item 
+const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classindividual_ad9f03da405f7f069cbafd11387fbf5f9}{GetPair} (void) const 
+\item 
+\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classindividual_a57a124a83b28f8af06fa2e5dbcf30c55}{GetPair} (void)
+\item 
+void \hyperlink{classindividual_a07dd69312bd76a2046ca3331b769023d}{SetPair} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$new\_\-pair)
+\item 
+const int \& \hyperlink{classindividual_a061ed50343d97420486e74d49e38a96f}{GetSize} (void) const 
+\item 
+const int \& \hyperlink{classindividual_a2142383da99c87d1f2dac7fccd4565d8}{GetDimension} (void) const 
+\item 
+const int \& \hyperlink{classindividual_aec666131664fc884367d321cde07a586}{GetID} (void) const 
+\item 
+void \hyperlink{classindividual_aa9650e911651d6656cbd44f0d9344aaf}{SetID} (const int \&new\_\-id)
+\item 
+\hyperlink{classindividual_adcf0ed63de337fb1511eb795502f6e48}{const\_\-it\_\-} \hyperlink{classindividual_aacc10fcba3051c1b1913afe924c8f293}{begin} (void) const 
+\item 
+\hyperlink{classindividual_adcf0ed63de337fb1511eb795502f6e48}{const\_\-it\_\-} \hyperlink{classindividual_af2c60e6a02eae91c9f1b419a11067bdb}{end} (void) const 
+\item 
+\hyperlink{classindividual_a366746f769614c9cc31b42da59525c6b}{it\_\-} \hyperlink{classindividual_a593da2dd173a84dd3dec95fd505cc348}{begin} (void)
+\item 
+\hyperlink{classindividual_a366746f769614c9cc31b42da59525c6b}{it\_\-} \hyperlink{classindividual_a101b20b621ef6cf681ba210247c937d5}{end} (void)
+\item 
+bool \hyperlink{classindividual_a06553b7f9e7ae18920b6956d68aec8f9}{AddCoordinate} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&new\_\-coord)
+\item 
+std::vector$<$ \_\-realTy $>$ \hyperlink{classindividual_a23ee0230af928473dfb38c8d2f03a6d8}{GetRealPosition} (void) const 
+\item 
+void \hyperlink{classindividual_a64d3b068c2c4e652a93051ab261b06eb}{GeneratePosition} (void)
+\item 
+void \hyperlink{classindividual_a19b73804838e239adf7eb78ac7d4495c}{PrintRealPosition} (void) const 
+\item 
+\hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \& \hyperlink{classindividual_a62c3d8ac9655e7cc94bd290013a7fb9c}{operator\mbox{[}$\,$\mbox{]}} (const int \&pos)
+\item 
+const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \& \hyperlink{classindividual_afe28d4eab4c2cc479b00931cc5c51d1b}{operator\mbox{[}$\,$\mbox{]}} (const int \&pos) const 
+\item 
+bool \hyperlink{classindividual_aec35be09dd951d52d794adf07f18f555}{operator==} (const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id) const 
+\item 
+bool \hyperlink{classindividual_a354f288f25fd01c842c91eba334cbc62}{operator!=} (const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id) const 
+\item 
+bool \hyperlink{classindividual_a33af2ec8a3a483ddd5e188959a20f22b}{operator$<$} (const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id) const 
+\item 
+bool \hyperlink{classindividual_a059f721458f46910431c30d5c7f8b83d}{operator$>$} (const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id) const 
+\item 
+bool \hyperlink{classindividual_a2116152c25706d6e5eef761f8b516cbe}{operator$>$=} (const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id) const 
+\item 
+bool \hyperlink{classindividual_a5fd9597a7c5dc2308535236c314d85e6}{operator$<$=} (const \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id) const 
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classindividual_a848c15d022ac9f2b446b45d7fae7ddd0}{MakePair} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id\_\-1, \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id\_\-2)
+\item 
+static void \hyperlink{classindividual_a3f064fc3cf1612ef6cd2ffda4cb7610c}{SeparetePair} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id\_\-1, \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id\_\-2)
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::istream \& \hyperlink{classindividual_a11c97e7fa3954c61cc91282d96d1ae2d}{operator$>$$>$} (std::istream \&is, \hyperlink{classindividual}{individual}$<$ T, U $>$ \&id)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::ostream \& \hyperlink{classindividual_a90bc9541f07077cb6af916fd8dd2eca2}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classindividual}{individual}$<$ T, U $>$ \&id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class individual$<$ \_\-ty, \_\-realTy $>$}
+
+Classe que possui os atributos e operações que podem ser realizados com um indivíduo do algoritmo genético. O indivíduo possui como atributo principal um vetor de coordenadas que contém uma coordenada para cada grau de liberdade do problema a ser otimizado.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Definições de Tipos}
+\hypertarget{classindividual_adcf0ed63de337fb1511eb795502f6e48}{
+\index{individual@{individual}!const\_\-it\_\-@{const\_\-it\_\-}}
+\index{const\_\-it\_\-@{const\_\-it\_\-}!individual@{individual}}
+\subsubsection[{const\_\-it\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef std::vector$<${\bf coordinate}$<$\_\-ty,\_\-realTy$>$$\ast$$>$::const\_\-iterator {\bf individual}$<$ \_\-ty, \_\-realTy $>$::{\bf const\_\-it\_\-}}}
+\label{classindividual_adcf0ed63de337fb1511eb795502f6e48}
+Tipo de dado de iterator constante para percorrer o vetor de coordenadas. \hypertarget{classindividual_a366746f769614c9cc31b42da59525c6b}{
+\index{individual@{individual}!it\_\-@{it\_\-}}
+\index{it\_\-@{it\_\-}!individual@{individual}}
+\subsubsection[{it\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef std::vector$<${\bf coordinate}$<$\_\-ty,\_\-realTy$>$$\ast$$>$::iterator {\bf individual}$<$ \_\-ty, \_\-realTy $>$::{\bf it\_\-}}}
+\label{classindividual_a366746f769614c9cc31b42da59525c6b}
+Tipo de dado do iterator para percorrer o vetor de coordenadas. \hypertarget{classindividual_a1e5daa9df67df2ce845387ea20c7111e}{
+\index{individual@{individual}!posTy\_\-@{posTy\_\-}}
+\index{posTy\_\-@{posTy\_\-}!individual@{individual}}
+\subsubsection[{posTy\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef std::vector$<${\bf coordinate}$<$\_\-ty,\_\-realTy$>$$\ast$$>$ {\bf individual}$<$ \_\-ty, \_\-realTy $>$::{\bf posTy\_\-}}}
+\label{classindividual_a1e5daa9df67df2ce845387ea20c7111e}
+Tipo de dados do vetor que armazena as coordenadas que compõem o indivíduo. 
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classindividual_af3455065daf6ab90fdb5c3e6347e453f}{
+\index{individual@{individual}!individual@{individual}}
+\index{individual@{individual}!individual@{individual}}
+\subsubsection[{individual}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf individual}$<$ \_\-ty, \_\-realTy $>$::{\bf individual} (const int \& {\em id}, \/  const int \& {\em dimension} = {\ttfamily def::individual$<$~\_\-ty,~\_\-realTy~$>$::dimension}, \/  const int \& {\em size} = {\ttfamily def::individual$<$~\_\-ty,~\_\-realTy~$>$::size})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_af3455065daf6ab90fdb5c3e6347e453f}
+Método construtor.
+
+id Identificador que identifica o indivíduo.  dimension Número de dimensões da função a ser otimizada (graus de liberdade do problema).  size Tamanho da representação em binário do problema. \hypertarget{classindividual_ab73b6268c2159515fc0bd845fbbbb13c}{
+\index{individual@{individual}!individual@{individual}}
+\index{individual@{individual}!individual@{individual}}
+\subsubsection[{individual}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf individual}$<$ \_\-ty, \_\-realTy $>$::{\bf individual} (const {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_ab73b6268c2159515fc0bd845fbbbb13c}
+Método construtor de cópia.
+
+id O indivíduo a ser copiado. \hypertarget{classindividual_a987acf66924e969f29e3091faf6776b3}{
+\index{individual@{individual}!$\sim$individual@{$\sim$individual}}
+\index{$\sim$individual@{$\sim$individual}!individual@{individual}}
+\subsubsection[{$\sim$individual}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf individual}$<$ \_\-ty, \_\-realTy $>$::$\sim${\bf individual} (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a987acf66924e969f29e3091faf6776b3}
+Método destrutor. 
+
+\subsection{Métodos}
+\hypertarget{classindividual_a06553b7f9e7ae18920b6956d68aec8f9}{
+\index{individual@{individual}!AddCoordinate@{AddCoordinate}}
+\index{AddCoordinate@{AddCoordinate}!individual@{individual}}
+\subsubsection[{AddCoordinate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ bool {\bf individual}$<$ \_\-ty, \_\-realTy $>$::AddCoordinate (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em new\_\-coord})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a06553b7f9e7ae18920b6956d68aec8f9}
+Método que adiciona uma coordenada ao vetor de coordenadas.
+
+new\_\-coord Nova coordenada a ser adicionada.
+
+\begin{DoxyReturn}{Retorna}
+True caso a inserção tenha sido realizada com sucesso, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a593da2dd173a84dd3dec95fd505cc348}{
+\index{individual@{individual}!begin@{begin}}
+\index{begin@{begin}!individual@{individual}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf it\_\-} {\bf individual}$<$ \_\-ty, \_\-realTy $>$::begin (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a593da2dd173a84dd3dec95fd505cc348}
+Retorna um iterator para o container que armazena as coordenadas do indivíduo.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o início do container. 
+\end{DoxyReturn}
+\hypertarget{classindividual_aacc10fcba3051c1b1913afe924c8f293}{
+\index{individual@{individual}!begin@{begin}}
+\index{begin@{begin}!individual@{individual}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf const\_\-it\_\-} {\bf individual}$<$ \_\-ty, \_\-realTy $>$::begin (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_aacc10fcba3051c1b1913afe924c8f293}
+Retorna um iterator constante para o container que armazena as coordenadas do indivíduo.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator constante para o início do container. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a101b20b621ef6cf681ba210247c937d5}{
+\index{individual@{individual}!end@{end}}
+\index{end@{end}!individual@{individual}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf it\_\-} {\bf individual}$<$ \_\-ty, \_\-realTy $>$::end (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a101b20b621ef6cf681ba210247c937d5}
+Retorna um iterator para o container que armazena as coordenadas do indivíduo.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o fim do container. 
+\end{DoxyReturn}
+\hypertarget{classindividual_af2c60e6a02eae91c9f1b419a11067bdb}{
+\index{individual@{individual}!end@{end}}
+\index{end@{end}!individual@{individual}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf const\_\-it\_\-} {\bf individual}$<$ \_\-ty, \_\-realTy $>$::end (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_af2c60e6a02eae91c9f1b419a11067bdb}
+Retorna um iterator constante para o container que armazena as coordenadas do indivíduo.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator constante para o fim do container. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a64d3b068c2c4e652a93051ab261b06eb}{
+\index{individual@{individual}!GeneratePosition@{GeneratePosition}}
+\index{GeneratePosition@{GeneratePosition}!individual@{individual}}
+\subsubsection[{GeneratePosition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GeneratePosition (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a64d3b068c2c4e652a93051ab261b06eb}
+Gera uma posição aleatória para o indivíduo id, para as coordenada apontadas por begin e end \hypertarget{classindividual_a2142383da99c87d1f2dac7fccd4565d8}{
+\index{individual@{individual}!GetDimension@{GetDimension}}
+\index{GetDimension@{GetDimension}!individual@{individual}}
+\subsubsection[{GetDimension}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const int\& {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GetDimension (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a2142383da99c87d1f2dac7fccd4565d8}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Número de graus de liberdade, ou dimensões do indivíduo. 
+\end{DoxyReturn}
+\hypertarget{classindividual_aec666131664fc884367d321cde07a586}{
+\index{individual@{individual}!GetID@{GetID}}
+\index{GetID@{GetID}!individual@{individual}}
+\subsubsection[{GetID}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const int\& {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GetID (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_aec666131664fc884367d321cde07a586}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O número que identifica unicamente o indivíduo dentro de uma população. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a57a124a83b28f8af06fa2e5dbcf30c55}{
+\index{individual@{individual}!GetPair@{GetPair}}
+\index{GetPair@{GetPair}!individual@{individual}}
+\subsubsection[{GetPair}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GetPair (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a57a124a83b28f8af06fa2e5dbcf30c55}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para o indivíduo que é par do indivíduo. Utilizado durante o cruzamento dos indivíduos. 
+\end{DoxyReturn}
+\hypertarget{classindividual_ad9f03da405f7f069cbafd11387fbf5f9}{
+\index{individual@{individual}!GetPair@{GetPair}}
+\index{GetPair@{GetPair}!individual@{individual}}
+\subsubsection[{GetPair}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const {\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GetPair (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_ad9f03da405f7f069cbafd11387fbf5f9}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para o indivíduo que é par do indivíduo. Utilizado durante o cruzamento dos indivíduos. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a23ee0230af928473dfb38c8d2f03a6d8}{
+\index{individual@{individual}!GetRealPosition@{GetRealPosition}}
+\index{GetRealPosition@{GetRealPosition}!individual@{individual}}
+\subsubsection[{GetRealPosition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ std::vector$<$ \_\-realTy $>$ {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GetRealPosition (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a23ee0230af928473dfb38c8d2f03a6d8}
+Método que retorna a posição, em representação real, do indivíduo.
+
+\begin{DoxyReturn}{Retorna}
+Um vetor contendo o valor real, em representação real, de cada coordenada do indivíduo. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a061ed50343d97420486e74d49e38a96f}{
+\index{individual@{individual}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!individual@{individual}}
+\subsubsection[{GetSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const int\& {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GetSize (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a061ed50343d97420486e74d49e38a96f}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Retorna o tamanho do indivíduo. 
+\end{DoxyReturn}
+\hypertarget{classindividual_adf23ea4763b162d8e84ee53765775697}{
+\index{individual@{individual}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!individual@{individual}}
+\subsubsection[{GetValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const \_\-realTy\& {\bf individual}$<$ \_\-ty, \_\-realTy $>$::GetValue (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_adf23ea4763b162d8e84ee53765775697}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor do fitness do indivíduo. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a848c15d022ac9f2b446b45d7fae7ddd0}{
+\index{individual@{individual}!MakePair@{MakePair}}
+\index{MakePair@{MakePair}!individual@{individual}}
+\subsubsection[{MakePair}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ static void {\bf individual}$<$ \_\-ty, \_\-realTy $>$::MakePair ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id\_\-1}, \/  {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id\_\-2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classindividual_a848c15d022ac9f2b446b45d7fae7ddd0}
+Método estático que faz o par entre dois indivíduos.
+
+id\_\-1 Um dos indivíduos do par.  id\_\-2 O outro indivíduo do par. \hypertarget{classindividual_a354f288f25fd01c842c91eba334cbc62}{
+\index{individual@{individual}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!individual@{individual}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator!= (const {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a354f288f25fd01c842c91eba334cbc62}
+Operador de desigualdade. retorna se o valor do fitness dos indivíduos são diferentes.
+
+id O indivíduo a ser comparado.
+
+\begin{DoxyReturn}{Retorna}
+True caso os indivíduos são diferentes, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a33af2ec8a3a483ddd5e188959a20f22b}{
+\index{individual@{individual}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!individual@{individual}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator$<$ (const {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a33af2ec8a3a483ddd5e188959a20f22b}
+Operador de comparação. Retorna se o fitness de um indivíduo é menor que o do outro.
+
+id O indivíduo a ser comparado.
+
+\begin{DoxyReturn}{Retorna}
+True se o fitness de id for menor, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a5fd9597a7c5dc2308535236c314d85e6}{
+\index{individual@{individual}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!individual@{individual}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator$<$= (const {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a5fd9597a7c5dc2308535236c314d85e6}
+Operador de comparação. Retorna se o fitness de um indivíduo é menor ou igual que o do outro.
+
+id O indivíduo a ser comparado.
+
+\begin{DoxyReturn}{Retorna}
+True se o fitness de id for menor ou igual, false caso contrário 
+\end{DoxyReturn}
+\hypertarget{classindividual_aec35be09dd951d52d794adf07f18f555}{
+\index{individual@{individual}!operator==@{operator==}}
+\index{operator==@{operator==}!individual@{individual}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator== (const {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_aec35be09dd951d52d794adf07f18f555}
+Operador de igualdade. Retorna se o valor do fitness dos indivíduos são iguais.
+
+id O indivíduo a ser comparado.
+
+\begin{DoxyReturn}{Retorna}
+True se os indivíduos são igauis, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a059f721458f46910431c30d5c7f8b83d}{
+\index{individual@{individual}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!individual@{individual}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator$>$ (const {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a059f721458f46910431c30d5c7f8b83d}
+Operador de comparação. Retorna se o fitness de um indivíduo é maior que o do outro.
+
+id O indivíduo a ser comparado.
+
+\begin{DoxyReturn}{Retorna}
+True se o fitness de id for maior, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a2116152c25706d6e5eef761f8b516cbe}{
+\index{individual@{individual}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!individual@{individual}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator$>$= (const {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a2116152c25706d6e5eef761f8b516cbe}
+Operador de comparação. Retorna se o fitness de um indivíduo é maior ou igual que o do outro.
+
+id O indivíduo a ser comparado.
+
+\begin{DoxyReturn}{Retorna}
+True se o fitness de id for maior ou igual, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classindividual_afe28d4eab4c2cc479b00931cc5c51d1b}{
+\index{individual@{individual}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!individual@{individual}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const {\bf coordinate}$<$\_\-ty,\_\-realTy$>$\& {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator\mbox{[}$\,$\mbox{]} (const int \& {\em pos}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_afe28d4eab4c2cc479b00931cc5c51d1b}
+Operador de acesso. Retorna a coordenada no índice passado como parâmetro.
+
+pos A posição da coordenada.
+
+\begin{DoxyReturn}{Retorna}
+A coordenada na posição pos. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a62c3d8ac9655e7cc94bd290013a7fb9c}{
+\index{individual@{individual}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!individual@{individual}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf coordinate}$<$\_\-ty,\_\-realTy$>$\& {\bf individual}$<$ \_\-ty, \_\-realTy $>$::operator\mbox{[}$\,$\mbox{]} (const int \& {\em pos})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a62c3d8ac9655e7cc94bd290013a7fb9c}
+Operador de acesso. Retorna a coordenada no índice passado como parâmetro.
+
+pos A posição da coordenada.
+
+\begin{DoxyReturn}{Retorna}
+A coordenada na posição pos. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a19b73804838e239adf7eb78ac7d4495c}{
+\index{individual@{individual}!PrintRealPosition@{PrintRealPosition}}
+\index{PrintRealPosition@{PrintRealPosition}!individual@{individual}}
+\subsubsection[{PrintRealPosition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf individual}$<$ \_\-ty, \_\-realTy $>$::PrintRealPosition (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a19b73804838e239adf7eb78ac7d4495c}
+Imprime a posiçao, em valores reais, na saída padrão. \hypertarget{classindividual_a3f064fc3cf1612ef6cd2ffda4cb7610c}{
+\index{individual@{individual}!SeparetePair@{SeparetePair}}
+\index{SeparetePair@{SeparetePair}!individual@{individual}}
+\subsubsection[{SeparetePair}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ static void {\bf individual}$<$ \_\-ty, \_\-realTy $>$::SeparetePair ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id\_\-1}, \/  {\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id\_\-2})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classindividual_a3f064fc3cf1612ef6cd2ffda4cb7610c}
+Método estático que desfaz um par de indivíduos.
+
+id\_\-1 O primeiro indivíduo do par a ser desfeito.  id\_\-2 O segundo indivíduo do par a ser desfeito. \hypertarget{classindividual_aa9650e911651d6656cbd44f0d9344aaf}{
+\index{individual@{individual}!SetID@{SetID}}
+\index{SetID@{SetID}!individual@{individual}}
+\subsubsection[{SetID}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf individual}$<$ \_\-ty, \_\-realTy $>$::SetID (const int \& {\em new\_\-id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_aa9650e911651d6656cbd44f0d9344aaf}
+Método de interface (set).
+
+new\_\-id Seta o novo valor do identificador. \hypertarget{classindividual_a07dd69312bd76a2046ca3331b769023d}{
+\index{individual@{individual}!SetPair@{SetPair}}
+\index{SetPair@{SetPair}!individual@{individual}}
+\subsubsection[{SetPair}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf individual}$<$ \_\-ty, \_\-realTy $>$::SetPair ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em new\_\-pair})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a07dd69312bd76a2046ca3331b769023d}
+Método de interface (set).
+
+new\_\-pair Ponteiro para o par do indivíduo a ser setado. \hypertarget{classindividual_a906863b234c66ce3a45cab44c85ef385}{
+\index{individual@{individual}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!individual@{individual}}
+\subsubsection[{SetValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf individual}$<$ \_\-ty, \_\-realTy $>$::SetValue (const \_\-realTy \& {\em new\_\-val})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classindividual_a906863b234c66ce3a45cab44c85ef385}
+Método de interface (set).
+
+new\_\-val É o novo valor do fitness do indivíduo. 
+
+\subsection{Amigas e Funções Relacionadas}
+\hypertarget{classindividual_a90bc9541f07077cb6af916fd8dd2eca2}{
+\index{individual@{individual}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!individual@{individual}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ template$<$typename T , typename U $>$ std::ostream\& operator$<$$<$ (std::ostream \& {\em os}, \/  const {\bf individual}$<$ T, U $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classindividual_a90bc9541f07077cb6af916fd8dd2eca2}
+Sobrecarga do operador de fluxo de saída.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]is Stream do fluxo de saída.  id Indivíduo a ser jogado no fluxo de saída.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+A mesma stream passada como parâmetro. 
+\end{DoxyReturn}
+\hypertarget{classindividual_a11c97e7fa3954c61cc91282d96d1ae2d}{
+\index{individual@{individual}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!individual@{individual}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ template$<$typename T , typename U $>$ std::istream\& operator$>$$>$ (std::istream \& {\em is}, \/  {\bf individual}$<$ T, U $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classindividual_a11c97e7fa3954c61cc91282d96d1ae2d}
+Sobrecarga do operador de fluxo de entrada.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]is Stream do fluxo de entrada.  id Indivíduo a ser jogado no fluxo de entrada.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+A mesma stream passada como parâmetro. 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{individual_8h}{individual.h}\end{DoxyCompactItemize}

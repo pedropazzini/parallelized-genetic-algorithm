@@ -1,0 +1,132 @@
+\hypertarget{definitions_8h}{
+\section{Referência do Arquivo definitions.h}
+\label{definitions_8h}\index{definitions.h@{definitions.h}}
+}
+\subsection*{Definições e Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{definitions_8h_a319728dbcb720057267ccc46d21dc9ee}{
+\#define {\bfseries GAtype}~unsigned int}
+\label{definitions_8h_a319728dbcb720057267ccc46d21dc9ee}
+
+\item 
+\hypertarget{definitions_8h_a30a6f25d45523b4f660dc029192abea2}{
+\#define {\bfseries GAreal\_\-type}~float}
+\label{definitions_8h_a30a6f25d45523b4f660dc029192abea2}
+
+\item 
+\hypertarget{definitions_8h_abb7ac68bffbe08289d6bc22354ff1e8f}{
+\#define {\bfseries pc\_\-cte}~true}
+\label{definitions_8h_abb7ac68bffbe08289d6bc22354ff1e8f}
+
+\item 
+\hypertarget{definitions_8h_aeff3451b2dbc0b9229eb50f51194342d}{
+\#define {\bfseries def\_\-pc}~12}
+\label{definitions_8h_aeff3451b2dbc0b9229eb50f51194342d}
+
+\end{DoxyCompactItemize}
+\subsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacedef_1_1coord_a75af32ee324f4082b7d82d653cddbe08}{
+const int {\bfseries def::coord::size} = sizeof(GAtype)$\ast$8}
+\label{namespacedef_1_1coord_a75af32ee324f4082b7d82d653cddbe08}
+
+\item 
+\hypertarget{namespacedef_1_1coord_ae8bbcac627d7c5b871015fda546f9e37}{
+const int {\bfseries def::coord::precision} = 5}
+\label{namespacedef_1_1coord_ae8bbcac627d7c5b871015fda546f9e37}
+
+\item 
+\hypertarget{namespacedef_1_1coord_a169effaf03114e6775685cb56754bb73}{
+const GAreal\_\-type {\bfseries def::coord::max} = 5}
+\label{namespacedef_1_1coord_a169effaf03114e6775685cb56754bb73}
+
+\item 
+\hypertarget{namespacedef_1_1coord_a35a57708d094d62b0357d828f0ad60c1}{
+const GAreal\_\-type {\bfseries def::coord::min} = -\/5}
+\label{namespacedef_1_1coord_a35a57708d094d62b0357d828f0ad60c1}
+
+\item 
+\hypertarget{namespacedef_1_1coord_a7246f04215fa5f213fa5b434652ee983}{
+const int {\bfseries def::coord::indice} = 0}
+\label{namespacedef_1_1coord_a7246f04215fa5f213fa5b434652ee983}
+
+\item 
+\hypertarget{namespacedef_1_1individual_a3e28d5ebba19058fed8db28dd2d9bcc6}{
+const int {\bfseries def::individual::identifier} = 0}
+\label{namespacedef_1_1individual_a3e28d5ebba19058fed8db28dd2d9bcc6}
+
+\item 
+\hypertarget{namespacedef_1_1individual_aa2656bd01d0a54a67280833f8aa654a8}{
+const int {\bfseries def::individual::dimension} = 2}
+\label{namespacedef_1_1individual_aa2656bd01d0a54a67280833f8aa654a8}
+
+\item 
+\hypertarget{namespacedef_1_1individual_a66682e5f81f05381758f1accfd2e4474}{
+const int {\bfseries def::individual::size} = coord::size}
+\label{namespacedef_1_1individual_a66682e5f81f05381758f1accfd2e4474}
+
+\item 
+\hypertarget{namespacedef_1_1population_a942dbc37dca4504ccc331517614fa57a}{
+const int {\bfseries def::population::population\_\-size} = 20}
+\label{namespacedef_1_1population_a942dbc37dca4504ccc331517614fa57a}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_a8da675457f3449ecc6f20c423552bfb9}{
+const float {\bfseries def::genetic\_\-operator::probability} = 0.01}
+\label{namespacedef_1_1genetic__operator_a8da675457f3449ecc6f20c423552bfb9}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_a875876bad690ebde8e7ba654ba9fd39f}{
+const int {\bfseries def::genetic\_\-operator::precision} = coord::precision+1}
+\label{namespacedef_1_1genetic__operator_a875876bad690ebde8e7ba654ba9fd39f}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_a066926705219c52095767ce93f258f95}{
+const char {\bfseries def::genetic\_\-operator::go\_\-down} = 'd'}
+\label{namespacedef_1_1genetic__operator_a066926705219c52095767ce93f258f95}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_a0bdf9db9bc8b6ccc53fdbb6ee994a0a4}{
+const char {\bfseries def::genetic\_\-operator::go\_\-up} = 'u'}
+\label{namespacedef_1_1genetic__operator_a0bdf9db9bc8b6ccc53fdbb6ee994a0a4}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_ae6b02bf81b3b4d41664d77ad24ae64ed}{
+const char {\bfseries def::genetic\_\-operator::go\_\-forward} = 'f'}
+\label{namespacedef_1_1genetic__operator_ae6b02bf81b3b4d41664d77ad24ae64ed}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_a0750afc81191bce3b2f9941a861c3c41}{
+const int {\bfseries def::genetic\_\-operator::numberOfGenerations} = 100}
+\label{namespacedef_1_1genetic__operator_a0750afc81191bce3b2f9941a861c3c41}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_1_1mutate__bit__by__bit_a2cfbcaf8acb4de0e90a0a00591b3ad46}{
+const float {\bfseries def::genetic\_\-operator::mutate\_\-bit\_\-by\_\-bit::probability} = 0.01}
+\label{namespacedef_1_1genetic__operator_1_1mutate__bit__by__bit_a2cfbcaf8acb4de0e90a0a00591b3ad46}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_1_1cross__over_a40f56d281a6f298cb53395cb29242356}{
+const float {\bfseries def::genetic\_\-operator::cross\_\-over::probability} = 0.8}
+\label{namespacedef_1_1genetic__operator_1_1cross__over_a40f56d281a6f298cb53395cb29242356}
+
+\item 
+\hypertarget{namespacedef_1_1genetic__operator_1_1cross__over_a3adf8409319560c72aacec8acb1d5101}{
+const int {\bfseries def::genetic\_\-operator::cross\_\-over::number\_\-coordinate} = individual::dimension}
+\label{namespacedef_1_1genetic__operator_1_1cross__over_a3adf8409319560c72aacec8acb1d5101}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Arquivo de configuração do GA. Contém parâmetros defaults como valores máximo mínimo das coordenadas, número de indivíduos e número de gerações. \begin{DoxyAuthor}{Autor}
+Pedro Pazzini 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+0.0.1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2010-\/10-\/29 
+\end{DoxyDate}

@@ -1,0 +1,236 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Referência da Template de Classe selection_by_tournament&lt; _ty, _realTy &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Busca" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;Componentes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&nbsp;de&nbsp;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&nbsp;Membros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referência da Template de Classe selection_by_tournament&lt; _ty, _realTy &gt;</h1><!-- doxytag: class="selection_by_tournament" --><!-- doxytag: inherits="genetic_operator_thread" -->
+<p><code>#include &lt;<a class="el" href="selection__by__tournament_8h_source.html">selection_by_tournament.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de Hierarquia para selection_by_tournament&lt; _ty, _realTy &gt;:</div>
+<div class="dynsection">
+ <div class="center">
+  <img src="classselection__by__tournament.png" usemap="#selection_by_tournament&lt; _ty, _realTy &gt;_map" alt=""/>
+  <map id="selection_by_tournament&lt; _ty, _realTy &gt;_map" name="selection_by_tournament&lt; _ty, _realTy &gt;_map">
+<area href="classgenetic__operator__thread.html" alt="genetic_operator_thread&lt; _ty, _realTy &gt;" shape="rect" coords="0,0,245,24"/>
+</map>
+ </div>
+</div>
+
+<p><a href="classselection__by__tournament-members.html">Lista de todos os Membros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Tipos Públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::mutex::scoped_lock&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classselection__by__tournament.html#a0ba2a47db6a59696b51f19341719c3fd">scoped_lock</a></td></tr>
+<tr><td colspan="2"><h2>Métodos Públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classselection__by__tournament.html#a511f69a870e3bb1fdcf7aa8d48383c15">selection_by_tournament</a> (<a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *popPt)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classselection__by__tournament.html#a4865e086f5a9f3aeb6991814f13f7eda">~selection_by_tournament</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classselection__by__tournament.html#aa2a32fdcbd6365eea3e40a565c9cff3a">Select</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classselection__by__tournament.html#a3e16cf77dd481a3ce1a01ac4edffa4ba">ReadyToReceive</a> (void)</td></tr>
+<tr><td colspan="2"><h2>Métodos Públicos Estáticos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static void *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classselection__by__tournament.html#ad754f7c3afa1443bfed139265cd506c1">CallSelect</a> (<a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt; *v)</td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Descrição Detalhada</h2>
+<h3>template&lt;typename _ty, typename _realTy&gt;<br/>
+ class selection_by_tournament&lt; _ty, _realTy &gt;</h3>
+
+<p>Classe que implementa a interface de um operador genético de seleção por torneio. As threads do operador executam o método <a class="el" href="classselection__by__tournament.html#aa2a32fdcbd6365eea3e40a565c9cff3a">Select()</a>. Como o operador de seleção é um gargalo na implementação atual ele espera</p>
+<dl><dt><b>Template Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>_ty</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>_realTy</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<hr/><h2>Definições de Tipos</h2>
+<a class="anchor" id="a0ba2a47db6a59696b51f19341719c3fd"></a><!-- doxytag: member="selection_by_tournament::scoped_lock" ref="a0ba2a47db6a59696b51f19341719c3fd" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty, typename _realTy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::mutex::scoped_lock <a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt;::<a class="el" href="classselection__by__tournament.html#a0ba2a47db6a59696b51f19341719c3fd">scoped_lock</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Definição do padrão scoped lock. </p>
+
+<p>Reimplementação de <a class="el" href="classgenetic__operator__thread.html#abe926f8fc2a1548516dad216a1acd4fb">genetic_operator_thread&lt; _ty, _realTy &gt;</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Construtores &amp; Destrutores</h2>
+<a class="anchor" id="a511f69a870e3bb1fdcf7aa8d48383c15"></a><!-- doxytag: member="selection_by_tournament::selection_by_tournament" ref="a511f69a870e3bb1fdcf7aa8d48383c15" args="(population&lt; _ty, _realTy &gt; *popPt)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt;::<a class="el" href="classselection__by__tournament.html">selection_by_tournament</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *&nbsp;</td>
+          <td class="paramname"> <em>popPt</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método construtor.</p>
+<p>popPt Ponteiro para a população onde será aplicado o operador. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4865e086f5a9f3aeb6991814f13f7eda"></a><!-- doxytag: member="selection_by_tournament::~selection_by_tournament" ref="a4865e086f5a9f3aeb6991814f13f7eda" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty, typename _realTy&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt;::~<a class="el" href="classselection__by__tournament.html">selection_by_tournament</a> </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método destrutor. </p>
+
+</div>
+</div>
+<hr/><h2>Métodos</h2>
+<a class="anchor" id="ad754f7c3afa1443bfed139265cd506c1"></a><!-- doxytag: member="selection_by_tournament::CallSelect" ref="ad754f7c3afa1443bfed139265cd506c1" args="(selection_by_tournament&lt; _ty, _realTy &gt; *v)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void * <a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt;::CallSelect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt; *&nbsp;</td>
+          <td class="paramname"> <em>v</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método que chama as threads.</p>
+<p>v Ponteiro para o operador.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>Ponteiro NULL. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e16cf77dd481a3ce1a01ac4edffa4ba"></a><!-- doxytag: member="selection_by_tournament::ReadyToReceive" ref="a3e16cf77dd481a3ce1a01ac4edffa4ba" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt;::ReadyToReceive </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Função que implementa a variável de condição para receber indivíduos </p>
+
+<p>Reimplementação de <a class="el" href="classgenetic__operator__thread.html#a7c86cee81334320d496fb196920fcc10">genetic_operator_thread&lt; _ty, _realTy &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2a32fdcbd6365eea3e40a565c9cff3a"></a><!-- doxytag: member="selection_by_tournament::Select" ref="aa2a32fdcbd6365eea3e40a565c9cff3a" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classselection__by__tournament.html">selection_by_tournament</a>&lt; _ty, _realTy &gt;::Select </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Realiza o torneio efetivamente após a avaliação da funções objetivo </p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li><a class="el" href="selection__by__tournament_8h_source.html">selection_by_tournament.h</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Gerado em Sat Oct 30 13:47:51 2010 por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

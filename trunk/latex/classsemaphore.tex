@@ -1,0 +1,61 @@
+\hypertarget{classsemaphore}{
+\section{Referência da Classe semaphore}
+\label{classsemaphore}\index{semaphore@{semaphore}}
+}
+
+
+{\ttfamily \#include $<$semaphore.h$>$}
+
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::mutex::scoped\_\-lock \hyperlink{classsemaphore_ad4d360a8eabfead011d7ce5394c4dd2a}{scoped\_\-lock}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsemaphore_a77d85322407545b8ccc4a85b920d90c1}{semaphore} (const unsigned int \&initCount, const unsigned int \&maxCount)
+\item 
+void \hyperlink{classsemaphore_af0e430d192c44be1d65f5a4fd8cb91a4}{wait} (void)
+\item 
+void \hyperlink{classsemaphore_a14c3b9f4312c43d9400905c938752665}{post} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Classe que encapsula os conceitos de um semáforo. Foi necessário a realização desta classe pois não existe um semáforo na boost, com apenas os métodos \hyperlink{classsemaphore_a14c3b9f4312c43d9400905c938752665}{post()} e \hyperlink{classsemaphore_af0e430d192c44be1d65f5a4fd8cb91a4}{wait()} como na pthreads. 
+
+\subsection{Definições de Tipos}
+\hypertarget{classsemaphore_ad4d360a8eabfead011d7ce5394c4dd2a}{
+\index{semaphore@{semaphore}!scoped\_\-lock@{scoped\_\-lock}}
+\index{scoped\_\-lock@{scoped\_\-lock}!semaphore@{semaphore}}
+\subsubsection[{scoped\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::mutex::scoped\_\-lock {\bf semaphore::scoped\_\-lock}}}
+\label{classsemaphore_ad4d360a8eabfead011d7ce5394c4dd2a}
+Definição do padrão de projeto scoped lock. 
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classsemaphore_a77d85322407545b8ccc4a85b920d90c1}{
+\index{semaphore@{semaphore}!semaphore@{semaphore}}
+\index{semaphore@{semaphore}!semaphore@{semaphore}}
+\subsubsection[{semaphore}]{\setlength{\rightskip}{0pt plus 5cm}semaphore::semaphore (const unsigned int \& {\em initCount}, \/  const unsigned int \& {\em maxCount})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classsemaphore_a77d85322407545b8ccc4a85b920d90c1}
+Método construtor.
+
+initCount Valor inicial do semáforo.  maxCount Valor máximo do semáforo. 
+
+\subsection{Métodos}
+\hypertarget{classsemaphore_a14c3b9f4312c43d9400905c938752665}{
+\index{semaphore@{semaphore}!post@{post}}
+\index{post@{post}!semaphore@{semaphore}}
+\subsubsection[{post}]{\setlength{\rightskip}{0pt plus 5cm}void semaphore::post (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classsemaphore_a14c3b9f4312c43d9400905c938752665}
+Método que decrementa o semáfor, até o valor zero. \hypertarget{classsemaphore_af0e430d192c44be1d65f5a4fd8cb91a4}{
+\index{semaphore@{semaphore}!wait@{wait}}
+\index{wait@{wait}!semaphore@{semaphore}}
+\subsubsection[{wait}]{\setlength{\rightskip}{0pt plus 5cm}void semaphore::wait (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classsemaphore_af0e430d192c44be1d65f5a4fd8cb91a4}
+Método que incremnta o semáforo até o valor máximo. 
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{semaphore_8h}{semaphore.h}\end{DoxyCompactItemize}

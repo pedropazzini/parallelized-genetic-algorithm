@@ -1,0 +1,87 @@
+\hypertarget{classmutate__bit__by__bit}{
+\section{Referência da Template de Classe mutate\_\-bit\_\-by\_\-bit$<$ \_\-ty, \_\-realTy $>$}
+\label{classmutate__bit__by__bit}\index{mutate\_\-bit\_\-by\_\-bit@{mutate\_\-bit\_\-by\_\-bit}}
+}
+Diagrama de Hierarquia para mutate\_\-bit\_\-by\_\-bit$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classmutate__bit__by__bit}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmutate__bit__by__bit_a14de7465518021a37cfa7e06e19d02f5}{mutate\_\-bit\_\-by\_\-bit} (\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$pt\_\-to\_\-apply\_\-operator=NULL, const float \&probability=def::genetic\_\-operator::mutate\_\-bit\_\-by\_\-bit::probability)
+\item 
+virtual const char \& \hyperlink{classmutate__bit__by__bit_a2f8cc52a35943854f24b7534ecd90c7b}{WalkOnPopulationHook} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id)
+\item 
+virtual const char \& \hyperlink{classmutate__bit__by__bit_a150b01e7ee79683012f7d60e8c1b9ccc}{WalkOnIndividualHook} (\hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo)
+\item 
+virtual std::string \hyperlink{classmutate__bit__by__bit_abdab6da2a2b180f14d71f35c895313a4}{GetName} (void)
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class mutate\_\-bit\_\-by\_\-bit$<$ \_\-ty, \_\-realTy $>$}
+
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classmutate__bit__by__bit_a14de7465518021a37cfa7e06e19d02f5}{
+\index{mutate\_\-bit\_\-by\_\-bit@{mutate\_\-bit\_\-by\_\-bit}!mutate\_\-bit\_\-by\_\-bit@{mutate\_\-bit\_\-by\_\-bit}}
+\index{mutate\_\-bit\_\-by\_\-bit@{mutate\_\-bit\_\-by\_\-bit}!mutate_bit_by_bit@{mutate\_\-bit\_\-by\_\-bit}}
+\subsubsection[{mutate\_\-bit\_\-by\_\-bit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf mutate\_\-bit\_\-by\_\-bit}$<$ \_\-ty, \_\-realTy $>$::{\bf mutate\_\-bit\_\-by\_\-bit} ({\bf population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em pt\_\-to\_\-apply\_\-operator} = {\ttfamily NULL}, \/  const float \& {\em probability} = {\ttfamily def::genetic\_\-operator::mutate\_\-bit\_\-by\_\-bit$<$~\_\-ty,~\_\-realTy~$>$::probability})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classmutate__bit__by__bit_a14de7465518021a37cfa7e06e19d02f5}
+Método contrutor.
+
+pt\_\-to\_\-apply\_\-operator Ponteiro para a população aonde o operador genético será aplicado.  probability Probabilidade do operador genético ser aplicado. 
+
+\subsection{Métodos}
+\hypertarget{classmutate__bit__by__bit_abdab6da2a2b180f14d71f35c895313a4}{
+\index{mutate\_\-bit\_\-by\_\-bit@{mutate\_\-bit\_\-by\_\-bit}!GetName@{GetName}}
+\index{GetName@{GetName}!mutate_bit_by_bit@{mutate\_\-bit\_\-by\_\-bit}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ virtual std::string {\bf mutate\_\-bit\_\-by\_\-bit}$<$ \_\-ty, \_\-realTy $>$::GetName (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classmutate__bit__by__bit_abdab6da2a2b180f14d71f35c895313a4}
+Retorna o nome da classe, usado no padrão AbstractFactory
+
+\begin{DoxyReturn}{Retorna}
+Uma string com o nome da classe. 
+\end{DoxyReturn}
+
+
+Reimplementação de \hyperlink{classgenetic__operator_ae0f79368c0b4ad0cff3f608727bd87f5}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classmutate__bit__by__bit_a150b01e7ee79683012f7d60e8c1b9ccc}{
+\index{mutate\_\-bit\_\-by\_\-bit@{mutate\_\-bit\_\-by\_\-bit}!WalkOnIndividualHook@{WalkOnIndividualHook}}
+\index{WalkOnIndividualHook@{WalkOnIndividualHook}!mutate_bit_by_bit@{mutate\_\-bit\_\-by\_\-bit}}
+\subsubsection[{WalkOnIndividualHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ const char \& {\bf mutate\_\-bit\_\-by\_\-bit}$<$ \_\-ty, \_\-realTy $>$::WalkOnIndividualHook ({\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classmutate__bit__by__bit_a150b01e7ee79683012f7d60e8c1b9ccc}
+A operação bit a bit de mutação é realizada nas coordenadas
+
+coo A coordenada em que será aplicado o operador.
+
+\begin{DoxyReturn}{Retorna}
+A direção da caminhada sobre os conteiners. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{classgenetic__operator_a2124d70b28b35d3114eb3e3ffa72baef}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classmutate__bit__by__bit_a2f8cc52a35943854f24b7534ecd90c7b}{
+\index{mutate\_\-bit\_\-by\_\-bit@{mutate\_\-bit\_\-by\_\-bit}!WalkOnPopulationHook@{WalkOnPopulationHook}}
+\index{WalkOnPopulationHook@{WalkOnPopulationHook}!mutate_bit_by_bit@{mutate\_\-bit\_\-by\_\-bit}}
+\subsubsection[{WalkOnPopulationHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ virtual const char\& {\bf mutate\_\-bit\_\-by\_\-bit}$<$ \_\-ty, \_\-realTy $>$::WalkOnPopulationHook ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classmutate__bit__by__bit_a2f8cc52a35943854f24b7534ecd90c7b}
+Nenhuma operação é realizada diretamente nos indivíduos, apenas nas coordenadas
+
+id Indivíduo aonde será aplicado o operador.
+
+\begin{DoxyReturn}{Retorna}
+A direção da caminhada sobre os containers. 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{classgenetic__operator_a3405bb5335111bd675d408aa8db052fa}{genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+mutate\_\-bit\_\-by\_\-bit.h\end{DoxyCompactItemize}

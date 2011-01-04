@@ -1,0 +1,409 @@
+\hypertarget{classpopulation}{
+\section{Referência da Template de Classe population$<$ \_\-ty, \_\-realTy $>$}
+\label{classpopulation}\index{population@{population}}
+}
+
+
+{\ttfamily \#include $<$population.h$>$}
+
+Diagrama de Hierarquia para population$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classpopulation}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::vector$<$ \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$ \hyperlink{classpopulation_a487317a079f4b94c650983ccbd0048a5}{\_\-pop}
+\item 
+typedef std::vector$<$ \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$::iterator \hyperlink{classpopulation_aa2f35e7dcc0553a7d2a96e5dca6105e0}{it\_\-}
+\item 
+typedef std::vector$<$ \hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ $>$::const\_\-iterator \hyperlink{classpopulation_afcea3753ae2b2e0211f8fdc919c51a71}{const\_\-it\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpopulation_aa497c7bcf82ec82f15cf0ca41f29c153}{population} (const int \&number\_\-ids=def::population::population\_\-size)
+\item 
+\hyperlink{classpopulation_ab7b5dad1173b0da5b177e6253b66a071}{population} (const \hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ \&pop)
+\item 
+\hyperlink{classpopulation_a735c7c86f92155f0deb6034432086d37}{$\sim$population} (void)
+\item 
+int \hyperlink{classpopulation_a15aee31f3669a3819a025d0c88fd559b}{GetId} (void) const 
+\item 
+void \hyperlink{classpopulation_aa7803cea8fa30be9c9732d8e81f8aaf4}{SetId} (const int \&new\_\-id)
+\item 
+int \hyperlink{classpopulation_aa8d33d15eef1966482d052ff509bc638}{GetNumerOfIndividuals} (void) const 
+\item 
+\_\-realTy \hyperlink{classpopulation_a3c0a549de81a152a15f052e57f106a86}{GetAveragePerformance} (void) const 
+\item 
+void \hyperlink{classpopulation_a7fb6b0d19740560913aac2eb376c56fb}{SetAveragePerformance} (const \_\-realTy \&new\_\-average)
+\item 
+\_\-realTy \hyperlink{classpopulation_ac7e0fd101523d1f1db34ae3484a30bf3}{GetSum} (void)
+\item 
+void \hyperlink{classpopulation_a80e34ba9884327ddc5bafbaedd32014b}{SetSum} (const \_\-realTy \&new\_\-sum)
+\item 
+\_\-realTy \hyperlink{classpopulation_abe769cd333fa71228e6a89da1171fd93}{GetDeviation} (void) const 
+\item 
+void \hyperlink{classpopulation_ad0b1614ed94b9eb82a8ca0e24bdc603b}{SetDeviation} (const \_\-realTy \&new\_\-deviation)
+\item 
+void \hyperlink{classpopulation_a2ddcfb41305717b30051f0aa0a8e240c}{SendGenerationDataToStream} (std::ostream \&os) const 
+\item 
+\hyperlink{classpopulation_afcea3753ae2b2e0211f8fdc919c51a71}{const\_\-it\_\-} \hyperlink{classpopulation_a4751584859b70770ae44717a43f9ab95}{begin} (void) const 
+\item 
+\hyperlink{classpopulation_afcea3753ae2b2e0211f8fdc919c51a71}{const\_\-it\_\-} \hyperlink{classpopulation_a38318f9ca5c607490f4d6e92b54d8734}{end} (void) const 
+\item 
+\hyperlink{classpopulation_aa2f35e7dcc0553a7d2a96e5dca6105e0}{it\_\-} \hyperlink{classpopulation_a7c7bcf224b99227f6ab381dbc9f37c2c}{begin} (void)
+\item 
+\hyperlink{classpopulation_aa2f35e7dcc0553a7d2a96e5dca6105e0}{it\_\-} \hyperlink{classpopulation_a42a620c96d521b7dcbd091c086258a4c}{end} (void)
+\item 
+void \hyperlink{classpopulation_ac7b74f6cbb098394df06e1c84de0f260}{SetNewIndividuals} (const \hyperlink{classpopulation_a487317a079f4b94c650983ccbd0048a5}{\_\-pop} \&new\_\-pop)
+\item 
+\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classpopulation_a251eb4e8235f4c456e2940fe4a0e4678}{GetWorseId} (void) const 
+\item 
+\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classpopulation_a9b2b5de6f220010a0d6c780b7ce04e5b}{GetBestId} (void) const 
+\item 
+\hyperlink{classpopulation_afcea3753ae2b2e0211f8fdc919c51a71}{const\_\-it\_\-} \hyperlink{classpopulation_a6ca81f5193818b065f792fac9b51f6e3}{operator\mbox{[}$\,$\mbox{]}} (const int \&indice) const 
+\item 
+bool \hyperlink{classpopulation_a1a847bb47928abf5a0d0a7e4a2ec8c5f}{operator==} (const \hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ \&pop) const 
+\item 
+\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classpopulation_a14c45c3fe1905bcb673919ae251087a9}{operator\mbox{[}$\,$\mbox{]}} (const int \&indice)
+\item 
+void \hyperlink{classpopulation_aba14d0fb6ceb7499c4fc4838889ba918}{PrintPairs} (void) const 
+\item 
+void \hyperlink{classpopulation_a20b40816fade14ec740cdc3f22d8066e}{GeneratePopulation} (void)
+\item 
+void \hyperlink{classpopulation_a10331bd5a9f8f4879cea62ee8b1f28c3}{SetIndividualsValue} (void)
+\item 
+void \hyperlink{classpopulation_a83be39057000008244d4d7bc947d09fa}{SortPopulation} (void)
+\item 
+void \hyperlink{classpopulation_a6953ec7e3cd8aa654a1621c515e0d166}{CleanPopulation} (void)
+\item 
+bool \hyperlink{classpopulation_a23a6d7fca0c7cbaffdcf6cb6cf3239a9}{AddIndividualToPopulation} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$newId)
+\item 
+bool \hyperlink{classpopulation_a1c227882a579ffe0b2fb049518e1eb85}{RemoveIndividualAt} (const int \&pos)
+\item 
+void \hyperlink{classpopulation_aa2cbedb9d90d9c660b4a4369857e1c96}{SetNullIndividualAt} (const int \&pos)
+\item 
+void \hyperlink{classpopulation_a7dd1a669bdbc71381ad2d01ca35c24ae}{UpdateData} (void)
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classpopulation_aa6fb88900759771dccfd85d21785fd1b}{
+{\footnotesize template$<$typename T , typename U $>$ }\\std::istream \& \hyperlink{classpopulation_aa6fb88900759771dccfd85d21785fd1b}{operator$>$$>$} (std::istream \&is, \hyperlink{classpopulation}{population}$<$ T, U $>$ \&pop)}
+\label{classpopulation_aa6fb88900759771dccfd85d21785fd1b}
+
+\begin{DoxyCompactList}\small\item\em Sobrecarga de operadores. \item\end{DoxyCompactList}\item 
+\hypertarget{classpopulation_ab134fdc6db277abea408d9dfb410e725}{
+{\footnotesize template$<$typename T , typename U $>$ }\\std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&os, const \hyperlink{classpopulation}{population}$<$ T, U $>$ \&pop)}
+\label{classpopulation_ab134fdc6db277abea408d9dfb410e725}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class population$<$ \_\-ty, \_\-realTy $>$}
+
+Class that encapsulates the concept of a population in a Genetic algorithm optimization method.
+
+Importantan Variables:
+
+\_\-myPop: Container that stores the individuals of the population \_\-bestId,\_\-worseId: Respectivily best and worse individuals of the consteiner \_\-myPop \_\-avarege: Avarage value of the objective function of the population 
+
+\subsection{Definições de Tipos}
+\hypertarget{classpopulation_a487317a079f4b94c650983ccbd0048a5}{
+\index{population@{population}!\_\-pop@{\_\-pop}}
+\index{\_\-pop@{\_\-pop}!population@{population}}
+\subsubsection[{\_\-pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef std::vector$<${\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$$>$ {\bf population}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-pop}}}
+\label{classpopulation_a487317a079f4b94c650983ccbd0048a5}
+Definição de uma população. \hypertarget{classpopulation_afcea3753ae2b2e0211f8fdc919c51a71}{
+\index{population@{population}!const\_\-it\_\-@{const\_\-it\_\-}}
+\index{const\_\-it\_\-@{const\_\-it\_\-}!population@{population}}
+\subsubsection[{const\_\-it\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef std::vector$<${\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$$>$::const\_\-iterator {\bf population}$<$ \_\-ty, \_\-realTy $>$::{\bf const\_\-it\_\-}}}
+\label{classpopulation_afcea3753ae2b2e0211f8fdc919c51a71}
+Definição de um iterator constante para percorrer o vetor de indivíduos. \hypertarget{classpopulation_aa2f35e7dcc0553a7d2a96e5dca6105e0}{
+\index{population@{population}!it\_\-@{it\_\-}}
+\index{it\_\-@{it\_\-}!population@{population}}
+\subsubsection[{it\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef std::vector$<${\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$$>$::iterator {\bf population}$<$ \_\-ty, \_\-realTy $>$::{\bf it\_\-}}}
+\label{classpopulation_aa2f35e7dcc0553a7d2a96e5dca6105e0}
+Definição de um iterator para percorrer o vetor de indivíduos. 
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classpopulation_aa497c7bcf82ec82f15cf0ca41f29c153}{
+\index{population@{population}!population@{population}}
+\index{population@{population}!population@{population}}
+\subsubsection[{population}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf population}$<$ \_\-ty, \_\-realTy $>$::{\bf population} (const int \& {\em number\_\-ids} = {\ttfamily def::population$<$~\_\-ty,~\_\-realTy~$>$::population\_\-size})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_aa497c7bcf82ec82f15cf0ca41f29c153}
+Método contrutor que recebe apenas o tamanho da população, ou seja, o número de indivíduos da mesma.
+
+number\_\-ids O número de indivíduos da população. \hypertarget{classpopulation_ab7b5dad1173b0da5b177e6253b66a071}{
+\index{population@{population}!population@{population}}
+\index{population@{population}!population@{population}}
+\subsubsection[{population}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf population}$<$ \_\-ty, \_\-realTy $>$::{\bf population} (const {\bf population}$<$ \_\-ty, \_\-realTy $>$ \& {\em pop})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_ab7b5dad1173b0da5b177e6253b66a071}
+Construtor de cópia.
+
+pop População a ser copiada. \hypertarget{classpopulation_a735c7c86f92155f0deb6034432086d37}{
+\index{population@{population}!$\sim$population@{$\sim$population}}
+\index{$\sim$population@{$\sim$population}!population@{population}}
+\subsubsection[{$\sim$population}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf population}$<$ \_\-ty, \_\-realTy $>$::$\sim${\bf population} (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a735c7c86f92155f0deb6034432086d37}
+Método destrutor. 
+
+\subsection{Métodos}
+\hypertarget{classpopulation_a23a6d7fca0c7cbaffdcf6cb6cf3239a9}{
+\index{population@{population}!AddIndividualToPopulation@{AddIndividualToPopulation}}
+\index{AddIndividualToPopulation@{AddIndividualToPopulation}!population@{population}}
+\subsubsection[{AddIndividualToPopulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ bool {\bf population}$<$ \_\-ty, \_\-realTy $>$::AddIndividualToPopulation ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em newId})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a23a6d7fca0c7cbaffdcf6cb6cf3239a9}
+Adiciona um indivíduo no vetor caso o vetor não esteja cheio, e retorna se foi possível adicionar o novo indivíduo
+
+newId Novo indivíduo a ser adicionado.
+
+\begin{DoxyReturn}{Retorna}
+True se a inserção foi realzada com sucesso, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a7c7bcf224b99227f6ab381dbc9f37c2c}{
+\index{population@{population}!begin@{begin}}
+\index{begin@{begin}!population@{population}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf it\_\-} {\bf population}$<$ \_\-ty, \_\-realTy $>$::begin (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a7c7bcf224b99227f6ab381dbc9f37c2c}
+Retorna um iterator para manipular os indivíduos da população.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o começo do container que armazena os indivíduos. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a4751584859b70770ae44717a43f9ab95}{
+\index{population@{population}!begin@{begin}}
+\index{begin@{begin}!population@{population}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf const\_\-it\_\-} {\bf population}$<$ \_\-ty, \_\-realTy $>$::begin (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a4751584859b70770ae44717a43f9ab95}
+Retorna um iterator para manipular os indivíduos da população.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o começo do container que armazena os indivíduos. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a6953ec7e3cd8aa654a1621c515e0d166}{
+\index{population@{population}!CleanPopulation@{CleanPopulation}}
+\index{CleanPopulation@{CleanPopulation}!population@{population}}
+\subsubsection[{CleanPopulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::CleanPopulation (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a6953ec7e3cd8aa654a1621c515e0d166}
+Limpa o container de indivíduos da população. \hypertarget{classpopulation_a42a620c96d521b7dcbd091c086258a4c}{
+\index{population@{population}!end@{end}}
+\index{end@{end}!population@{population}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf it\_\-} {\bf population}$<$ \_\-ty, \_\-realTy $>$::end (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a42a620c96d521b7dcbd091c086258a4c}
+Retorna um iterator para manipular os indivíduos da população.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o fim do container que armazena os indivíduos. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a38318f9ca5c607490f4d6e92b54d8734}{
+\index{population@{population}!end@{end}}
+\index{end@{end}!population@{population}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf const\_\-it\_\-} {\bf population}$<$ \_\-ty, \_\-realTy $>$::end (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a38318f9ca5c607490f4d6e92b54d8734}
+Retorna um iterator para manipular os indivíduos da população.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o fim do container que armazena os indivíduos. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a20b40816fade14ec740cdc3f22d8066e}{
+\index{population@{population}!GeneratePopulation@{GeneratePopulation}}
+\index{GeneratePopulation@{GeneratePopulation}!population@{population}}
+\subsubsection[{GeneratePopulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::GeneratePopulation (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a20b40816fade14ec740cdc3f22d8066e}
+Gera uma população de indivíduos aleatórios. \hypertarget{classpopulation_a3c0a549de81a152a15f052e57f106a86}{
+\index{population@{population}!GetAveragePerformance@{GetAveragePerformance}}
+\index{GetAveragePerformance@{GetAveragePerformance}!population@{population}}
+\subsubsection[{GetAveragePerformance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ \_\-realTy {\bf population}$<$ \_\-ty, \_\-realTy $>$::GetAveragePerformance (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a3c0a549de81a152a15f052e57f106a86}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor médio do fitness dos indivíduos da população. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a9b2b5de6f220010a0d6c780b7ce04e5b}{
+\index{population@{population}!GetBestId@{GetBestId}}
+\index{GetBestId@{GetBestId}!population@{population}}
+\subsubsection[{GetBestId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf population}$<$ \_\-ty, \_\-realTy $>$::GetBestId (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a9b2b5de6f220010a0d6c780b7ce04e5b}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para o indivíduo com o melhor fitness da população. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_abe769cd333fa71228e6a89da1171fd93}{
+\index{population@{population}!GetDeviation@{GetDeviation}}
+\index{GetDeviation@{GetDeviation}!population@{population}}
+\subsubsection[{GetDeviation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ \_\-realTy {\bf population}$<$ \_\-ty, \_\-realTy $>$::GetDeviation (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_abe769cd333fa71228e6a89da1171fd93}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor da variância do fitness dos indivíduos da população. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a15aee31f3669a3819a025d0c88fd559b}{
+\index{population@{population}!GetId@{GetId}}
+\index{GetId@{GetId}!population@{population}}
+\subsubsection[{GetId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ int {\bf population}$<$ \_\-ty, \_\-realTy $>$::GetId (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a15aee31f3669a3819a025d0c88fd559b}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O inteiro que identifica unicamente um indivíduo. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_aa8d33d15eef1966482d052ff509bc638}{
+\index{population@{population}!GetNumerOfIndividuals@{GetNumerOfIndividuals}}
+\index{GetNumerOfIndividuals@{GetNumerOfIndividuals}!population@{population}}
+\subsubsection[{GetNumerOfIndividuals}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ int {\bf population}$<$ \_\-ty, \_\-realTy $>$::GetNumerOfIndividuals (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_aa8d33d15eef1966482d052ff509bc638}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O número de indivíduos da população. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_ac7e0fd101523d1f1db34ae3484a30bf3}{
+\index{population@{population}!GetSum@{GetSum}}
+\index{GetSum@{GetSum}!population@{population}}
+\subsubsection[{GetSum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ \_\-realTy {\bf population}$<$ \_\-ty, \_\-realTy $>$::GetSum (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_ac7e0fd101523d1f1db34ae3484a30bf3}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+A soma dos valores de fitness de todos os indivíduos da população. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a251eb4e8235f4c456e2940fe4a0e4678}{
+\index{population@{population}!GetWorseId@{GetWorseId}}
+\index{GetWorseId@{GetWorseId}!population@{population}}
+\subsubsection[{GetWorseId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf population}$<$ \_\-ty, \_\-realTy $>$::GetWorseId (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a251eb4e8235f4c456e2940fe4a0e4678}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para o indivíduo com o pior fitness da população. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a1a847bb47928abf5a0d0a7e4a2ec8c5f}{
+\index{population@{population}!operator==@{operator==}}
+\index{operator==@{operator==}!population@{population}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ bool {\bf population}$<$ \_\-ty, \_\-realTy $>$::operator== (const {\bf population}$<$ \_\-ty, \_\-realTy $>$ \& {\em pop}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a1a847bb47928abf5a0d0a7e4a2ec8c5f}
+Operador de igualdade. Retorna se dois indivíduos têm o mesmo fitness.
+
+pop A população que se deseja comparar o fitness.
+
+\begin{DoxyReturn}{Retorna}
+True caso os fitnesses sejam iguais, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a14c45c3fe1905bcb673919ae251087a9}{
+\index{population@{population}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!population@{population}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf population}$<$ \_\-ty, \_\-realTy $>$::operator\mbox{[}$\,$\mbox{]} (const int \& {\em indice})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a14c45c3fe1905bcb673919ae251087a9}
+Operador de acesso aleatório. Acesso um indivíduo em determinado índice do container de indivíduos.
+
+indice O índice do container do indivíduo que se deseja acessar.
+
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para o indivíduo que se deseja acessar. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a6ca81f5193818b065f792fac9b51f6e3}{
+\index{population@{population}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!population@{population}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf const\_\-it\_\-} {\bf population}$<$ \_\-ty, \_\-realTy $>$::operator\mbox{[}$\,$\mbox{]} (const int \& {\em indice}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a6ca81f5193818b065f792fac9b51f6e3}
+Operador de acesso aleatório. Acesso um indivíduo em determinado índice do container de indivíduos.
+
+indice O índice do container do indivíduo que se deseja acessar.
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o indivíduo que se deseja acessar. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_aba14d0fb6ceb7499c4fc4838889ba918}{
+\index{population@{population}!PrintPairs@{PrintPairs}}
+\index{PrintPairs@{PrintPairs}!population@{population}}
+\subsubsection[{PrintPairs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::PrintPairs (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_aba14d0fb6ceb7499c4fc4838889ba918}
+Imprime os pares da população na saída padrão. \hypertarget{classpopulation_a1c227882a579ffe0b2fb049518e1eb85}{
+\index{population@{population}!RemoveIndividualAt@{RemoveIndividualAt}}
+\index{RemoveIndividualAt@{RemoveIndividualAt}!population@{population}}
+\subsubsection[{RemoveIndividualAt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ bool {\bf population}$<$ \_\-ty, \_\-realTy $>$::RemoveIndividualAt (const int \& {\em pos})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a1c227882a579ffe0b2fb049518e1eb85}
+Remove o indivíduo da posição pos da população
+
+pos A posição no container de indivíduos do indivíduo a ser removido.
+
+\begin{DoxyReturn}{Retorna}
+True se a remoção foi realizada com sucesso, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classpopulation_a2ddcfb41305717b30051f0aa0a8e240c}{
+\index{population@{population}!SendGenerationDataToStream@{SendGenerationDataToStream}}
+\index{SendGenerationDataToStream@{SendGenerationDataToStream}!population@{population}}
+\subsubsection[{SendGenerationDataToStream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SendGenerationDataToStream (std::ostream \& {\em os}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a2ddcfb41305717b30051f0aa0a8e240c}
+Envia os dados da população (fitness, variancia, etc) para a stream.
+
+os A stream para onde são enviado os dados. \hypertarget{classpopulation_a7fb6b0d19740560913aac2eb376c56fb}{
+\index{population@{population}!SetAveragePerformance@{SetAveragePerformance}}
+\index{SetAveragePerformance@{SetAveragePerformance}!population@{population}}
+\subsubsection[{SetAveragePerformance}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SetAveragePerformance (const \_\-realTy \& {\em new\_\-average})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a7fb6b0d19740560913aac2eb376c56fb}
+Método de interface (set).
+
+new\_\-average O novo valor médio do fitness dos indivíduos da população. \hypertarget{classpopulation_ad0b1614ed94b9eb82a8ca0e24bdc603b}{
+\index{population@{population}!SetDeviation@{SetDeviation}}
+\index{SetDeviation@{SetDeviation}!population@{population}}
+\subsubsection[{SetDeviation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SetDeviation (const \_\-realTy \& {\em new\_\-deviation})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_ad0b1614ed94b9eb82a8ca0e24bdc603b}
+Método de interface (set).
+
+new\_\-deviation O novo valor da variância do fitness dos indivíduos da população. \hypertarget{classpopulation_aa7803cea8fa30be9c9732d8e81f8aaf4}{
+\index{population@{population}!SetId@{SetId}}
+\index{SetId@{SetId}!population@{population}}
+\subsubsection[{SetId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SetId (const int \& {\em new\_\-id})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_aa7803cea8fa30be9c9732d8e81f8aaf4}
+Método de interface (set).
+
+new\_\-id O novo valor que identifica o indivíduo unicamente. \hypertarget{classpopulation_a10331bd5a9f8f4879cea62ee8b1f28c3}{
+\index{population@{population}!SetIndividualsValue@{SetIndividualsValue}}
+\index{SetIndividualsValue@{SetIndividualsValue}!population@{population}}
+\subsubsection[{SetIndividualsValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SetIndividualsValue (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a10331bd5a9f8f4879cea62ee8b1f28c3}
+Seta o valor da função objetivo para cada indivíduo da população \hypertarget{classpopulation_ac7b74f6cbb098394df06e1c84de0f260}{
+\index{population@{population}!SetNewIndividuals@{SetNewIndividuals}}
+\index{SetNewIndividuals@{SetNewIndividuals}!population@{population}}
+\subsubsection[{SetNewIndividuals}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SetNewIndividuals (const {\bf \_\-pop} \& {\em new\_\-pop})}}
+\label{classpopulation_ac7b74f6cbb098394df06e1c84de0f260}
+Seta os novos indivíduos da população.
+
+new\_\-pop População que contém os indivíduos que formarão a nova população. \hypertarget{classpopulation_aa2cbedb9d90d9c660b4a4369857e1c96}{
+\index{population@{population}!SetNullIndividualAt@{SetNullIndividualAt}}
+\index{SetNullIndividualAt@{SetNullIndividualAt}!population@{population}}
+\subsubsection[{SetNullIndividualAt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SetNullIndividualAt (const int \& {\em pos})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_aa2cbedb9d90d9c660b4a4369857e1c96}
+Seta um individuo como nulo (usado antes de remover para manter o individuo antigo)
+
+pos A posição no container de indivíduos do indivíduo a ser removido. \hypertarget{classpopulation_a80e34ba9884327ddc5bafbaedd32014b}{
+\index{population@{population}!SetSum@{SetSum}}
+\index{SetSum@{SetSum}!population@{population}}
+\subsubsection[{SetSum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SetSum (const \_\-realTy \& {\em new\_\-sum})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a80e34ba9884327ddc5bafbaedd32014b}
+Método de interface (set).
+
+new\_\-sum O novovalor da soma a ser setado. \hypertarget{classpopulation_a83be39057000008244d4d7bc947d09fa}{
+\index{population@{population}!SortPopulation@{SortPopulation}}
+\index{SortPopulation@{SortPopulation}!population@{population}}
+\subsubsection[{SortPopulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::SortPopulation (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a83be39057000008244d4d7bc947d09fa}
+Ordena o vetor de indivíduos da população. \hypertarget{classpopulation_a7dd1a669bdbc71381ad2d01ca35c24ae}{
+\index{population@{population}!UpdateData@{UpdateData}}
+\index{UpdateData@{UpdateData}!population@{population}}
+\subsubsection[{UpdateData}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf population}$<$ \_\-ty, \_\-realTy $>$::UpdateData (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpopulation_a7dd1a669bdbc71381ad2d01ca35c24ae}
+Atualiza os dados da nova geração da população 
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{population_8h}{population.h}\end{DoxyCompactItemize}

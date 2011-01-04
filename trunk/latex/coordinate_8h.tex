@@ -1,0 +1,69 @@
+\hypertarget{coordinate_8h}{
+\section{Referência do Arquivo coordinate.h}
+\label{coordinate_8h}\index{coordinate.h@{coordinate.h}}
+}
+
+
+Arquivo que contêm as definições da classe template coordinate.  
+
+
+{\ttfamily \#include $<$string$>$}\par
+{\ttfamily \#include $<$cmath$>$}\par
+{\ttfamily \#include \char`\"{}definitions.h\char`\"{}}\par
+{\ttfamily \#include $<$iostream$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+\subsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcoordinate}{coordinate$<$ \_\-ty, \_\-realTy $>$}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::istream \& \hyperlink{coordinate_8h_aacb2e8f6ef327786248a961828b53fa5}{operator$>$$>$} (std::istream \&is, \hyperlink{classcoordinate}{coordinate}$<$ T, U $>$ \&coo)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::ostream \& \hyperlink{coordinate_8h_ac6da0a94290e6364c27e4dff1a52f5e5}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classcoordinate}{coordinate}$<$ T, U $>$ \&coo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+Arquivo que contêm as definições da classe template coordinate. \begin{DoxyAuthor}{Autor}
+Pedro Pazzini 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+0.0.1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2010-\/01-\/21 
+\end{DoxyDate}
+
+
+\subsection{Funções}
+\hypertarget{coordinate_8h_ac6da0a94290e6364c27e4dff1a52f5e5}{
+\index{coordinate.h@{coordinate.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!coordinate.h@{coordinate.h}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ std::ostream\& operator$<$$<$ (std::ostream \& {\em os}, \/  const {\bf coordinate}$<$ T, U $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{coordinate_8h_ac6da0a94290e6364c27e4dff1a52f5e5}
+Operador de fluxo de entrada. Recebe os atributos do objeto coordenada da stream, e os seta no objeto do tipo coordenada passado como parâmetro
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]os O objeto stream que carrega os atributos.  coo O objeto coordenada que recebe os atributos da stream\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+O mesmo objeto stream passado como parâmetro, para possibilitar o encadeamento do operador 
+\end{DoxyReturn}
+\hypertarget{coordinate_8h_aacb2e8f6ef327786248a961828b53fa5}{
+\index{coordinate.h@{coordinate.h}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!coordinate.h@{coordinate.h}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ std::istream\& operator$>$$>$ (std::istream \& {\em is}, \/  {\bf coordinate}$<$ T, U $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{coordinate_8h_aacb2e8f6ef327786248a961828b53fa5}
+Operador de fluxo de saída. Imprime na stream os atributos do objeto coordenada.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]is A stream que recebe os atributos  coo A coordenada que possui os atributos que serão passados para a stream\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+A mesma stream passada como parâmetro, para permitir o uso encadeado do operador 
+\end{DoxyReturn}

@@ -1,0 +1,135 @@
+\hypertarget{classgenetic__operator}{
+\section{Referência da Template de Classe genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}
+\label{classgenetic__operator}\index{genetic\_\-operator@{genetic\_\-operator}}
+}
+Diagrama de Hierarquia para genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.21344cm]{classgenetic__operator}
+\end{center}
+\end{figure}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgenetic__operator_a114de57cea1aa2b6db81389ddf5be520}{genetic\_\-operator} (\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$pt\_\-to\_\-apply\_\-operator=NULL, const float \&probability=def::genetic\_\-operator::probability)
+\item 
+virtual void \hyperlink{classgenetic__operator_a70569d059114efa73bcd45a264953d13}{doApplyGeneticOperator} (void)
+\item 
+const \_\-realTy \hyperlink{classgenetic__operator_a406eeb5144dd74698fcd9a120f021aba}{GenerateRandom} (const \_\-realTy \&max=1, const \_\-realTy \&min=0, const int \&precision=def::genetic\_\-operator::precision)
+\item 
+const \_\-ty \hyperlink{classgenetic__operator_ad9f7ea3ff91063cde8959794b1ac5679}{GenerateRandom} (const \_\-ty \&max, const \_\-ty \&min=0)
+\item 
+virtual const char \& \hyperlink{classgenetic__operator_a3405bb5335111bd675d408aa8db052fa}{WalkOnPopulationHook} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ \&id)=0
+\item 
+virtual const char \& \hyperlink{classgenetic__operator_a2124d70b28b35d3114eb3e3ffa72baef}{WalkOnIndividualHook} (\hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo)=0
+\item 
+virtual std::string \hyperlink{classgenetic__operator_ae0f79368c0b4ad0cff3f608727bd87f5}{GetName} (void)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgenetic__operator_a5d8f57b5d777bb2ec2f71ab2a21847fc}{
+\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\bfseries \_\-to\_\-apply\_\-operator}}
+\label{classgenetic__operator_a5d8f57b5d777bb2ec2f71ab2a21847fc}
+
+\item 
+\hypertarget{classgenetic__operator_a8d05857f8efcc48ba94f502b2eb7f277}{
+float {\bfseries \_\-probability}}
+\label{classgenetic__operator_a8d05857f8efcc48ba94f502b2eb7f277}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class genetic\_\-operator$<$ \_\-ty, \_\-realTy $>$}
+
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classgenetic__operator_a114de57cea1aa2b6db81389ddf5be520}{
+\index{genetic\_\-operator@{genetic\_\-operator}!genetic\_\-operator@{genetic\_\-operator}}
+\index{genetic\_\-operator@{genetic\_\-operator}!genetic_operator@{genetic\_\-operator}}
+\subsubsection[{genetic\_\-operator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf genetic\_\-operator}$<$ \_\-ty, \_\-realTy $>$::{\bf genetic\_\-operator} ({\bf population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em pt\_\-to\_\-apply\_\-operator} = {\ttfamily NULL}, \/  const float \& {\em probability} = {\ttfamily def::genetic\_\-operator$<$~\_\-ty,~\_\-realTy~$>$::probability})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator_a114de57cea1aa2b6db81389ddf5be520}
+Método construtor.
+
+pt\_\-to\_\-apply\_\-operator Ponteiro para o objeto população aonde será aplicado o operador genético.  probability Probabilidade do operador genético realizar uma operação. 
+
+\subsection{Métodos}
+\hypertarget{classgenetic__operator_a70569d059114efa73bcd45a264953d13}{
+\index{genetic\_\-operator@{genetic\_\-operator}!doApplyGeneticOperator@{doApplyGeneticOperator}}
+\index{doApplyGeneticOperator@{doApplyGeneticOperator}!genetic_operator@{genetic\_\-operator}}
+\subsubsection[{doApplyGeneticOperator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-operator}$<$ \_\-ty, \_\-realTy $>$::doApplyGeneticOperator (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classgenetic__operator_a70569d059114efa73bcd45a264953d13}
+Método virtual que realiza a mutação \hypertarget{classgenetic__operator_ad9f7ea3ff91063cde8959794b1ac5679}{
+\index{genetic\_\-operator@{genetic\_\-operator}!GenerateRandom@{GenerateRandom}}
+\index{GenerateRandom@{GenerateRandom}!genetic_operator@{genetic\_\-operator}}
+\subsubsection[{GenerateRandom}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ const \_\-ty {\bf genetic\_\-operator}$<$ \_\-ty, \_\-realTy $>$::GenerateRandom (const \_\-ty \& {\em max}, \/  const \_\-ty \& {\em min} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator_ad9f7ea3ff91063cde8959794b1ac5679}
+Método que retorna um número entre min e max do tipo \_\-ty(sem ponto flutuante)
+
+max Valor máximo do intervalo do número aleatório a ser gerado.  min Valor mínimo do intervalo do número aleatório a ser gerado.
+
+\begin{DoxyReturn}{Retorna}
+Um número aleatório entre os valores min e max. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator_a406eeb5144dd74698fcd9a120f021aba}{
+\index{genetic\_\-operator@{genetic\_\-operator}!GenerateRandom@{GenerateRandom}}
+\index{GenerateRandom@{GenerateRandom}!genetic_operator@{genetic\_\-operator}}
+\subsubsection[{GenerateRandom}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ const \_\-realTy {\bf genetic\_\-operator}$<$ \_\-ty, \_\-realTy $>$::GenerateRandom (const \_\-realTy \& {\em max} = {\ttfamily 1}, \/  const \_\-realTy \& {\em min} = {\ttfamily 0}, \/  const int \& {\em precision} = {\ttfamily def::genetic\_\-operator$<$~\_\-ty,~\_\-realTy~$>$::precision})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator_a406eeb5144dd74698fcd9a120f021aba}
+Método que retorna um número aleatório entre min e max do tipo \_\-realTy(ponto flutuante) com precisão de precision casas decimais
+
+max Valor máximo do intervalo do número aleatório a ser gerado.  min Valor mínimo do intervalo do número aleatório a ser gerado.  precision Número de casas decimais do número aleatório gerado.
+
+\begin{DoxyReturn}{Retorna}
+Um número aleatório com precision casas decimais e entre os valores min e max. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator_ae0f79368c0b4ad0cff3f608727bd87f5}{
+\index{genetic\_\-operator@{genetic\_\-operator}!GetName@{GetName}}
+\index{GetName@{GetName}!genetic_operator@{genetic\_\-operator}}
+\subsubsection[{GetName}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ virtual std::string {\bf genetic\_\-operator}$<$ \_\-ty, \_\-realTy $>$::GetName (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classgenetic__operator_ae0f79368c0b4ad0cff3f608727bd87f5}
+Método que retorna o nome da classe, usado no padrão AbstractFactory
+
+\begin{DoxyReturn}{Retorna}
+Uma string com o nome do operador. 
+\end{DoxyReturn}
+
+
+Reimplementado por \hyperlink{classmutate__bit__by__bit_abdab6da2a2b180f14d71f35c895313a4}{mutate\_\-bit\_\-by\_\-bit$<$ \_\-ty, \_\-realTy $>$} e \hyperlink{classselection__by__roulette_a137f1a757ab4d71a0ca0bdba7f9f35d0}{selection\_\-by\_\-roulette$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classgenetic__operator_a2124d70b28b35d3114eb3e3ffa72baef}{
+\index{genetic\_\-operator@{genetic\_\-operator}!WalkOnIndividualHook@{WalkOnIndividualHook}}
+\index{WalkOnIndividualHook@{WalkOnIndividualHook}!genetic_operator@{genetic\_\-operator}}
+\subsubsection[{WalkOnIndividualHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ virtual const char\& {\bf genetic\_\-operator}$<$ \_\-ty, \_\-realTy $>$::WalkOnIndividualHook ({\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classgenetic__operator_a2124d70b28b35d3114eb3e3ffa72baef}
+Método de gancho puramente virtual para as classes filhas, usadas no padrão Template Method. Caminha sobre o conteiner de coordenadas do indivíduo, e aplica o operador nas coordenadas.
+
+coo A coordenada onde será aplicado o operador.
+
+\begin{DoxyReturn}{Retorna}
+A direção da caminhada nos conteiners. 
+\end{DoxyReturn}
+
+
+Implementado por \hyperlink{classcross__over_a1febad7c46ec396173e099372d50839e}{cross\_\-over$<$ \_\-ty, \_\-realTy $>$}, \hyperlink{classmutate__bit__by__bit_a150b01e7ee79683012f7d60e8c1b9ccc}{mutate\_\-bit\_\-by\_\-bit$<$ \_\-ty, \_\-realTy $>$} e \hyperlink{classselection__by__roulette_abb536fd7b63a452a2ebd8e7572bfc4d8}{selection\_\-by\_\-roulette$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classgenetic__operator_a3405bb5335111bd675d408aa8db052fa}{
+\index{genetic\_\-operator@{genetic\_\-operator}!WalkOnPopulationHook@{WalkOnPopulationHook}}
+\index{WalkOnPopulationHook@{WalkOnPopulationHook}!genetic_operator@{genetic\_\-operator}}
+\subsubsection[{WalkOnPopulationHook}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ virtual const char\& {\bf genetic\_\-operator}$<$ \_\-ty, \_\-realTy $>$::WalkOnPopulationHook ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ \& {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classgenetic__operator_a3405bb5335111bd675d408aa8db052fa}
+Método de gancho puramente virtual para as classes filhas, usadas no padrão Template Method. Caminha sobre o conteiner de indivíduos da populacao, e aplica o operador nos indivíduos
+
+id Indivíduo em que será aplicado o operador genético.
+
+\begin{DoxyReturn}{Retorna}
+A direção da caminhada nos containers. 
+\end{DoxyReturn}
+
+
+Implementado por \hyperlink{classcross__over_a1a840a73fa36cc7f4f7e769f78d73e81}{cross\_\-over$<$ \_\-ty, \_\-realTy $>$}, \hyperlink{classmutate__bit__by__bit_a2f8cc52a35943854f24b7534ecd90c7b}{mutate\_\-bit\_\-by\_\-bit$<$ \_\-ty, \_\-realTy $>$} e \hyperlink{classselection__by__roulette_a98be3d54afb87450f190615f7da330e9}{selection\_\-by\_\-roulette$<$ \_\-ty, \_\-realTy $>$}.
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{genetic__operator_8h}{genetic\_\-operator.h}\end{DoxyCompactItemize}

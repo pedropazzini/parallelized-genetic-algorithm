@@ -1,0 +1,315 @@
+\select@language {brazil}
+\contentsline {chapter}{\numberline {1}\IeC {\'I}ndice dos Componentes}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Hierarquia de Classes}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}\IeC {\'I}ndice dos Componentes}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lista de Componentes}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}\IeC {\'I}ndice dos Arquivos}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lista de Arquivos}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Classes}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Refer\IeC {\^e}ncia da Template de Classe coordinate$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Construtores \& Destrutores}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}coordinate}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}coordinate}{8}{subsubsection.4.1.2.2}
+\contentsline {subsection}{\numberline {4.1.3}M\IeC {\'e}todos}{8}{subsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Code}{8}{subsubsection.4.1.3.1}
+\contentsline {subsubsection}{\numberline {4.1.3.2}Decode}{9}{subsubsection.4.1.3.2}
+\contentsline {subsubsection}{\numberline {4.1.3.3}Decode}{9}{subsubsection.4.1.3.3}
+\contentsline {subsubsection}{\numberline {4.1.3.4}GenerateCoordinate}{9}{subsubsection.4.1.3.4}
+\contentsline {subsubsection}{\numberline {4.1.3.5}GetIndice}{9}{subsubsection.4.1.3.5}
+\contentsline {subsubsection}{\numberline {4.1.3.6}GetInterval}{9}{subsubsection.4.1.3.6}
+\contentsline {subsubsection}{\numberline {4.1.3.7}GetMax}{9}{subsubsection.4.1.3.7}
+\contentsline {subsubsection}{\numberline {4.1.3.8}GetMaxCoded}{10}{subsubsection.4.1.3.8}
+\contentsline {subsubsection}{\numberline {4.1.3.9}GetMin}{10}{subsubsection.4.1.3.9}
+\contentsline {subsubsection}{\numberline {4.1.3.10}GetMinCoded}{10}{subsubsection.4.1.3.10}
+\contentsline {subsubsection}{\numberline {4.1.3.11}GetPC}{10}{subsubsection.4.1.3.11}
+\contentsline {subsubsection}{\numberline {4.1.3.12}GetPrecision}{10}{subsubsection.4.1.3.12}
+\contentsline {subsubsection}{\numberline {4.1.3.13}GetSize}{10}{subsubsection.4.1.3.13}
+\contentsline {subsubsection}{\numberline {4.1.3.14}GetValue}{10}{subsubsection.4.1.3.14}
+\contentsline {subsubsection}{\numberline {4.1.3.15}GetValue}{10}{subsubsection.4.1.3.15}
+\contentsline {subsubsection}{\numberline {4.1.3.16}IsConsistent}{11}{subsubsection.4.1.3.16}
+\contentsline {subsubsection}{\numberline {4.1.3.17}IsOutOfBound}{11}{subsubsection.4.1.3.17}
+\contentsline {subsubsection}{\numberline {4.1.3.18}IsOutOfBound}{11}{subsubsection.4.1.3.18}
+\contentsline {subsubsection}{\numberline {4.1.3.19}operator!=}{11}{subsubsection.4.1.3.19}
+\contentsline {subsubsection}{\numberline {4.1.3.20}operator$<$}{11}{subsubsection.4.1.3.20}
+\contentsline {subsubsection}{\numberline {4.1.3.21}operator$<$=}{11}{subsubsection.4.1.3.21}
+\contentsline {subsubsection}{\numberline {4.1.3.22}operator=}{12}{subsubsection.4.1.3.22}
+\contentsline {subsubsection}{\numberline {4.1.3.23}operator==}{12}{subsubsection.4.1.3.23}
+\contentsline {subsubsection}{\numberline {4.1.3.24}operator$>$}{12}{subsubsection.4.1.3.24}
+\contentsline {subsubsection}{\numberline {4.1.3.25}operator$>$=}{12}{subsubsection.4.1.3.25}
+\contentsline {subsubsection}{\numberline {4.1.3.26}SetMax}{12}{subsubsection.4.1.3.26}
+\contentsline {subsubsection}{\numberline {4.1.3.27}SetMaxCoded}{12}{subsubsection.4.1.3.27}
+\contentsline {subsubsection}{\numberline {4.1.3.28}SetMin}{12}{subsubsection.4.1.3.28}
+\contentsline {subsubsection}{\numberline {4.1.3.29}SetMinCoded}{12}{subsubsection.4.1.3.29}
+\contentsline {subsubsection}{\numberline {4.1.3.30}SetPrecision}{12}{subsubsection.4.1.3.30}
+\contentsline {subsubsection}{\numberline {4.1.3.31}SetSize}{13}{subsubsection.4.1.3.31}
+\contentsline {subsubsection}{\numberline {4.1.3.32}SetValue}{13}{subsubsection.4.1.3.32}
+\contentsline {subsubsection}{\numberline {4.1.3.33}SetValue}{13}{subsubsection.4.1.3.33}
+\contentsline {subsubsection}{\numberline {4.1.3.34}SetValueMaxValue}{13}{subsubsection.4.1.3.34}
+\contentsline {subsubsection}{\numberline {4.1.3.35}SetValueMinValue}{13}{subsubsection.4.1.3.35}
+\contentsline {subsubsection}{\numberline {4.1.3.36}ToString}{13}{subsubsection.4.1.3.36}
+\contentsline {subsection}{\numberline {4.1.4}Amigas e Fun\IeC {\c c}\IeC {\~o}es Relacionadas}{13}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}operator$<$$<$}{13}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}operator$>$$>$}{13}{subsubsection.4.1.4.2}
+\contentsline {section}{\numberline {4.2}Refer\IeC {\^e}ncia da Template de Classe cross\_\discretionary {-}{}{}over$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{14}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Construtores \& Destrutores}{14}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}cross\_\discretionary {-}{}{}over}{14}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}M\IeC {\'e}todos}{14}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}CrossOver}{14}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}CrossOver}{14}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}IsAleatory}{14}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}MakePairs}{15}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}SetAleatory}{15}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}WalkOnIndividualHook}{15}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}WalkOnPopulationHook}{15}{subsubsection.4.2.3.7}
+\contentsline {section}{\numberline {4.3}Refer\IeC {\^e}ncia da Template de Classe cross\_\discretionary {-}{}{}over\_\discretionary {-}{}{}thread$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{17}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Construtores \& Destrutores}{17}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}cross\_\discretionary {-}{}{}over\_\discretionary {-}{}{}thread}{17}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}$\sim $cross\_\discretionary {-}{}{}over\_\discretionary {-}{}{}thread}{17}{subsubsection.4.3.1.2}
+\contentsline {subsection}{\numberline {4.3.2}M\IeC {\'e}todos}{17}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}ConsumeAndProduceIndividuals}{17}{subsubsection.4.3.2.1}
+\contentsline {section}{\numberline {4.4}Refer\IeC {\^e}ncia da Classe ga\_\discretionary {-}{}{}exception}{19}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{19}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Construtores \& Destrutores}{19}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}ga\_\discretionary {-}{}{}exception}{19}{subsubsection.4.4.2.1}
+\contentsline {subsection}{\numberline {4.4.3}M\IeC {\'e}todos}{19}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}what}{19}{subsubsection.4.4.3.1}
+\contentsline {section}{\numberline {4.5}Refer\IeC {\^e}ncia da Template de Classe genetic\_\discretionary {-}{}{}algorithm$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{20}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{20}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Construtores \& Destrutores}{20}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}genetic\_\discretionary {-}{}{}algorithm}{20}{subsubsection.4.5.2.1}
+\contentsline {subsection}{\numberline {4.5.3}M\IeC {\'e}todos}{20}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}GetMaxGeneration}{20}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}SeMaxGeneration}{20}{subsubsection.4.5.3.2}
+\contentsline {subsubsection}{\numberline {4.5.3.3}StartGA}{20}{subsubsection.4.5.3.3}
+\contentsline {subsection}{\numberline {4.5.4}Atributos}{20}{subsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.4.1}\_\discretionary {-}{}{}cross\_\discretionary {-}{}{}over}{20}{subsubsection.4.5.4.1}
+\contentsline {subsubsection}{\numberline {4.5.4.2}\_\discretionary {-}{}{}max\_\discretionary {-}{}{}generation}{20}{subsubsection.4.5.4.2}
+\contentsline {subsubsection}{\numberline {4.5.4.3}\_\discretionary {-}{}{}mutation}{21}{subsubsection.4.5.4.3}
+\contentsline {subsubsection}{\numberline {4.5.4.4}\_\discretionary {-}{}{}population}{21}{subsubsection.4.5.4.4}
+\contentsline {subsubsection}{\numberline {4.5.4.5}\_\discretionary {-}{}{}selection}{21}{subsubsection.4.5.4.5}
+\contentsline {section}{\numberline {4.6}Refer\IeC {\^e}ncia da Template de Classe genetic\_\discretionary {-}{}{}algorithm\_\discretionary {-}{}{}thread$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{23}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{23}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Construtores \& Destrutores}{23}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}genetic\_\discretionary {-}{}{}algorithm\_\discretionary {-}{}{}thread}{23}{subsubsection.4.6.2.1}
+\contentsline {section}{\numberline {4.7}Refer\IeC {\^e}ncia da Template de Classe genetic\_\discretionary {-}{}{}operator$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{25}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Construtores \& Destrutores}{25}{subsection.4.7.1}
+\contentsline {subsubsection}{\numberline {4.7.1.1}genetic\_\discretionary {-}{}{}operator}{25}{subsubsection.4.7.1.1}
+\contentsline {subsection}{\numberline {4.7.2}M\IeC {\'e}todos}{25}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}doApplyGeneticOperator}{25}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}GenerateRandom}{25}{subsubsection.4.7.2.2}
+\contentsline {subsubsection}{\numberline {4.7.2.3}GenerateRandom}{25}{subsubsection.4.7.2.3}
+\contentsline {subsubsection}{\numberline {4.7.2.4}GetName}{25}{subsubsection.4.7.2.4}
+\contentsline {subsubsection}{\numberline {4.7.2.5}WalkOnIndividualHook}{26}{subsubsection.4.7.2.5}
+\contentsline {subsubsection}{\numberline {4.7.2.6}WalkOnPopulationHook}{26}{subsubsection.4.7.2.6}
+\contentsline {section}{\numberline {4.8}Refer\IeC {\^e}ncia da Template de Classe genetic\_\discretionary {-}{}{}operator\_\discretionary {-}{}{}thread$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{28}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{29}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Defini\IeC {\c c}\IeC {\~o}es de Tipos}{29}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}it\_\discretionary {-}{}{}}{29}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}scoped\_\discretionary {-}{}{}lock}{29}{subsubsection.4.8.2.2}
+\contentsline {subsection}{\numberline {4.8.3}Construtores \& Destrutores}{29}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}genetic\_\discretionary {-}{}{}operator\_\discretionary {-}{}{}thread}{29}{subsubsection.4.8.3.1}
+\contentsline {subsubsection}{\numberline {4.8.3.2}genetic\_\discretionary {-}{}{}operator\_\discretionary {-}{}{}thread}{29}{subsubsection.4.8.3.2}
+\contentsline {subsection}{\numberline {4.8.4}M\IeC {\'e}todos}{29}{subsection.4.8.4}
+\contentsline {subsubsection}{\numberline {4.8.4.1}AddIndividual}{29}{subsubsection.4.8.4.1}
+\contentsline {subsubsection}{\numberline {4.8.4.2}ApplyGeneticOperator}{30}{subsubsection.4.8.4.2}
+\contentsline {subsubsection}{\numberline {4.8.4.3}Begin}{30}{subsubsection.4.8.4.3}
+\contentsline {subsubsection}{\numberline {4.8.4.4}End}{30}{subsubsection.4.8.4.4}
+\contentsline {subsubsection}{\numberline {4.8.4.5}EndOfGA}{30}{subsubsection.4.8.4.5}
+\contentsline {subsubsection}{\numberline {4.8.4.6}FullPopulation}{30}{subsubsection.4.8.4.6}
+\contentsline {subsubsection}{\numberline {4.8.4.7}GetBestIndividual}{30}{subsubsection.4.8.4.7}
+\contentsline {subsubsection}{\numberline {4.8.4.8}GetCondApplyOp}{30}{subsubsection.4.8.4.8}
+\contentsline {subsubsection}{\numberline {4.8.4.9}GetGenerationCount}{30}{subsubsection.4.8.4.9}
+\contentsline {subsubsection}{\numberline {4.8.4.10}GetMutexCondApplyOp}{31}{subsubsection.4.8.4.10}
+\contentsline {subsubsection}{\numberline {4.8.4.11}GetReference}{31}{subsubsection.4.8.4.11}
+\contentsline {subsubsection}{\numberline {4.8.4.12}GetSemConsumer}{31}{subsubsection.4.8.4.12}
+\contentsline {subsubsection}{\numberline {4.8.4.13}GetSemProducer}{31}{subsubsection.4.8.4.13}
+\contentsline {subsubsection}{\numberline {4.8.4.14}IncrementGenerationCount}{31}{subsubsection.4.8.4.14}
+\contentsline {subsubsection}{\numberline {4.8.4.15}IncrementIterator}{31}{subsubsection.4.8.4.15}
+\contentsline {subsubsection}{\numberline {4.8.4.16}PrintPopulation}{31}{subsubsection.4.8.4.16}
+\contentsline {subsubsection}{\numberline {4.8.4.17}PushBackIndividual}{31}{subsubsection.4.8.4.17}
+\contentsline {subsubsection}{\numberline {4.8.4.18}ReadyToReceive}{31}{subsubsection.4.8.4.18}
+\contentsline {subsubsection}{\numberline {4.8.4.19}SetConsumer}{31}{subsubsection.4.8.4.19}
+\contentsline {subsubsection}{\numberline {4.8.4.20}SetProducer}{31}{subsubsection.4.8.4.20}
+\contentsline {subsubsection}{\numberline {4.8.4.21}UpdatePopulation}{31}{subsubsection.4.8.4.21}
+\contentsline {subsubsection}{\numberline {4.8.4.22}$\sim $genetic\_\discretionary {-}{}{}operator\_\discretionary {-}{}{}thread}{31}{subsubsection.4.8.4.22}
+\contentsline {subsection}{\numberline {4.8.5}Atributos}{31}{subsection.4.8.5}
+\contentsline {subsubsection}{\numberline {4.8.5.1}\_\discretionary {-}{}{}consumidorPt}{32}{subsubsection.4.8.5.1}
+\contentsline {subsubsection}{\numberline {4.8.5.2}\_\discretionary {-}{}{}coreNumbers}{32}{subsubsection.4.8.5.2}
+\contentsline {subsubsection}{\numberline {4.8.5.3}\_\discretionary {-}{}{}genCount}{32}{subsubsection.4.8.5.3}
+\contentsline {subsubsection}{\numberline {4.8.5.4}\_\discretionary {-}{}{}MutexgenCount}{32}{subsubsection.4.8.5.4}
+\contentsline {subsubsection}{\numberline {4.8.5.5}\_\discretionary {-}{}{}popOperatorPt}{32}{subsubsection.4.8.5.5}
+\contentsline {subsubsection}{\numberline {4.8.5.6}\_\discretionary {-}{}{}producerPt}{32}{subsubsection.4.8.5.6}
+\contentsline {section}{\numberline {4.9}Refer\IeC {\^e}ncia da Template de Classe individual$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{34}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{35}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Defini\IeC {\c c}\IeC {\~o}es de Tipos}{35}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}const\_\discretionary {-}{}{}it\_\discretionary {-}{}{}}{35}{subsubsection.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.2.2}it\_\discretionary {-}{}{}}{35}{subsubsection.4.9.2.2}
+\contentsline {subsubsection}{\numberline {4.9.2.3}posTy\_\discretionary {-}{}{}}{35}{subsubsection.4.9.2.3}
+\contentsline {subsection}{\numberline {4.9.3}Construtores \& Destrutores}{35}{subsection.4.9.3}
+\contentsline {subsubsection}{\numberline {4.9.3.1}individual}{35}{subsubsection.4.9.3.1}
+\contentsline {subsubsection}{\numberline {4.9.3.2}individual}{35}{subsubsection.4.9.3.2}
+\contentsline {subsubsection}{\numberline {4.9.3.3}$\sim $individual}{35}{subsubsection.4.9.3.3}
+\contentsline {subsection}{\numberline {4.9.4}M\IeC {\'e}todos}{35}{subsection.4.9.4}
+\contentsline {subsubsection}{\numberline {4.9.4.1}AddCoordinate}{35}{subsubsection.4.9.4.1}
+\contentsline {subsubsection}{\numberline {4.9.4.2}begin}{35}{subsubsection.4.9.4.2}
+\contentsline {subsubsection}{\numberline {4.9.4.3}begin}{35}{subsubsection.4.9.4.3}
+\contentsline {subsubsection}{\numberline {4.9.4.4}end}{36}{subsubsection.4.9.4.4}
+\contentsline {subsubsection}{\numberline {4.9.4.5}end}{36}{subsubsection.4.9.4.5}
+\contentsline {subsubsection}{\numberline {4.9.4.6}GeneratePosition}{36}{subsubsection.4.9.4.6}
+\contentsline {subsubsection}{\numberline {4.9.4.7}GetDimension}{36}{subsubsection.4.9.4.7}
+\contentsline {subsubsection}{\numberline {4.9.4.8}GetID}{36}{subsubsection.4.9.4.8}
+\contentsline {subsubsection}{\numberline {4.9.4.9}GetPair}{36}{subsubsection.4.9.4.9}
+\contentsline {subsubsection}{\numberline {4.9.4.10}GetPair}{36}{subsubsection.4.9.4.10}
+\contentsline {subsubsection}{\numberline {4.9.4.11}GetRealPosition}{36}{subsubsection.4.9.4.11}
+\contentsline {subsubsection}{\numberline {4.9.4.12}GetSize}{37}{subsubsection.4.9.4.12}
+\contentsline {subsubsection}{\numberline {4.9.4.13}GetValue}{37}{subsubsection.4.9.4.13}
+\contentsline {subsubsection}{\numberline {4.9.4.14}MakePair}{37}{subsubsection.4.9.4.14}
+\contentsline {subsubsection}{\numberline {4.9.4.15}operator!=}{37}{subsubsection.4.9.4.15}
+\contentsline {subsubsection}{\numberline {4.9.4.16}operator$<$}{37}{subsubsection.4.9.4.16}
+\contentsline {subsubsection}{\numberline {4.9.4.17}operator$<$=}{37}{subsubsection.4.9.4.17}
+\contentsline {subsubsection}{\numberline {4.9.4.18}operator==}{37}{subsubsection.4.9.4.18}
+\contentsline {subsubsection}{\numberline {4.9.4.19}operator$>$}{38}{subsubsection.4.9.4.19}
+\contentsline {subsubsection}{\numberline {4.9.4.20}operator$>$=}{38}{subsubsection.4.9.4.20}
+\contentsline {subsubsection}{\numberline {4.9.4.21}operator[]}{38}{subsubsection.4.9.4.21}
+\contentsline {subsubsection}{\numberline {4.9.4.22}operator[]}{38}{subsubsection.4.9.4.22}
+\contentsline {subsubsection}{\numberline {4.9.4.23}PrintRealPosition}{38}{subsubsection.4.9.4.23}
+\contentsline {subsubsection}{\numberline {4.9.4.24}SeparetePair}{38}{subsubsection.4.9.4.24}
+\contentsline {subsubsection}{\numberline {4.9.4.25}SetID}{38}{subsubsection.4.9.4.25}
+\contentsline {subsubsection}{\numberline {4.9.4.26}SetPair}{38}{subsubsection.4.9.4.26}
+\contentsline {subsubsection}{\numberline {4.9.4.27}SetValue}{38}{subsubsection.4.9.4.27}
+\contentsline {subsection}{\numberline {4.9.5}Amigas e Fun\IeC {\c c}\IeC {\~o}es Relacionadas}{38}{subsection.4.9.5}
+\contentsline {subsubsection}{\numberline {4.9.5.1}operator$<$$<$}{38}{subsubsection.4.9.5.1}
+\contentsline {subsubsection}{\numberline {4.9.5.2}operator$>$$>$}{39}{subsubsection.4.9.5.2}
+\contentsline {section}{\numberline {4.10}Refer\IeC {\^e}ncia da Template de Classe mutate\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}by\_\discretionary {-}{}{}bit$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{40}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Construtores \& Destrutores}{40}{subsection.4.10.1}
+\contentsline {subsubsection}{\numberline {4.10.1.1}mutate\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}by\_\discretionary {-}{}{}bit}{40}{subsubsection.4.10.1.1}
+\contentsline {subsection}{\numberline {4.10.2}M\IeC {\'e}todos}{40}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}GetName}{40}{subsubsection.4.10.2.1}
+\contentsline {subsubsection}{\numberline {4.10.2.2}WalkOnIndividualHook}{40}{subsubsection.4.10.2.2}
+\contentsline {subsubsection}{\numberline {4.10.2.3}WalkOnPopulationHook}{40}{subsubsection.4.10.2.3}
+\contentsline {section}{\numberline {4.11}Refer\IeC {\^e}ncia da Template de Classe mutate\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}by\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}thread$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{42}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{42}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Defini\IeC {\c c}\IeC {\~o}es de Tipos}{42}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}scoped\_\discretionary {-}{}{}lock}{42}{subsubsection.4.11.2.1}
+\contentsline {subsection}{\numberline {4.11.3}Construtores \& Destrutores}{42}{subsection.4.11.3}
+\contentsline {subsubsection}{\numberline {4.11.3.1}mutate\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}by\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}thread}{42}{subsubsection.4.11.3.1}
+\contentsline {subsection}{\numberline {4.11.4}M\IeC {\'e}todos}{42}{subsection.4.11.4}
+\contentsline {subsubsection}{\numberline {4.11.4.1}ApplyMutateOperatorInIndividual}{42}{subsubsection.4.11.4.1}
+\contentsline {subsubsection}{\numberline {4.11.4.2}CallConsumeAndProduce}{43}{subsubsection.4.11.4.2}
+\contentsline {subsubsection}{\numberline {4.11.4.3}ConsumeAndProduce}{43}{subsubsection.4.11.4.3}
+\contentsline {section}{\numberline {4.12}Refer\IeC {\^e}ncia da Template de Classe population$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{45}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{46}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Defini\IeC {\c c}\IeC {\~o}es de Tipos}{46}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}\_\discretionary {-}{}{}pop}{46}{subsubsection.4.12.2.1}
+\contentsline {subsubsection}{\numberline {4.12.2.2}const\_\discretionary {-}{}{}it\_\discretionary {-}{}{}}{46}{subsubsection.4.12.2.2}
+\contentsline {subsubsection}{\numberline {4.12.2.3}it\_\discretionary {-}{}{}}{46}{subsubsection.4.12.2.3}
+\contentsline {subsection}{\numberline {4.12.3}Construtores \& Destrutores}{46}{subsection.4.12.3}
+\contentsline {subsubsection}{\numberline {4.12.3.1}population}{46}{subsubsection.4.12.3.1}
+\contentsline {subsubsection}{\numberline {4.12.3.2}population}{46}{subsubsection.4.12.3.2}
+\contentsline {subsubsection}{\numberline {4.12.3.3}$\sim $population}{46}{subsubsection.4.12.3.3}
+\contentsline {subsection}{\numberline {4.12.4}M\IeC {\'e}todos}{46}{subsection.4.12.4}
+\contentsline {subsubsection}{\numberline {4.12.4.1}AddIndividualToPopulation}{46}{subsubsection.4.12.4.1}
+\contentsline {subsubsection}{\numberline {4.12.4.2}begin}{46}{subsubsection.4.12.4.2}
+\contentsline {subsubsection}{\numberline {4.12.4.3}begin}{46}{subsubsection.4.12.4.3}
+\contentsline {subsubsection}{\numberline {4.12.4.4}CleanPopulation}{47}{subsubsection.4.12.4.4}
+\contentsline {subsubsection}{\numberline {4.12.4.5}end}{47}{subsubsection.4.12.4.5}
+\contentsline {subsubsection}{\numberline {4.12.4.6}end}{47}{subsubsection.4.12.4.6}
+\contentsline {subsubsection}{\numberline {4.12.4.7}GeneratePopulation}{47}{subsubsection.4.12.4.7}
+\contentsline {subsubsection}{\numberline {4.12.4.8}GetAveragePerformance}{47}{subsubsection.4.12.4.8}
+\contentsline {subsubsection}{\numberline {4.12.4.9}GetBestId}{47}{subsubsection.4.12.4.9}
+\contentsline {subsubsection}{\numberline {4.12.4.10}GetDeviation}{47}{subsubsection.4.12.4.10}
+\contentsline {subsubsection}{\numberline {4.12.4.11}GetId}{47}{subsubsection.4.12.4.11}
+\contentsline {subsubsection}{\numberline {4.12.4.12}GetNumerOfIndividuals}{47}{subsubsection.4.12.4.12}
+\contentsline {subsubsection}{\numberline {4.12.4.13}GetSum}{48}{subsubsection.4.12.4.13}
+\contentsline {subsubsection}{\numberline {4.12.4.14}GetWorseId}{48}{subsubsection.4.12.4.14}
+\contentsline {subsubsection}{\numberline {4.12.4.15}operator==}{48}{subsubsection.4.12.4.15}
+\contentsline {subsubsection}{\numberline {4.12.4.16}operator[]}{48}{subsubsection.4.12.4.16}
+\contentsline {subsubsection}{\numberline {4.12.4.17}operator[]}{48}{subsubsection.4.12.4.17}
+\contentsline {subsubsection}{\numberline {4.12.4.18}PrintPairs}{48}{subsubsection.4.12.4.18}
+\contentsline {subsubsection}{\numberline {4.12.4.19}RemoveIndividualAt}{48}{subsubsection.4.12.4.19}
+\contentsline {subsubsection}{\numberline {4.12.4.20}SendGenerationDataToStream}{48}{subsubsection.4.12.4.20}
+\contentsline {subsubsection}{\numberline {4.12.4.21}SetAveragePerformance}{49}{subsubsection.4.12.4.21}
+\contentsline {subsubsection}{\numberline {4.12.4.22}SetDeviation}{49}{subsubsection.4.12.4.22}
+\contentsline {subsubsection}{\numberline {4.12.4.23}SetId}{49}{subsubsection.4.12.4.23}
+\contentsline {subsubsection}{\numberline {4.12.4.24}SetIndividualsValue}{49}{subsubsection.4.12.4.24}
+\contentsline {subsubsection}{\numberline {4.12.4.25}SetNewIndividuals}{49}{subsubsection.4.12.4.25}
+\contentsline {subsubsection}{\numberline {4.12.4.26}SetNullIndividualAt}{49}{subsubsection.4.12.4.26}
+\contentsline {subsubsection}{\numberline {4.12.4.27}SetSum}{49}{subsubsection.4.12.4.27}
+\contentsline {subsubsection}{\numberline {4.12.4.28}SortPopulation}{49}{subsubsection.4.12.4.28}
+\contentsline {subsubsection}{\numberline {4.12.4.29}UpdateData}{49}{subsubsection.4.12.4.29}
+\contentsline {section}{\numberline {4.13}Refer\IeC {\^e}ncia da Template de Estrutura population\_\discretionary {-}{}{}compare$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{51}{section.4.13}
+\contentsline {subsection}{\numberline {4.13.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{51}{subsection.4.13.1}
+\contentsline {section}{\numberline {4.14}Refer\IeC {\^e}ncia da Template de Classe population\_\discretionary {-}{}{}thread$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{52}{section.4.14}
+\contentsline {section}{\numberline {4.15}Refer\IeC {\^e}ncia da Template de Classe selection\_\discretionary {-}{}{}by\_\discretionary {-}{}{}roulette$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{54}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{54}{subsection.4.15.1}
+\contentsline {subsection}{\numberline {4.15.2}Defini\IeC {\c c}\IeC {\~o}es de Tipos}{54}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}\_\discretionary {-}{}{}RouletteTy}{54}{subsubsection.4.15.2.1}
+\contentsline {subsubsection}{\numberline {4.15.2.2}const\_\discretionary {-}{}{}it\_\discretionary {-}{}{}}{54}{subsubsection.4.15.2.2}
+\contentsline {subsubsection}{\numberline {4.15.2.3}it\_\discretionary {-}{}{}}{54}{subsubsection.4.15.2.3}
+\contentsline {subsection}{\numberline {4.15.3}Construtores \& Destrutores}{54}{subsection.4.15.3}
+\contentsline {subsubsection}{\numberline {4.15.3.1}selection\_\discretionary {-}{}{}by\_\discretionary {-}{}{}roulette}{54}{subsubsection.4.15.3.1}
+\contentsline {subsection}{\numberline {4.15.4}M\IeC {\'e}todos}{54}{subsection.4.15.4}
+\contentsline {subsubsection}{\numberline {4.15.4.1}begin}{54}{subsubsection.4.15.4.1}
+\contentsline {subsubsection}{\numberline {4.15.4.2}end}{55}{subsubsection.4.15.4.2}
+\contentsline {subsubsection}{\numberline {4.15.4.3}GenerateRoulette}{55}{subsubsection.4.15.4.3}
+\contentsline {subsubsection}{\numberline {4.15.4.4}GetName}{55}{subsubsection.4.15.4.4}
+\contentsline {subsubsection}{\numberline {4.15.4.5}RotateRoulette}{55}{subsubsection.4.15.4.5}
+\contentsline {subsubsection}{\numberline {4.15.4.6}WalkOnIndividualHook}{55}{subsubsection.4.15.4.6}
+\contentsline {subsubsection}{\numberline {4.15.4.7}WalkOnPopulationHook}{55}{subsubsection.4.15.4.7}
+\contentsline {section}{\numberline {4.16}Refer\IeC {\^e}ncia da Template de Classe selection\_\discretionary {-}{}{}by\_\discretionary {-}{}{}tournament$<$ \_\discretionary {-}{}{}ty, \_\discretionary {-}{}{}realTy $>$}{57}{section.4.16}
+\contentsline {subsection}{\numberline {4.16.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{57}{subsection.4.16.1}
+\contentsline {subsection}{\numberline {4.16.2}Defini\IeC {\c c}\IeC {\~o}es de Tipos}{57}{subsection.4.16.2}
+\contentsline {subsubsection}{\numberline {4.16.2.1}scoped\_\discretionary {-}{}{}lock}{57}{subsubsection.4.16.2.1}
+\contentsline {subsection}{\numberline {4.16.3}Construtores \& Destrutores}{57}{subsection.4.16.3}
+\contentsline {subsubsection}{\numberline {4.16.3.1}selection\_\discretionary {-}{}{}by\_\discretionary {-}{}{}tournament}{57}{subsubsection.4.16.3.1}
+\contentsline {subsubsection}{\numberline {4.16.3.2}$\sim $selection\_\discretionary {-}{}{}by\_\discretionary {-}{}{}tournament}{57}{subsubsection.4.16.3.2}
+\contentsline {subsection}{\numberline {4.16.4}M\IeC {\'e}todos}{57}{subsection.4.16.4}
+\contentsline {subsubsection}{\numberline {4.16.4.1}CallSelect}{57}{subsubsection.4.16.4.1}
+\contentsline {subsubsection}{\numberline {4.16.4.2}ReadyToReceive}{57}{subsubsection.4.16.4.2}
+\contentsline {subsubsection}{\numberline {4.16.4.3}Select}{58}{subsubsection.4.16.4.3}
+\contentsline {section}{\numberline {4.17}Refer\IeC {\^e}ncia da Classe semaphore}{60}{section.4.17}
+\contentsline {subsection}{\numberline {4.17.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{60}{subsection.4.17.1}
+\contentsline {subsection}{\numberline {4.17.2}Defini\IeC {\c c}\IeC {\~o}es de Tipos}{60}{subsection.4.17.2}
+\contentsline {subsubsection}{\numberline {4.17.2.1}scoped\_\discretionary {-}{}{}lock}{60}{subsubsection.4.17.2.1}
+\contentsline {subsection}{\numberline {4.17.3}Construtores \& Destrutores}{60}{subsection.4.17.3}
+\contentsline {subsubsection}{\numberline {4.17.3.1}semaphore}{60}{subsubsection.4.17.3.1}
+\contentsline {subsection}{\numberline {4.17.4}M\IeC {\'e}todos}{60}{subsection.4.17.4}
+\contentsline {subsubsection}{\numberline {4.17.4.1}post}{60}{subsubsection.4.17.4.1}
+\contentsline {subsubsection}{\numberline {4.17.4.2}wait}{60}{subsubsection.4.17.4.2}
+\contentsline {chapter}{\numberline {5}Arquivos}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}Refer\IeC {\^e}ncia do Arquivo coordinate.h}{61}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{61}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Fun\IeC {\c c}\IeC {\~o}es}{61}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}operator$<$$<$}{62}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}operator$>$$>$}{62}{subsubsection.5.1.2.2}
+\contentsline {section}{\numberline {5.2}Refer\IeC {\^e}ncia do Arquivo cross\_\discretionary {-}{}{}over.h}{63}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{63}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Refer\IeC {\^e}ncia do Arquivo definitions.h}{64}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{64}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Refer\IeC {\^e}ncia do Arquivo ga\_\discretionary {-}{}{}exception.h}{65}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{65}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Refer\IeC {\^e}ncia do Arquivo genetic\_\discretionary {-}{}{}algorithm.h}{66}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{66}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.6}Refer\IeC {\^e}ncia do Arquivo genetic\_\discretionary {-}{}{}algorithm\_\discretionary {-}{}{}thread.h}{67}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{67}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}Refer\IeC {\^e}ncia do Arquivo genetic\_\discretionary {-}{}{}operator.h}{68}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{68}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.8}Refer\IeC {\^e}ncia do Arquivo genetic\_\discretionary {-}{}{}operator\_\discretionary {-}{}{}thread.h}{69}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{69}{subsection.5.8.1}
+\contentsline {section}{\numberline {5.9}Refer\IeC {\^e}ncia do Arquivo individual.h}{70}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{70}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}Fun\IeC {\c c}\IeC {\~o}es}{70}{subsection.5.9.2}
+\contentsline {subsubsection}{\numberline {5.9.2.1}operator$<$$<$}{70}{subsubsection.5.9.2.1}
+\contentsline {subsubsection}{\numberline {5.9.2.2}operator$>$$>$}{70}{subsubsection.5.9.2.2}
+\contentsline {section}{\numberline {5.10}Refer\IeC {\^e}ncia do Arquivo mutate\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}by\_\discretionary {-}{}{}bit\_\discretionary {-}{}{}thread.h}{71}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{71}{subsection.5.10.1}
+\contentsline {section}{\numberline {5.11}Refer\IeC {\^e}ncia do Arquivo population.h}{72}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{72}{subsection.5.11.1}
+\contentsline {section}{\numberline {5.12}Refer\IeC {\^e}ncia do Arquivo selection\_\discretionary {-}{}{}by\_\discretionary {-}{}{}roulette.h}{73}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{73}{subsection.5.12.1}
+\contentsline {section}{\numberline {5.13}Refer\IeC {\^e}ncia do Arquivo selection\_\discretionary {-}{}{}by\_\discretionary {-}{}{}tournament.h}{74}{section.5.13}
+\contentsline {subsection}{\numberline {5.13.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{74}{subsection.5.13.1}
+\contentsline {section}{\numberline {5.14}Refer\IeC {\^e}ncia do Arquivo semaphore.h}{75}{section.5.14}
+\contentsline {subsection}{\numberline {5.14.1}Descri\IeC {\c c}\IeC {\~a}o Detalhada}{75}{subsection.5.14.1}

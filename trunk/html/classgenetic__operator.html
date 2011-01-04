@@ -1,0 +1,301 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Referência da Template de Classe genetic_operator&lt; _ty, _realTy &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Gerado por Doxygen 1.6.3 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="Busca" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Lista&nbsp;de&nbsp;Componentes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hierarquia&nbsp;de&nbsp;Classes</span></a></li>
+      <li><a href="functions.html"><span>Componentes&nbsp;Membros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referência da Template de Classe genetic_operator&lt; _ty, _realTy &gt;</h1><!-- doxytag: class="genetic_operator" --><div class="dynheader">
+Diagrama de Hierarquia para genetic_operator&lt; _ty, _realTy &gt;:</div>
+<div class="dynsection">
+ <div class="center">
+  <img src="classgenetic__operator.png" usemap="#genetic_operator&lt; _ty, _realTy &gt;_map" alt=""/>
+  <map id="genetic_operator&lt; _ty, _realTy &gt;_map" name="genetic_operator&lt; _ty, _realTy &gt;_map">
+<area href="classcross__over.html" alt="cross_over&lt; _ty, _realTy &gt;" shape="rect" coords="0,56,245,80"/>
+<area href="classmutate__bit__by__bit.html" alt="mutate_bit_by_bit&lt; _ty, _realTy &gt;" shape="rect" coords="255,56,500,80"/>
+<area href="classselection__by__roulette.html" alt="selection_by_roulette&lt; _ty, _realTy &gt;" shape="rect" coords="510,56,755,80"/>
+<area href="classcross__over__thread.html" alt="cross_over_thread&lt; _ty, _realTy &gt;" shape="rect" coords="0,112,245,136"/>
+<area href="classmutate__bit__by__bit__thread.html" alt="mutate_bit_by_bit_thread&lt; _ty, _realTy &gt;" shape="rect" coords="255,112,500,136"/>
+</map>
+ </div>
+</div>
+
+<p><a href="classgenetic__operator-members.html">Lista de todos os Membros.</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Métodos Públicos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__operator.html#a114de57cea1aa2b6db81389ddf5be520">genetic_operator</a> (<a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *pt_to_apply_operator=NULL, const float &amp;probability=def::genetic_operator::probability)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__operator.html#a70569d059114efa73bcd45a264953d13">doApplyGeneticOperator</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const _realTy&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__operator.html#a406eeb5144dd74698fcd9a120f021aba">GenerateRandom</a> (const _realTy &amp;max=1, const _realTy &amp;min=0, const int &amp;precision=def::genetic_operator::precision)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const _ty&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__operator.html#ad9f7ea3ff91063cde8959794b1ac5679">GenerateRandom</a> (const _ty &amp;max, const _ty &amp;min=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const char &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__operator.html#a3405bb5335111bd675d408aa8db052fa">WalkOnPopulationHook</a> (<a class="el" href="classindividual.html">individual</a>&lt; _ty, _realTy &gt; &amp;id)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual const char &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__operator.html#a2124d70b28b35d3114eb3e3ffa72baef">WalkOnIndividualHook</a> (<a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;coo)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgenetic__operator.html#ae0f79368c0b4ad0cff3f608727bd87f5">GetName</a> (void)</td></tr>
+<tr><td colspan="2"><h2>Atributos Protegidos</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d8f57b5d777bb2ec2f71ab2a21847fc"></a><!-- doxytag: member="genetic_operator::_to_apply_operator" ref="a5d8f57b5d777bb2ec2f71ab2a21847fc" args="" -->
+<a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_to_apply_operator</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d05857f8efcc48ba94f502b2eb7f277"></a><!-- doxytag: member="genetic_operator::_probability" ref="a8d05857f8efcc48ba94f502b2eb7f277" args="" -->
+float&nbsp;</td><td class="memItemRight" valign="bottom"><b>_probability</b></td></tr>
+</table>
+<h3>template&lt;typename _ty, typename _realTy&gt;<br/>
+ class genetic_operator&lt; _ty, _realTy &gt;</h3>
+
+<hr/><h2>Construtores &amp; Destrutores</h2>
+<a class="anchor" id="a114de57cea1aa2b6db81389ddf5be520"></a><!-- doxytag: member="genetic_operator::genetic_operator" ref="a114de57cea1aa2b6db81389ddf5be520" args="(population&lt; _ty, _realTy &gt; *pt_to_apply_operator=NULL, const float &amp;probability=def::genetic_operator::probability)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt; _ty, _realTy &gt;::<a class="el" href="classgenetic__operator.html">genetic_operator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpopulation.html">population</a>&lt; _ty, _realTy &gt; *&nbsp;</td>
+          <td class="paramname"> <em>pt_to_apply_operator</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;&nbsp;</td>
+          <td class="paramname"> <em>probability</em> = <code>def::genetic_operator&lt;&nbsp;_ty,&nbsp;_realTy&nbsp;&gt;::probability</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método construtor.</p>
+<p>pt_to_apply_operator Ponteiro para o objeto população aonde será aplicado o operador genético.  probability Probabilidade do operador genético realizar uma operação. </p>
+
+</div>
+</div>
+<hr/><h2>Métodos</h2>
+<a class="anchor" id="a70569d059114efa73bcd45a264953d13"></a><!-- doxytag: member="genetic_operator::doApplyGeneticOperator" ref="a70569d059114efa73bcd45a264953d13" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt; _ty, _realTy &gt;::doApplyGeneticOperator </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método virtual que realiza a mutação </p>
+
+</div>
+</div>
+<a class="anchor" id="ad9f7ea3ff91063cde8959794b1ac5679"></a><!-- doxytag: member="genetic_operator::GenerateRandom" ref="ad9f7ea3ff91063cde8959794b1ac5679" args="(const _ty &amp;max, const _ty &amp;min=0)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const _ty <a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt; _ty, _realTy &gt;::GenerateRandom </td>
+          <td>(</td>
+          <td class="paramtype">const _ty &amp;&nbsp;</td>
+          <td class="paramname"> <em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const _ty &amp;&nbsp;</td>
+          <td class="paramname"> <em>min</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método que retorna um número entre min e max do tipo _ty(sem ponto flutuante)</p>
+<p>max Valor máximo do intervalo do número aleatório a ser gerado.  min Valor mínimo do intervalo do número aleatório a ser gerado.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>Um número aleatório entre os valores min e max. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a406eeb5144dd74698fcd9a120f021aba"></a><!-- doxytag: member="genetic_operator::GenerateRandom" ref="a406eeb5144dd74698fcd9a120f021aba" args="(const _realTy &amp;max=1, const _realTy &amp;min=0, const int &amp;precision=def::genetic_operator::precision)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const _realTy <a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt; _ty, _realTy &gt;::GenerateRandom </td>
+          <td>(</td>
+          <td class="paramtype">const _realTy &amp;&nbsp;</td>
+          <td class="paramname"> <em>max</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const _realTy &amp;&nbsp;</td>
+          <td class="paramname"> <em>min</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&nbsp;</td>
+          <td class="paramname"> <em>precision</em> = <code>def::genetic_operator&lt;&nbsp;_ty,&nbsp;_realTy&nbsp;&gt;::precision</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método que retorna um número aleatório entre min e max do tipo _realTy(ponto flutuante) com precisão de precision casas decimais</p>
+<p>max Valor máximo do intervalo do número aleatório a ser gerado.  min Valor mínimo do intervalo do número aleatório a ser gerado.  precision Número de casas decimais do número aleatório gerado.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>Um número aleatório com precision casas decimais e entre os valores min e max. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae0f79368c0b4ad0cff3f608727bd87f5"></a><!-- doxytag: member="genetic_operator::GetName" ref="ae0f79368c0b4ad0cff3f608727bd87f5" args="(void)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string <a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt; _ty, _realTy &gt;::GetName </td>
+          <td>(</td>
+          <td class="paramtype">void&nbsp;</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método que retorna o nome da classe, usado no padrão AbstractFactory</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>Uma string com o nome do operador. </dd></dl>
+
+<p>Reimplementado por <a class="el" href="classmutate__bit__by__bit.html#abdab6da2a2b180f14d71f35c895313a4">mutate_bit_by_bit&lt; _ty, _realTy &gt;</a> e <a class="el" href="classselection__by__roulette.html#a137f1a757ab4d71a0ca0bdba7f9f35d0">selection_by_roulette&lt; _ty, _realTy &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2124d70b28b35d3114eb3e3ffa72baef"></a><!-- doxytag: member="genetic_operator::WalkOnIndividualHook" ref="a2124d70b28b35d3114eb3e3ffa72baef" args="(coordinate&lt; _ty, _realTy &gt; &amp;coo)=0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char&amp; <a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt; _ty, _realTy &gt;::WalkOnIndividualHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcoordinate.html">coordinate</a>&lt; _ty, _realTy &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>coo</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de gancho puramente virtual para as classes filhas, usadas no padrão Template Method. Caminha sobre o conteiner de coordenadas do indivíduo, e aplica o operador nas coordenadas.</p>
+<p>coo A coordenada onde será aplicado o operador.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>A direção da caminhada nos conteiners. </dd></dl>
+
+<p>Implementado por <a class="el" href="classcross__over.html#a1febad7c46ec396173e099372d50839e">cross_over&lt; _ty, _realTy &gt;</a>, <a class="el" href="classmutate__bit__by__bit.html#a150b01e7ee79683012f7d60e8c1b9ccc">mutate_bit_by_bit&lt; _ty, _realTy &gt;</a> e <a class="el" href="classselection__by__roulette.html#abb536fd7b63a452a2ebd8e7572bfc4d8">selection_by_roulette&lt; _ty, _realTy &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3405bb5335111bd675d408aa8db052fa"></a><!-- doxytag: member="genetic_operator::WalkOnPopulationHook" ref="a3405bb5335111bd675d408aa8db052fa" args="(individual&lt; _ty, _realTy &gt; &amp;id)=0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _ty , typename _realTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char&amp; <a class="el" href="classgenetic__operator.html">genetic_operator</a>&lt; _ty, _realTy &gt;::WalkOnPopulationHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classindividual.html">individual</a>&lt; _ty, _realTy &gt; &amp;&nbsp;</td>
+          <td class="paramname"> <em>id</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Método de gancho puramente virtual para as classes filhas, usadas no padrão Template Method. Caminha sobre o conteiner de indivíduos da populacao, e aplica o operador nos indivíduos</p>
+<p>id Indivíduo em que será aplicado o operador genético.</p>
+<dl class="return"><dt><b>Retorna:</b></dt><dd>A direção da caminhada nos containers. </dd></dl>
+
+<p>Implementado por <a class="el" href="classcross__over.html#a1a840a73fa36cc7f4f7e769f78d73e81">cross_over&lt; _ty, _realTy &gt;</a>, <a class="el" href="classmutate__bit__by__bit.html#a2f8cc52a35943854f24b7534ecd90c7b">mutate_bit_by_bit&lt; _ty, _realTy &gt;</a> e <a class="el" href="classselection__by__roulette.html#a98be3d54afb87450f190615f7da330e9">selection_by_roulette&lt; _ty, _realTy &gt;</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li><a class="el" href="genetic__operator_8h_source.html">genetic_operator.h</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Definições de Tipos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&nbsp;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address style="text-align: right;"><small>Gerado em Sat Oct 30 13:47:50 2010 por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
+</body>
+</html>

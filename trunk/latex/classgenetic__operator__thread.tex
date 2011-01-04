@@ -1,0 +1,425 @@
+\hypertarget{classgenetic__operator__thread}{
+\section{Referência da Template de Classe genetic\_\-operator\_\-thread$<$ \_\-ty, \_\-realTy $>$}
+\label{classgenetic__operator__thread}\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}}
+}
+
+
+{\ttfamily \#include $<$genetic\_\-operator\_\-thread.h$>$}
+
+Diagrama de Hierarquia para genetic\_\-operator\_\-thread$<$ \_\-ty, \_\-realTy $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.47563cm]{classgenetic__operator__thread}
+\end{center}
+\end{figure}
+\subsection*{Tipos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::mutex::scoped\_\-lock \hyperlink{classgenetic__operator__thread_abe926f8fc2a1548516dad216a1acd4fb}{scoped\_\-lock}
+\item 
+typedef std::vector$<$ boost::thread $\ast$ $>$::iterator \hyperlink{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}{it\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgenetic__operator__thread_a2b60b46c5d55135436590f6aa2b11da3}{genetic\_\-operator\_\-thread} (\hyperlink{classpopulation}{population}$<$$>$ $\ast$popPt)
+\item 
+\hyperlink{classgenetic__operator__thread_a30c4b7a10dae2ff72905416953a64049}{$\sim$genetic\_\-operator\_\-thread} ()
+\item 
+\hyperlink{classgenetic__operator__thread_adb72da6103f5995bd4c265789e5eceac}{genetic\_\-operator\_\-thread} (const \hyperlink{classgenetic__operator__thread}{genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$ \&got)
+\item 
+\hyperlink{classgenetic__operator__thread}{genetic\_\-operator\_\-thread} $\ast$ \hyperlink{classgenetic__operator__thread_a751c7f678d7486bee8b1a02bb9e60416}{GetReference} (void)
+\item 
+void \hyperlink{classgenetic__operator__thread_a435435aa8c4e9f50b041b40c7f63b599}{SetProducer} (\hyperlink{classgenetic__operator__thread}{genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$ $\ast$new\_\-prod\_\-pt)
+\item 
+void \hyperlink{classgenetic__operator__thread_a2944e0158bc914db042fdcf22a4a4e70}{SetConsumer} (\hyperlink{classgenetic__operator__thread}{genetic\_\-operator\_\-thread} $\ast$cons\_\-pt)
+\item 
+\hyperlink{classsemaphore}{semaphore} $\ast$ \hyperlink{classgenetic__operator__thread_aa9a6e0370bfd3afe316af822832a8013}{GetSemProducer} (void)
+\item 
+\hyperlink{classsemaphore}{semaphore} $\ast$ \hyperlink{classgenetic__operator__thread_a73424d811348f5a911da3744dfc08762}{GetSemConsumer} (void)
+\item 
+void \hyperlink{classgenetic__operator__thread_abd1a0cb47d379e74f3e738f5c75fe7b7}{ApplyGeneticOperator} (void)
+\item 
+void \hyperlink{classgenetic__operator__thread_a5e739f35ac03b42311540dbf4db25d2e}{AddIndividual} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$newId)
+\item 
+void \hyperlink{classgenetic__operator__thread_a1e355fe496238b6433bbf9f3f70bf6ad}{PushBackIndividual} (\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$newId)
+\item 
+\hyperlink{classindividual}{individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__operator__thread_aba37d3926c0ae0f61846a3e98cfeaf39}{GetBestIndividual} (void)
+\item 
+void \hyperlink{classgenetic__operator__thread_a44556f084005e19742891fae2e3c8df3}{UpdatePopulation} (void)
+\item 
+void \hyperlink{classgenetic__operator__thread_afaab02a61f5f0a52b37c4f8bda8df131}{PrintPopulation} (void)
+\item 
+boost::condition \& \hyperlink{classgenetic__operator__thread_adbc04b2ec67ef127c316efd2bfb407c4}{GetCondApplyOp} (void)
+\item 
+boost::mutex \hyperlink{classgenetic__operator__thread_a0973b32bc54f444ca7afcdcdfef9a38a}{GetMutexCondApplyOp} (void)
+\item 
+bool \hyperlink{classgenetic__operator__thread_a2fdf96fda297cef206de86300ab7df0c}{FullPopulation} (void) const 
+\item 
+\hyperlink{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}{it\_\-} \hyperlink{classgenetic__operator__thread_a3f9defee5440ebe6d973bcc8806d64ee}{Begin} (void)
+\item 
+\hyperlink{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}{it\_\-} \hyperlink{classgenetic__operator__thread_ae836d401cde0a8ac21025348b9fcedf6}{End} (void)
+\item 
+virtual void \hyperlink{classgenetic__operator__thread_a7c86cee81334320d496fb196920fcc10}{ReadyToReceive} (void)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgenetic__operator__thread_a838af3900b85dfba3b5daa7c9dd1b51c}{
+boost::mutex {\bfseries GetInMutex} (void)}
+\label{classgenetic__operator__thread_a838af3900b85dfba3b5daa7c9dd1b51c}
+
+\item 
+\hypertarget{classgenetic__operator__thread_a83fa2b4627e313d4e28ab946e7673017}{
+boost::mutex {\bfseries GetOutMutex} (void)}
+\label{classgenetic__operator__thread_a83fa2b4627e313d4e28ab946e7673017}
+
+\item 
+void \hyperlink{classgenetic__operator__thread_a856af75479279710968a1aa2b26400de}{IncrementIterator} (typename \hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$::\hyperlink{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}{it\_\-} \&it)
+\end{DoxyCompactItemize}
+\subsection*{Métodos Protegidos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static int \& \hyperlink{classgenetic__operator__thread_a22db2979e50888a982e4d78a874b0193}{GetGenerationCount} (void)
+\item 
+static void \hyperlink{classgenetic__operator__thread_a77fb097a6fa283eebe5cf6af08dd2cfc}{IncrementGenerationCount} (void)
+\item 
+static bool \hyperlink{classgenetic__operator__thread_aad1cfa9857458b80ca2f5ba2fa3c5d74}{EndOfGA} (void)
+\end{DoxyCompactItemize}
+\subsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__operator__thread_ae0bb1f4c8c30c5557eefc870d2767d66}{\_\-popOperatorPt}
+\item 
+\hyperlink{classgenetic__operator__thread}{genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__operator__thread_ad88e4f6c5afb05bbc55d5f44bce88ba2}{\_\-consumidorPt}
+\item 
+\hyperlink{classgenetic__operator__thread}{genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$ $\ast$ \hyperlink{classgenetic__operator__thread_af325a8a1c9964fc0eac9e2eeda670499}{\_\-producerPt}
+\item 
+int \hyperlink{classgenetic__operator__thread_a886d986c24ceb36bff5a77bf58447be0}{\_\-coreNumbers}
+\item 
+\hypertarget{classgenetic__operator__thread_a33d19c478eee6deee0a1fcb43272cc92}{
+\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$::\hyperlink{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}{it\_\-} {\bfseries \_\-inIterator}}
+\label{classgenetic__operator__thread_a33d19c478eee6deee0a1fcb43272cc92}
+
+\item 
+\hypertarget{classgenetic__operator__thread_ac403a8cd7cd497e8d98bdd40f417771c}{
+boost::mutex {\bfseries \_\-inMutex}}
+\label{classgenetic__operator__thread_ac403a8cd7cd497e8d98bdd40f417771c}
+
+\item 
+\hypertarget{classgenetic__operator__thread_a11bd7c84a7feb28bfed6e1ea52964fd1}{
+\hyperlink{classpopulation}{population}$<$ \_\-ty, \_\-realTy $>$::\hyperlink{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}{it\_\-} {\bfseries \_\-outIterator}}
+\label{classgenetic__operator__thread_a11bd7c84a7feb28bfed6e1ea52964fd1}
+
+\item 
+\hypertarget{classgenetic__operator__thread_a923a2cd5dfdd1478677f5a05f5dd4063}{
+boost::mutex {\bfseries \_\-outMutex}}
+\label{classgenetic__operator__thread_a923a2cd5dfdd1478677f5a05f5dd4063}
+
+\item 
+\hypertarget{classgenetic__operator__thread_a8e9f788e9d5e9c0ee96de0505525196c}{
+\hyperlink{classsemaphore}{semaphore} $\ast$ {\bfseries \_\-semConsumer}}
+\label{classgenetic__operator__thread_a8e9f788e9d5e9c0ee96de0505525196c}
+
+\item 
+\hypertarget{classgenetic__operator__thread_ae9a9af2ff152c15152f42de2c02be1e3}{
+\hyperlink{classsemaphore}{semaphore} $\ast$ {\bfseries \_\-semProducer}}
+\label{classgenetic__operator__thread_ae9a9af2ff152c15152f42de2c02be1e3}
+
+\item 
+\hypertarget{classgenetic__operator__thread_ab1bee0ae612b0f61b9f2bb15b431ea26}{
+boost::condition {\bfseries \_\-condApplyOperator}}
+\label{classgenetic__operator__thread_ab1bee0ae612b0f61b9f2bb15b431ea26}
+
+\item 
+\hypertarget{classgenetic__operator__thread_a9fd8a736c036bb91234a54db69418464}{
+boost::mutex {\bfseries \_\-mutexCondApplyOp}}
+\label{classgenetic__operator__thread_a9fd8a736c036bb91234a54db69418464}
+
+\item 
+\hypertarget{classgenetic__operator__thread_ac45e4d73d9023af4c7998355b4302f28}{
+boost::condition {\bfseries \_\-condStopCondition}}
+\label{classgenetic__operator__thread_ac45e4d73d9023af4c7998355b4302f28}
+
+\item 
+\hypertarget{classgenetic__operator__thread_aa828c4d595704dcd561e1eec098e3ab3}{
+boost::mutex {\bfseries \_\-mutexCondStopCond}}
+\label{classgenetic__operator__thread_aa828c4d595704dcd561e1eec098e3ab3}
+
+\item 
+\hypertarget{classgenetic__operator__thread_a8007f81975ddd3911ef63682cabcd990}{
+std::vector$<$ boost::thread $\ast$ $>$ {\bfseries \_\-threadVec}}
+\label{classgenetic__operator__thread_a8007f81975ddd3911ef63682cabcd990}
+
+\end{DoxyCompactItemize}
+\subsection*{Atributos Estáticos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classgenetic__operator__thread_acdf9606e26ae1240cd1c9fced36c656a}{\_\-genCount} = 0
+\item 
+static boost::mutex \hyperlink{classgenetic__operator__thread_afb4be1bcb256082a4d6e90faba3e5567}{\_\-MutexgenCount}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class genetic\_\-operator\_\-thread$<$ \_\-ty, \_\-realTy $>$}
+
+Classe que possui a definição básica de um operador genético paralelizado.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Definições de Tipos}
+\hypertarget{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!it\_\-@{it\_\-}}
+\index{it\_\-@{it\_\-}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{it\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef std::vector$<$boost::thread$\ast$$>$::iterator {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf it\_\-}}}
+\label{classgenetic__operator__thread_ac5a153e12dd6711746126c48edba271a}
+Iterator para percorrer o vetor de threads. \hypertarget{classgenetic__operator__thread_abe926f8fc2a1548516dad216a1acd4fb}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!scoped\_\-lock@{scoped\_\-lock}}
+\index{scoped\_\-lock@{scoped\_\-lock}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{scoped\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ typedef boost::mutex::scoped\_\-lock {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf scoped\_\-lock}}}
+\label{classgenetic__operator__thread_abe926f8fc2a1548516dad216a1acd4fb}
+Definição do padrão scoped lock. 
+
+Reimplementado por \hyperlink{classmutate__bit__by__bit__thread_a059838b054d4de64b20d33d1db7e89c0}{mutate\_\-bit\_\-by\_\-bit\_\-thread$<$ \_\-ty, \_\-realTy $>$} e \hyperlink{classselection__by__tournament_a0ba2a47db6a59696b51f19341719c3fd}{selection\_\-by\_\-tournament$<$ \_\-ty, \_\-realTy $>$}.
+
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classgenetic__operator__thread_a2b60b46c5d55135436590f6aa2b11da3}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}}
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{genetic\_\-operator\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf genetic\_\-operator\_\-thread} ({\bf population}$<$$>$ $\ast$ {\em popPt})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a2b60b46c5d55135436590f6aa2b11da3}
+Método construtor.
+
+popPt Ponteiro para a população em que se vai aplicar o operador. \hypertarget{classgenetic__operator__thread_adb72da6103f5995bd4c265789e5eceac}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}}
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{genetic\_\-operator\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf genetic\_\-operator\_\-thread} (const {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$ \& {\em got})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_adb72da6103f5995bd4c265789e5eceac}
+Construtor de cópia.
+
+got Operador genético a ser copiado. 
+
+\subsection{Métodos}
+\hypertarget{classgenetic__operator__thread_a5e739f35ac03b42311540dbf4db25d2e}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!AddIndividual@{AddIndividual}}
+\index{AddIndividual@{AddIndividual}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{AddIndividual}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::AddIndividual ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em newId})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a5e739f35ac03b42311540dbf4db25d2e}
+Método que adiciona um novo indivíduo ao vetor de indivíduos do operador
+
+newId Ponteiro para o novo indivíduo a ser adicionado \hypertarget{classgenetic__operator__thread_abd1a0cb47d379e74f3e738f5c75fe7b7}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!ApplyGeneticOperator@{ApplyGeneticOperator}}
+\index{ApplyGeneticOperator@{ApplyGeneticOperator}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{ApplyGeneticOperator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::ApplyGeneticOperator (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_abd1a0cb47d379e74f3e738f5c75fe7b7}
+Método que dispara as threads que aplicam o operador genético \hypertarget{classgenetic__operator__thread_a3f9defee5440ebe6d973bcc8806d64ee}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!Begin@{Begin}}
+\index{Begin@{Begin}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{Begin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf it\_\-} {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::Begin (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a3f9defee5440ebe6d973bcc8806d64ee}
+Retorna um iterator para o começo do vetor de threads
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o começo do vetor de threads. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_ae836d401cde0a8ac21025348b9fcedf6}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!End@{End}}
+\index{End@{End}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{End}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf it\_\-} {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::End (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_ae836d401cde0a8ac21025348b9fcedf6}
+Retorna um iterator para o fim do vetor de threads
+
+\begin{DoxyReturn}{Retorna}
+Um iterator para o fim do vetor de threads. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_aad1cfa9857458b80ca2f5ba2fa3c5d74}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!EndOfGA@{EndOfGA}}
+\index{EndOfGA@{EndOfGA}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{EndOfGA}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ static bool {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::EndOfGA (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classgenetic__operator__thread_aad1cfa9857458b80ca2f5ba2fa3c5d74}
+Retorna se o número de gerações chegou ao máximo, ou seja se o algoritmo já terminou.
+
+\begin{DoxyReturn}{Retorna}
+True caso o número de gerações já chegou ao máximo, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_a2fdf96fda297cef206de86300ab7df0c}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!FullPopulation@{FullPopulation}}
+\index{FullPopulation@{FullPopulation}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{FullPopulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::FullPopulation (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a2fdf96fda297cef206de86300ab7df0c}
+Confere se a população se eonctra cheia.
+
+\begin{DoxyReturn}{Retorna}
+True caso o número de indivíduos seja igual ao máximo, false caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_aba37d3926c0ae0f61846a3e98cfeaf39}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!GetBestIndividual@{GetBestIndividual}}
+\index{GetBestIndividual@{GetBestIndividual}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{GetBestIndividual}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf individual}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::GetBestIndividual (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_aba37d3926c0ae0f61846a3e98cfeaf39}
+Retorna o melhor do indivíduo da população.
+
+\begin{DoxyReturn}{Retorna}
+Ponteiro para o melhor indivíduo da população. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_adbc04b2ec67ef127c316efd2bfb407c4}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!GetCondApplyOp@{GetCondApplyOp}}
+\index{GetCondApplyOp@{GetCondApplyOp}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{GetCondApplyOp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ boost::condition\& {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::GetCondApplyOp (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_adbc04b2ec67ef127c316efd2bfb407c4}
+Método que retorna uma referência para a variável de condição para iniciar a aplicar o operador
+
+\begin{DoxyReturn}{Retorna}
+Referência para a variável de condição 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_a22db2979e50888a982e4d78a874b0193}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!GetGenerationCount@{GetGenerationCount}}
+\index{GetGenerationCount@{GetGenerationCount}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{GetGenerationCount}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ int \& {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::GetGenerationCount (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classgenetic__operator__thread_a22db2979e50888a982e4d78a874b0193}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Retorna o número de geração ocorridas. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_a0973b32bc54f444ca7afcdcdfef9a38a}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!GetMutexCondApplyOp@{GetMutexCondApplyOp}}
+\index{GetMutexCondApplyOp@{GetMutexCondApplyOp}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{GetMutexCondApplyOp}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ boost::mutex {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::GetMutexCondApplyOp (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a0973b32bc54f444ca7afcdcdfef9a38a}
+Método que retorna uma referência do mutex da variável de condição para aplicar o operador genético.
+
+\begin{DoxyReturn}{Retorna}
+Uma referência para o mutec da variável de condição. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_a751c7f678d7486bee8b1a02bb9e60416}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!GetReference@{GetReference}}
+\index{GetReference@{GetReference}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{GetReference}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf genetic\_\-operator\_\-thread}$\ast$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::GetReference (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a751c7f678d7486bee8b1a02bb9e60416}
+Retorna uma referência de si mesmo
+
+\begin{DoxyReturn}{Retorna}
+Um ponteiro para si mesmo. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_a73424d811348f5a911da3744dfc08762}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!GetSemConsumer@{GetSemConsumer}}
+\index{GetSemConsumer@{GetSemConsumer}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{GetSemConsumer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf semaphore}$\ast$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::GetSemConsumer (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a73424d811348f5a911da3744dfc08762}
+Retorna uma referência do semáforo do consumidor
+
+\begin{DoxyReturn}{Retorna}
+Uma referência para o objeto semáforo de consumir um indivíduo. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_aa9a6e0370bfd3afe316af822832a8013}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!GetSemProducer@{GetSemProducer}}
+\index{GetSemProducer@{GetSemProducer}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{GetSemProducer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf semaphore}$\ast$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::GetSemProducer (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_aa9a6e0370bfd3afe316af822832a8013}
+Retorna uma referência do semáforo do produtor
+
+\begin{DoxyReturn}{Retorna}
+Uma referêmcia para o objeto semáforo de produzir um indivíduo. 
+\end{DoxyReturn}
+\hypertarget{classgenetic__operator__thread_a77fb097a6fa283eebe5cf6af08dd2cfc}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!IncrementGenerationCount@{IncrementGenerationCount}}
+\index{IncrementGenerationCount@{IncrementGenerationCount}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{IncrementGenerationCount}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::IncrementGenerationCount (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classgenetic__operator__thread_a77fb097a6fa283eebe5cf6af08dd2cfc}
+Incrementa o contador de gerações. \hypertarget{classgenetic__operator__thread_a856af75479279710968a1aa2b26400de}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!IncrementIterator@{IncrementIterator}}
+\index{IncrementIterator@{IncrementIterator}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{IncrementIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::IncrementIterator (typename {\bf population}$<$ \_\-ty, \_\-realTy $>$::{\bf it\_\-} \& {\em it})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classgenetic__operator__thread_a856af75479279710968a1aa2b26400de}
+Incrementa um iteartor do vetor de populações, como em um vetor circular.
+
+it O iterator a ser incrementado. \hypertarget{classgenetic__operator__thread_afaab02a61f5f0a52b37c4f8bda8df131}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!PrintPopulation@{PrintPopulation}}
+\index{PrintPopulation@{PrintPopulation}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{PrintPopulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::PrintPopulation (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_afaab02a61f5f0a52b37c4f8bda8df131}
+Imprime a população ordenada pelo fitness \hypertarget{classgenetic__operator__thread_a1e355fe496238b6433bbf9f3f70bf6ad}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!PushBackIndividual@{PushBackIndividual}}
+\index{PushBackIndividual@{PushBackIndividual}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{PushBackIndividual}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::PushBackIndividual ({\bf individual}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em newId})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a1e355fe496238b6433bbf9f3f70bf6ad}
+Método que adiciona um nov indivíduo independente do ponteiro de inserir
+
+newId Ponteiro para o novo indivíduo a ser adicionado \hypertarget{classgenetic__operator__thread_a7c86cee81334320d496fb196920fcc10}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!ReadyToReceive@{ReadyToReceive}}
+\index{ReadyToReceive@{ReadyToReceive}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{ReadyToReceive}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ virtual void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::ReadyToReceive (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classgenetic__operator__thread_a7c86cee81334320d496fb196920fcc10}
+Método virtual que confere se é possível que o operador receba indivíduos no seu vetor. 
+
+Reimplementado por \hyperlink{classselection__by__tournament_a3e16cf77dd481a3ce1a01ac4edffa4ba}{selection\_\-by\_\-tournament$<$ \_\-ty, \_\-realTy $>$}.
+
+\hypertarget{classgenetic__operator__thread_a2944e0158bc914db042fdcf22a4a4e70}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!SetConsumer@{SetConsumer}}
+\index{SetConsumer@{SetConsumer}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{SetConsumer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::SetConsumer ({\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em cons\_\-pt})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a2944e0158bc914db042fdcf22a4a4e70}
+Seta o outro operador genético que irá consumir os dados deste
+
+cons\_\-pt A nova referência para o operador produtor. \hypertarget{classgenetic__operator__thread_a435435aa8c4e9f50b041b40c7f63b599}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!SetProducer@{SetProducer}}
+\index{SetProducer@{SetProducer}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{SetProducer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::SetProducer ({\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$ $\ast$ {\em new\_\-prod\_\-pt})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a435435aa8c4e9f50b041b40c7f63b599}
+Seta qual operador consome os indivíduos produzidos.
+
+new\_\-prod\_\-pt A nova referência para o operador produtor. \hypertarget{classgenetic__operator__thread_a44556f084005e19742891fae2e3c8df3}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!UpdatePopulation@{UpdatePopulation}}
+\index{UpdatePopulation@{UpdatePopulation}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{UpdatePopulation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::UpdatePopulation (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a44556f084005e19742891fae2e3c8df3}
+Atualiza os dados da população \hypertarget{classgenetic__operator__thread_a30c4b7a10dae2ff72905416953a64049}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!$\sim$genetic\_\-operator\_\-thread@{$\sim$genetic\_\-operator\_\-thread}}
+\index{$\sim$genetic\_\-operator\_\-thread@{$\sim$genetic\_\-operator\_\-thread}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{$\sim$genetic\_\-operator\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::$\sim${\bf genetic\_\-operator\_\-thread} (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classgenetic__operator__thread_a30c4b7a10dae2ff72905416953a64049}
+Método destrutor. 
+
+\subsection{Atributos}
+\hypertarget{classgenetic__operator__thread_ad88e4f6c5afb05bbc55d5f44bce88ba2}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!\_\-consumidorPt@{\_\-consumidorPt}}
+\index{\_\-consumidorPt@{\_\-consumidorPt}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{\_\-consumidorPt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf genetic\_\-operator\_\-thread}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-consumidorPt}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__operator__thread_ad88e4f6c5afb05bbc55d5f44bce88ba2}
+Ponteiro para o operador genético que consome os dados do operador genético. \hypertarget{classgenetic__operator__thread_a886d986c24ceb36bff5a77bf58447be0}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!\_\-coreNumbers@{\_\-coreNumbers}}
+\index{\_\-coreNumbers@{\_\-coreNumbers}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{\_\-coreNumbers}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ int {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-coreNumbers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__operator__thread_a886d986c24ceb36bff5a77bf58447be0}
+Número de núcleos do procesador \hypertarget{classgenetic__operator__thread_acdf9606e26ae1240cd1c9fced36c656a}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!\_\-genCount@{\_\-genCount}}
+\index{\_\-genCount@{\_\-genCount}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{\_\-genCount}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ int {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-genCount} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classgenetic__operator__thread_acdf9606e26ae1240cd1c9fced36c656a}
+Contador de número de gerações que já foram realizadas. \hypertarget{classgenetic__operator__thread_afb4be1bcb256082a4d6e90faba3e5567}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!\_\-MutexgenCount@{\_\-MutexgenCount}}
+\index{\_\-MutexgenCount@{\_\-MutexgenCount}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{\_\-MutexgenCount}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ boost::mutex {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-MutexgenCount}\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}
+\label{classgenetic__operator__thread_afb4be1bcb256082a4d6e90faba3e5567}
+Mutex para acessar a variável \_\-genCount. \hypertarget{classgenetic__operator__thread_ae0bb1f4c8c30c5557eefc870d2767d66}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!\_\-popOperatorPt@{\_\-popOperatorPt}}
+\index{\_\-popOperatorPt@{\_\-popOperatorPt}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{\_\-popOperatorPt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf population}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-popOperatorPt}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__operator__thread_ae0bb1f4c8c30c5557eefc870d2767d66}
+Ponteiro para a população do operador. \hypertarget{classgenetic__operator__thread_af325a8a1c9964fc0eac9e2eeda670499}{
+\index{genetic\_\-operator\_\-thread@{genetic\_\-operator\_\-thread}!\_\-producerPt@{\_\-producerPt}}
+\index{\_\-producerPt@{\_\-producerPt}!genetic_operator_thread@{genetic\_\-operator\_\-thread}}
+\subsubsection[{\_\-producerPt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf genetic\_\-operator\_\-thread}$<$\_\-ty,\_\-realTy$>$$\ast$ {\bf genetic\_\-operator\_\-thread}$<$ \_\-ty, \_\-realTy $>$::{\bf \_\-producerPt}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classgenetic__operator__thread_af325a8a1c9964fc0eac9e2eeda670499}
+Ponteiro para o operador genético que produz os dados do operador genéticos 
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{genetic__operator__thread_8h}{genetic\_\-operator\_\-thread.h}\end{DoxyCompactItemize}

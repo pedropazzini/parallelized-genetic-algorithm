@@ -1,0 +1,522 @@
+\hypertarget{classcoordinate}{
+\section{Referência da Template de Classe coordinate$<$ \_\-ty, \_\-realTy $>$}
+\label{classcoordinate}\index{coordinate@{coordinate}}
+}
+
+
+{\ttfamily \#include $<$coordinate.h$>$}
+
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcoordinate_a1c690e9cfa9ce1bff5f1d64eaadd171f}{coordinate} (const int \&indice=def::coord::indice, const int \&size=def::coord::size, const int \&precision=def::coord::precision, const \_\-realTy \&max=def::coord::max, const \_\-realTy \&min=def::coord::min)
+\begin{DoxyCompactList}\small\item\em Construtores/Destrutores. \item\end{DoxyCompactList}\item 
+\hyperlink{classcoordinate_a52212c2723e16c95a8bc6acce3d6ef4e}{coordinate} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo)
+\item 
+const int \& \hyperlink{classcoordinate_a0e3450e6a6a1b4d577886fb68883d61c}{GetSize} (void) const 
+\item 
+void \hyperlink{classcoordinate_a8dca6b1375bc84a05f66d8694681acbe}{SetSize} (const int \&new\_\-size)
+\item 
+const int \& \hyperlink{classcoordinate_a617500d91429987c40541973ae80662a}{GetIndice} (void) const 
+\item 
+const \_\-ty \& \hyperlink{classcoordinate_a67e7c384fd0641455b6629a7d6a9a344}{GetValue} (void) const 
+\item 
+\_\-ty \& \hyperlink{classcoordinate_a46e04592c97e4d4f10aad3cbe90a7a6a}{GetValue} (void)
+\item 
+void \hyperlink{classcoordinate_ae66e44d1146ca8020809efe799a5a59c}{SetValue} (const \_\-ty \&new\_\-value)
+\item 
+void \hyperlink{classcoordinate_a84cb188432f5139c669b8fd3fc0037f5}{SetValue} (const \_\-realTy \&new\_\-value)
+\item 
+void \hyperlink{classcoordinate_a33a2b235424b34d89e42422c05adc276}{SetValueMinValue} (void)
+\item 
+void \hyperlink{classcoordinate_a552fb17fcf9a6d74c972020d21e99709}{SetValueMaxValue} (void)
+\item 
+const int \& \hyperlink{classcoordinate_a92cf59fbfd315c208a5533b68ce3a3d0}{GetPrecision} (void) const 
+\item 
+void \hyperlink{classcoordinate_a46b633da2fed8687b33814122ad2ce1d}{SetPrecision} (const int \&new\_\-precision)
+\item 
+const \_\-realTy \& \hyperlink{classcoordinate_ad3a0bad89d7914ec157f773f445edeeb}{GetMin} (void) const 
+\item 
+const \_\-realTy \& \hyperlink{classcoordinate_af879abf859d6f890045dc6ad558ada96}{GetMax} (void) const 
+\item 
+const \_\-ty \& \hyperlink{classcoordinate_a06ceabdaa759122e5ea2436a68da951b}{GetMaxCoded} (void) const 
+\item 
+const \_\-ty \& \hyperlink{classcoordinate_ae5cae8ad8f7c0cd26d4ac1e565c2b72b}{GetMinCoded} (void) const 
+\item 
+void \hyperlink{classcoordinate_a74810fee94eae241e36552db0041b023}{SetMin} (const \_\-realTy \&new\_\-min)
+\item 
+void \hyperlink{classcoordinate_a74e0f7eaf59e785c37b2d6f92e6f89a9}{SetMax} (const \_\-realTy \&new\_\-max)
+\item 
+void \hyperlink{classcoordinate_a7a8c16521bfde82906c7a9013f7ef909}{SetMinCoded} (const \_\-ty \&new\_\-minCoded)
+\item 
+void \hyperlink{classcoordinate_a8f1612243c59f409ca70878ea572188a}{SetMaxCoded} (const \_\-ty \&new\_\-maxCoded)
+\item 
+bool \hyperlink{classcoordinate_aa77bd1b22e652f61ced9ff8ef76fcbd9}{IsConsistent} (void)
+\item 
+\_\-realTy \hyperlink{classcoordinate_aef173b7a32cc1cdb83c35f71a15f2f59}{GetInterval} (void)
+\item 
+bool \hyperlink{classcoordinate_aa39b86f0c5c09bf06fd5b2b8655d4dc2}{IsOutOfBound} (const \_\-ty \&value) const 
+\item 
+bool \hyperlink{classcoordinate_a5c05c89e4d5f69ea15ae724e2494bc6c}{IsOutOfBound} (const \_\-realTy \&value) const 
+\item 
+const int \& \hyperlink{classcoordinate_a08bd46e2f1731b7042718f9c395b768d}{GetPC} (void) const 
+\item 
+void \hyperlink{classcoordinate_a6ee17f2dd5b36b7bc2fc7b404afb899c}{GenerateCoordinate} (void)
+\item 
+std::string \hyperlink{classcoordinate_ae7277b9648c716a4ff6f16c15c26433d}{ToString} (void) const 
+\item 
+\_\-realTy \hyperlink{classcoordinate_a03f63a984d0b894f2056e3014eb570a3}{Decode} (void) const 
+\item 
+\hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \& \hyperlink{classcoordinate_aeb156220bc0921767319774d77d0eb72}{operator=} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo)
+\item 
+bool \hyperlink{classcoordinate_a063671d1577abcf23a36af1c996ac26a}{operator==} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo) const 
+\item 
+bool \hyperlink{classcoordinate_a8254401d37f6be169cafb28ba10635c3}{operator!=} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo) const 
+\item 
+bool \hyperlink{classcoordinate_a9c19583af7069c444bef4a712ed7fc0c}{operator$>$} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo) const 
+\item 
+bool \hyperlink{classcoordinate_a052d4f0f28d416b72fe1b8ecccf80858}{operator$<$} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo) const 
+\item 
+bool \hyperlink{classcoordinate_a2b75371880389112fd471f596429fd23}{operator$>$=} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo) const 
+\item 
+bool \hyperlink{classcoordinate_a5c4a0543683ec8a6cbe751a075bd5187}{operator$<$=} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo) const 
+\end{DoxyCompactItemize}
+\subsection*{Métodos Públicos Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \_\-realTy \hyperlink{classcoordinate_a18260f8c8efb3e0b9e5cf8181569aa98}{Decode} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo)
+\item 
+static \_\-ty \hyperlink{classcoordinate_adac8246ca9452ff459e46e2d1b981466}{Code} (const \hyperlink{classcoordinate}{coordinate}$<$ \_\-ty, \_\-realTy $>$ \&coo, const \_\-realTy \&value)
+\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::ostream \& \hyperlink{classcoordinate_ac6da0a94290e6364c27e4dff1a52f5e5}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classcoordinate}{coordinate}$<$ T, U $>$ \&coo)
+\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std::istream \& \hyperlink{classcoordinate_aacb2e8f6ef327786248a961828b53fa5}{operator$>$$>$} (std::istream \&is, \hyperlink{classcoordinate}{coordinate}$<$ T, U $>$ \&coo)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\subsubsection*{template$<$typename \_\-ty, typename \_\-realTy$>$ class coordinate$<$ \_\-ty, \_\-realTy $>$}
+
+Classe que define a interface de um objeto do tipo coordenada. Cada indivíduo do algoritmo genético possui um vetor de objetos do tipo coordenada. Como principal atributos da classe coordenada estão: o número de bits para representar a coordenada, a precisão da coordenada, os valores máximos e mínimos da coordenada. Os métodos principais são Code e Decode, que fazem a conversão entre a representação binária e real do valor da coordenada.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]\end{DoxyTemplParams}
+
+
+\subsection{Construtores \& Destrutores}
+\hypertarget{classcoordinate_a1c690e9cfa9ce1bff5f1d64eaadd171f}{
+\index{coordinate@{coordinate}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!coordinate@{coordinate}}
+\subsubsection[{coordinate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::{\bf coordinate} (const int \& {\em indice} = {\ttfamily def::coord::indice}, \/  const int \& {\em size} = {\ttfamily def::coord::size}, \/  const int \& {\em precision} = {\ttfamily def::coord::precision}, \/  const \_\-realTy \& {\em max} = {\ttfamily def::coord::max}, \/  const \_\-realTy \& {\em min} = {\ttfamily def::coord::min})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a1c690e9cfa9ce1bff5f1d64eaadd171f}
+
+
+Construtores/Destrutores. 
+
+Método construtor para coordenada com ponto de corte constante e definido no arquivo \hyperlink{definitions_8h}{definitions.h}
+
+indice É o índice da coordenada. As coordenadas de funções com mais de um grau de liberdade possuem mais de um índice.  size É o número de bist necessários para representar o valor real da coordenada em binário.  precision É a precisão da representação em casas decimais. Ex: precision = 3, a precisão é de 0.001.  max É o valor máximo da coordenada, em valor real.  min É o valor mínimo da coordenada, em valor real. \hypertarget{classcoordinate_a52212c2723e16c95a8bc6acce3d6ef4e}{
+\index{coordinate@{coordinate}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!coordinate@{coordinate}}
+\subsubsection[{coordinate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::{\bf coordinate} (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a52212c2723e16c95a8bc6acce3d6ef4e}
+Construtor de cópia.
+
+É a coordenada a ser copiada. 
+
+\subsection{Métodos}
+\hypertarget{classcoordinate_adac8246ca9452ff459e46e2d1b981466}{
+\index{coordinate@{coordinate}!Code@{Code}}
+\index{Code@{Code}!coordinate@{coordinate}}
+\subsubsection[{Code}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ \_\-ty {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::Code (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo}, \/  const \_\-realTy \& {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classcoordinate_adac8246ca9452ff459e46e2d1b981466}
+Método estático que recebe um objeto do tipo coordenada, e um valor na representação real do GA. Com base nos atributos da coordenada passada como parâmetro, como precisão, máximos, e mínimos, o método retorna a representação em binário do valor real passado como parâmetro.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]Tipo de dado da representação em binário da coordenada do GA. \item[{\em \_\-realTy}]Tipo de dado da representação real da coordeanda do GA.  coo Objeto do tipo coordenda que contém as informações para realizar a codificação.  value O valor real a ser codificado\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+O representação binária do GA de value. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a03f63a984d0b894f2056e3014eb570a3}{
+\index{coordinate@{coordinate}!Decode@{Decode}}
+\index{Decode@{Decode}!coordinate@{coordinate}}
+\subsubsection[{Decode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ \_\-realTy {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::Decode (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a03f63a984d0b894f2056e3014eb570a3}
+Método que recebe um objeto do tipo coordenada como parâmetro, e retorna o valor da coordenada nas representação real do ga
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]Tipo da representação em binário das coordenadas do GA. \item[{\em \_\-realTy}]Tipo da representação real cas coordeandas do GA  coo Referência para a coordenada a ser decodifcada.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+O valor da representação real da coordenada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a18260f8c8efb3e0b9e5cf8181569aa98}{
+\index{coordinate@{coordinate}!Decode@{Decode}}
+\index{Decode@{Decode}!coordinate@{coordinate}}
+\subsubsection[{Decode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ \_\-realTy {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::Decode (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classcoordinate_a18260f8c8efb3e0b9e5cf8181569aa98}
+Método estático que recebe um objeto do tipo coordenada como parâmetro, e retorna o valor da coordenada nas representação real do ga.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]Tipo da representação em binário das coordenadas do GA. \item[{\em \_\-realTy}]Tipo da representação real cas coordeandas do GA  coo Referência para a coordenada a ser decodifcada.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+O valor da representação real da coordenada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a6ee17f2dd5b36b7bc2fc7b404afb899c}{
+\index{coordinate@{coordinate}!GenerateCoordinate@{GenerateCoordinate}}
+\index{GenerateCoordinate@{GenerateCoordinate}!coordinate@{coordinate}}
+\subsubsection[{GenerateCoordinate}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GenerateCoordinate (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a6ee17f2dd5b36b7bc2fc7b404afb899c}
+Método que gera um número aleatório de coordenada dentro dos valores máximos e mínimos da coordenada. O valor é codificado e depois setado no valor da coordenada.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]Tipo de dado da representação em binário da coordenada do GA. \item[{\em \_\-realTy}]Tipo de dado da representação real da coordeanda do GA. \end{DoxyTemplParams}
+\hypertarget{classcoordinate_a617500d91429987c40541973ae80662a}{
+\index{coordinate@{coordinate}!GetIndice@{GetIndice}}
+\index{GetIndice@{GetIndice}!coordinate@{coordinate}}
+\subsubsection[{GetIndice}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const int\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetIndice (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a617500d91429987c40541973ae80662a}
+Métod de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O índice da coordeanada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_aef173b7a32cc1cdb83c35f71a15f2f59}{
+\index{coordinate@{coordinate}!GetInterval@{GetInterval}}
+\index{GetInterval@{GetInterval}!coordinate@{coordinate}}
+\subsubsection[{GetInterval}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ \_\-realTy {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetInterval (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_aef173b7a32cc1cdb83c35f71a15f2f59}
+Método que calcula o tamanho do intervalo da coordenada.
+
+\begin{DoxyReturn}{Retorna}
+O tamanho do intervalo da coordenada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_af879abf859d6f890045dc6ad558ada96}{
+\index{coordinate@{coordinate}!GetMax@{GetMax}}
+\index{GetMax@{GetMax}!coordinate@{coordinate}}
+\subsubsection[{GetMax}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const \_\-realTy\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetMax (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_af879abf859d6f890045dc6ad558ada96}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor mínimo, em valor real, da coordenada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a06ceabdaa759122e5ea2436a68da951b}{
+\index{coordinate@{coordinate}!GetMaxCoded@{GetMaxCoded}}
+\index{GetMaxCoded@{GetMaxCoded}!coordinate@{coordinate}}
+\subsubsection[{GetMaxCoded}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const \_\-ty\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetMaxCoded (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a06ceabdaa759122e5ea2436a68da951b}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor máximo, em binário, da coordenada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_ad3a0bad89d7914ec157f773f445edeeb}{
+\index{coordinate@{coordinate}!GetMin@{GetMin}}
+\index{GetMin@{GetMin}!coordinate@{coordinate}}
+\subsubsection[{GetMin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const \_\-realTy\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetMin (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_ad3a0bad89d7914ec157f773f445edeeb}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor mínimao, em valor real, da coordenada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_ae5cae8ad8f7c0cd26d4ac1e565c2b72b}{
+\index{coordinate@{coordinate}!GetMinCoded@{GetMinCoded}}
+\index{GetMinCoded@{GetMinCoded}!coordinate@{coordinate}}
+\subsubsection[{GetMinCoded}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const \_\-ty\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetMinCoded (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_ae5cae8ad8f7c0cd26d4ac1e565c2b72b}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor mínimo, em binário, da coordenada. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a08bd46e2f1731b7042718f9c395b768d}{
+\index{coordinate@{coordinate}!GetPC@{GetPC}}
+\index{GetPC@{GetPC}!coordinate@{coordinate}}
+\subsubsection[{GetPC}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const int\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetPC (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a08bd46e2f1731b7042718f9c395b768d}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O valor do ponto de corte. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a92cf59fbfd315c208a5533b68ce3a3d0}{
+\index{coordinate@{coordinate}!GetPrecision@{GetPrecision}}
+\index{GetPrecision@{GetPrecision}!coordinate@{coordinate}}
+\subsubsection[{GetPrecision}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const int\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetPrecision (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a92cf59fbfd315c208a5533b68ce3a3d0}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+A precisão da coordenada 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a0e3450e6a6a1b4d577886fb68883d61c}{
+\index{coordinate@{coordinate}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!coordinate@{coordinate}}
+\subsubsection[{GetSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const int\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetSize (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a0e3450e6a6a1b4d577886fb68883d61c}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+O número de bits necessários para representar o valor real da coordenada em binário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a46e04592c97e4d4f10aad3cbe90a7a6a}{
+\index{coordinate@{coordinate}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!coordinate@{coordinate}}
+\subsubsection[{GetValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ \_\-ty\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetValue (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a46e04592c97e4d4f10aad3cbe90a7a6a}
+Método de interface (get).
+
+\begin{DoxyReturn}{Retorna}
+Referência para o valor, na representação em binário, da variável. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a67e7c384fd0641455b6629a7d6a9a344}{
+\index{coordinate@{coordinate}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!coordinate@{coordinate}}
+\subsubsection[{GetValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ const \_\-ty\& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::GetValue (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a67e7c384fd0641455b6629a7d6a9a344}
+Método de interface (get)
+
+\begin{DoxyReturn}{Retorna}
+Referência constante para o valor, na representação em binário, da variável. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_aa77bd1b22e652f61ced9ff8ef76fcbd9}{
+\index{coordinate@{coordinate}!IsConsistent@{IsConsistent}}
+\index{IsConsistent@{IsConsistent}!coordinate@{coordinate}}
+\subsubsection[{IsConsistent}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::IsConsistent (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_aa77bd1b22e652f61ced9ff8ef76fcbd9}
+Método que verifica se os valores mínimos e máximos da coordenadas são consistentes, ou seja, se o valor mínimo é menor que o valor máximo.
+
+\begin{DoxyReturn}{Retorna}
+True caso o vamor mínimo da coordenada seja menor que o valor máximo, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a5c05c89e4d5f69ea15ae724e2494bc6c}{
+\index{coordinate@{coordinate}!IsOutOfBound@{IsOutOfBound}}
+\index{IsOutOfBound@{IsOutOfBound}!coordinate@{coordinate}}
+\subsubsection[{IsOutOfBound}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::IsOutOfBound (const \_\-realTy \& {\em value}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a5c05c89e4d5f69ea15ae724e2494bc6c}
+Retorna se um valor passado como parâmetro se encontra fora do intervalo da coordenada.
+
+value O Valor real a ser conferido se se encontra dentro dos limites mínimos e máximos da coordenada.
+
+\begin{DoxyReturn}{Retorna}
+true caso o valor se encontra fora do intervalo, e false caso se encontre dentro do intervalo. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_aa39b86f0c5c09bf06fd5b2b8655d4dc2}{
+\index{coordinate@{coordinate}!IsOutOfBound@{IsOutOfBound}}
+\index{IsOutOfBound@{IsOutOfBound}!coordinate@{coordinate}}
+\subsubsection[{IsOutOfBound}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::IsOutOfBound (const \_\-ty \& {\em value}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_aa39b86f0c5c09bf06fd5b2b8655d4dc2}
+Método que checa se um valor, em binário, se encontra dentro do itervalo da coordenada.
+
+value O valor a ser checado.
+
+\begin{DoxyReturn}{Retorna}
+True caso value esteja dentro do intervalo, e False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a8254401d37f6be169cafb28ba10635c3}{
+\index{coordinate@{coordinate}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!coordinate@{coordinate}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::operator!= (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a8254401d37f6be169cafb28ba10635c3}
+Operador de diferença. Confere se o valor de duas coordenadas são diferentes.
+
+coo Coordenada a ser checada se o valor é diferente.
+
+\begin{DoxyReturn}{Retorna}
+True caso os valores das coordenadas sejam iguais, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a052d4f0f28d416b72fe1b8ecccf80858}{
+\index{coordinate@{coordinate}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!coordinate@{coordinate}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::operator$<$ (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a052d4f0f28d416b72fe1b8ecccf80858}
+Operador de comparação. Confere se o valor de uma coordenada é menor que o valor da outra.
+
+coo Coordenada a ser checada se o valor é menor.
+
+\begin{DoxyReturn}{Retorna}
+True caso o valor da coordenada seja menor que o da coordenada de coo, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a5c4a0543683ec8a6cbe751a075bd5187}{
+\index{coordinate@{coordinate}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!coordinate@{coordinate}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::operator$<$= (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a5c4a0543683ec8a6cbe751a075bd5187}
+Operador de comparação. Confere se o valor de uma coordenada é menor ou igual ao valor da outra.
+
+coo Coordenada a ser checada se o valor é menor ou igual.
+
+\begin{DoxyReturn}{Retorna}
+True caso o valor da coordenada seja menor ou igual ao da coordenada de coo, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_aeb156220bc0921767319774d77d0eb72}{
+\index{coordinate@{coordinate}!operator=@{operator=}}
+\index{operator=@{operator=}!coordinate@{coordinate}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::operator= (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_aeb156220bc0921767319774d77d0eb72}
+Operador de atribuição. Ao ser utlizado, os atributos da coordenada à esquerda do operador tem seus valores alterados, e se tornam idênticos aos atributos da coordenada à direita do operador.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]\item[{\em \_\-realTy}]coo A coordenada à direia do operador de atribuição, com os atributos a serem copiados.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+A coordenada à esquerda do operador de atribuição, com os atributos a serem alterados. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a063671d1577abcf23a36af1c996ac26a}{
+\index{coordinate@{coordinate}!operator==@{operator==}}
+\index{operator==@{operator==}!coordinate@{coordinate}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::operator== (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a063671d1577abcf23a36af1c996ac26a}
+Operador de igualdade. Confere se o valor de duas coordenadas são iguais.
+
+coo Coordenada a ser checada se o valor é igual.
+
+\begin{DoxyReturn}{Retorna}
+True caso os valores das coordenadas sejam iguais, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a9c19583af7069c444bef4a712ed7fc0c}{
+\index{coordinate@{coordinate}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!coordinate@{coordinate}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::operator$>$ (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a9c19583af7069c444bef4a712ed7fc0c}
+Operador de comparação. Confere se o valor de uma coordenada é maior que o valor da outra.
+
+coo Coordenada a ser checada se o valor é maior.
+
+\begin{DoxyReturn}{Retorna}
+True caso o valor da coordenada seja maior que o da coordenada de coo, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a2b75371880389112fd471f596429fd23}{
+\index{coordinate@{coordinate}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!coordinate@{coordinate}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ bool {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::operator$>$= (const {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$ \& {\em coo}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a2b75371880389112fd471f596429fd23}
+Operador de comparação. Confere se o valor de uma coordenada é maior ou igual ao valor da outra.
+
+coo Coordenada a ser checada se o valor é maior ou igual.
+
+\begin{DoxyReturn}{Retorna}
+True caso o valor da coordenada seja maior ou igual ao da coordenada de coo, False caso contrário. 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_a74e0f7eaf59e785c37b2d6f92e6f89a9}{
+\index{coordinate@{coordinate}!SetMax@{SetMax}}
+\index{SetMax@{SetMax}!coordinate@{coordinate}}
+\subsubsection[{SetMax}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetMax (const \_\-realTy \& {\em new\_\-max})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a74e0f7eaf59e785c37b2d6f92e6f89a9}
+Método de interface (set).
+
+new\_\-max É o valor máximo, em valor real, da coordenada. \hypertarget{classcoordinate_a8f1612243c59f409ca70878ea572188a}{
+\index{coordinate@{coordinate}!SetMaxCoded@{SetMaxCoded}}
+\index{SetMaxCoded@{SetMaxCoded}!coordinate@{coordinate}}
+\subsubsection[{SetMaxCoded}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetMaxCoded (const \_\-ty \& {\em new\_\-maxCoded})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a8f1612243c59f409ca70878ea572188a}
+Método de interface (set).
+
+new\_\-maxCoded É o valor máximo, em binário, da coordenada. \hypertarget{classcoordinate_a74810fee94eae241e36552db0041b023}{
+\index{coordinate@{coordinate}!SetMin@{SetMin}}
+\index{SetMin@{SetMin}!coordinate@{coordinate}}
+\subsubsection[{SetMin}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetMin (const \_\-realTy \& {\em new\_\-min})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a74810fee94eae241e36552db0041b023}
+Método de interface (set).
+
+new\_\-min É o valor mínimo, em valor real, da coordenada. \hypertarget{classcoordinate_a7a8c16521bfde82906c7a9013f7ef909}{
+\index{coordinate@{coordinate}!SetMinCoded@{SetMinCoded}}
+\index{SetMinCoded@{SetMinCoded}!coordinate@{coordinate}}
+\subsubsection[{SetMinCoded}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetMinCoded (const \_\-ty \& {\em new\_\-minCoded})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a7a8c16521bfde82906c7a9013f7ef909}
+Método de interface (set).
+
+new\_\-minCoded É o valor mínimo, em binário, da coordenada. \hypertarget{classcoordinate_a46b633da2fed8687b33814122ad2ce1d}{
+\index{coordinate@{coordinate}!SetPrecision@{SetPrecision}}
+\index{SetPrecision@{SetPrecision}!coordinate@{coordinate}}
+\subsubsection[{SetPrecision}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetPrecision (const int \& {\em new\_\-precision})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a46b633da2fed8687b33814122ad2ce1d}
+Método de interface (set).
+
+new\_\-precision É o novo valor da precisão da coordenada. \hypertarget{classcoordinate_a8dca6b1375bc84a05f66d8694681acbe}{
+\index{coordinate@{coordinate}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!coordinate@{coordinate}}
+\subsubsection[{SetSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetSize (const int \& {\em new\_\-size})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a8dca6b1375bc84a05f66d8694681acbe}
+Método de interface (set)
+
+new\_\-size É o novo valor do número de bits necessárioos para representar o valor real da coordenada em binário. \hypertarget{classcoordinate_a84cb188432f5139c669b8fd3fc0037f5}{
+\index{coordinate@{coordinate}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!coordinate@{coordinate}}
+\subsubsection[{SetValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetValue (const \_\-realTy \& {\em new\_\-value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a84cb188432f5139c669b8fd3fc0037f5}
+Método de interface (set). Antes de ser setado, é checado se o valor se encontra dentro do intervalo definido pelos valores máximo e mínimo da variável. Após o novo valor ter sido validado ele é codificado para binário e o novo valor é setado.
+
+new\_\-value É o novo valor, em real do valor da coordenada. \hypertarget{classcoordinate_ae66e44d1146ca8020809efe799a5a59c}{
+\index{coordinate@{coordinate}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!coordinate@{coordinate}}
+\subsubsection[{SetValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetValue (const \_\-ty \& {\em new\_\-value})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_ae66e44d1146ca8020809efe799a5a59c}
+Método de interface (set). Antes de ser setado, é checado se o valor se encontra dentro do intervalo definido pelos valores máximo e mínimo da variável.
+
+new\_\-value É o novo valor, em binário do valor da coordenada. \hypertarget{classcoordinate_a552fb17fcf9a6d74c972020d21e99709}{
+\index{coordinate@{coordinate}!SetValueMaxValue@{SetValueMaxValue}}
+\index{SetValueMaxValue@{SetValueMaxValue}!coordinate@{coordinate}}
+\subsubsection[{SetValueMaxValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetValueMaxValue (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a552fb17fcf9a6d74c972020d21e99709}
+Seta o valor da coordenada como o valor máximo definido para a mesma. \hypertarget{classcoordinate_a33a2b235424b34d89e42422c05adc276}{
+\index{coordinate@{coordinate}!SetValueMinValue@{SetValueMinValue}}
+\index{SetValueMinValue@{SetValueMinValue}!coordinate@{coordinate}}
+\subsubsection[{SetValueMinValue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ void {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::SetValueMinValue (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_a33a2b235424b34d89e42422c05adc276}
+Seta o valor da coordenada como o valor mínimo definido para a mesma. \hypertarget{classcoordinate_ae7277b9648c716a4ff6f16c15c26433d}{
+\index{coordinate@{coordinate}!ToString@{ToString}}
+\index{ToString@{ToString}!coordinate@{coordinate}}
+\subsubsection[{ToString}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty , typename \_\-realTy $>$ std::string {\bf coordinate}$<$ \_\-ty, \_\-realTy $>$::ToString (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classcoordinate_ae7277b9648c716a4ff6f16c15c26433d}
+Retorna uma string com a representação em binário do valor da coordenada.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em \_\-ty}]Tipo de dado da representação em binário da coordenada do GA. \item[{\em \_\-realTy}]Tipo de dado da representação real da coordeanda do GA.\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+Uma string representado o valor binário do valor da coordenada. 
+\end{DoxyReturn}
+
+
+\subsection{Amigas e Funções Relacionadas}
+\hypertarget{classcoordinate_ac6da0a94290e6364c27e4dff1a52f5e5}{
+\index{coordinate@{coordinate}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!coordinate@{coordinate}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ template$<$typename T , typename U $>$ std::ostream\& operator$<$$<$ (std::ostream \& {\em os}, \/  const {\bf coordinate}$<$ T, U $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classcoordinate_ac6da0a94290e6364c27e4dff1a52f5e5}
+Operador de fluxo de entrada. Recebe os atributos do objeto coordenada da stream, e os seta no objeto do tipo coordenada passado como parâmetro
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]os O objeto stream que carrega os atributos.  coo O objeto coordenada que recebe os atributos da stream\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+O mesmo objeto stream passado como parâmetro, para possibilitar o encadeamento do operador 
+\end{DoxyReturn}
+\hypertarget{classcoordinate_aacb2e8f6ef327786248a961828b53fa5}{
+\index{coordinate@{coordinate}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!coordinate@{coordinate}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \_\-ty, typename \_\-realTy$>$ template$<$typename T , typename U $>$ std::istream\& operator$>$$>$ (std::istream \& {\em is}, \/  {\bf coordinate}$<$ T, U $>$ \& {\em coo})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classcoordinate_aacb2e8f6ef327786248a961828b53fa5}
+Operador de fluxo de saída. Imprime na stream os atributos do objeto coordenada.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em T}]\item[{\em U}]is A stream que recebe os atributos  coo A coordenada que possui os atributos que serão passados para a stream\end{DoxyTemplParams}
+\begin{DoxyReturn}{Retorna}
+A mesma stream passada como parâmetro, para permitir o uso encadeado do operador 
+\end{DoxyReturn}
+
+
+A documentação para esta classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{coordinate_8h}{coordinate.h}\end{DoxyCompactItemize}
