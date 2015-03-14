@@ -1,0 +1,1 @@
+This project contains a C++ implementation of the genetic algorithm. There are two main implementations: one parallelized version and the other non-parallelized. The project makes use of the Boost.Thread library and is documented making use of the Doxygen software, but unfortunately the documentation is written on portuguese.
